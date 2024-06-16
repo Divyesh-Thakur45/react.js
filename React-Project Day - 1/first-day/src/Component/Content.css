@@ -1,6 +1,6 @@
 .content {
   display: grid;
-  grid-template-columns: repeat(3,1fr); /* Three columns of equal width */
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
   margin: auto;
   /* gap: 16px; */
 }
@@ -66,4 +66,37 @@
 .discount {
   color: #e84417;
   font-size: 12px;
+}
+
+/* btn */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.prev-button,
+.next-button {
+  background-color: #e0e0e0;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.page-info {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #333;
+}
+.btns{
+  width: 100%;
+  margin: auto;
 }

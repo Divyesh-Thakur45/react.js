@@ -1,4 +1,9 @@
 import '../Component/Footer.css'
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -68,22 +73,22 @@ export default function Footer() {
           <ul className="social-icons">
             <li>
               <a href="#">
-                <img src="https://via.placeholder.com/20" alt="Facebook"></img>
+              <FaFacebook />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="https://via.placeholder.com/20" alt="Twitter"></img>
+              <FaTwitter />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="https://via.placeholder.com/20" alt="YouTube"></img>
+              <FaYoutube />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="https://via.placeholder.com/20" alt="Instagram"></img>
+              <FaInstagram />
               </a>
             </li>
           </ul>

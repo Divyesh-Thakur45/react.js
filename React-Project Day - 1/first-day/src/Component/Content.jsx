@@ -1,14 +1,26 @@
+import { useEffect, useState } from "react";
 import "./Content.css";
-import ShirtData from "../db.json";
 
 export default function Content() {
-    console.log(ShirtData.shirts)
+  const [data, setdata] = useState([]);
+  const [page , setpage] = useState(1)
+  const ShirtData = () => {
+    fetch(`http://localhost:8080/shirts?_limit=6&_page=${page}`)
+      .then((res) => res.json())
+      .then((data) => setdata(data))
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    ShirtData();
+    console.log("helllo")
+  }, [page])
+  
   return (
-    <div className="content">
-      {ShirtData.shirts.map((e, index) => {
-        
-        return (
+    <div>
+      <div className="content">
+        {data.map((e, index) => (
           <div key={index} className="card">
+         
             <div style={{ position: "relative" }}>
               <img src={e.imageUrl} alt="Casual Shirt" />
               <div className="rating">
@@ -25,8 +37,15 @@ export default function Content() {
               </div>
             </div>
           </div>
-        );
-      })}
+        ))}
+      </div>
+      <div className="btns">
+        <div className="button-container">
+          <button disabled={page == 1} className="prev-button" onClick={()=> setpage(page - 1)}>&lt; Previous</button>
+          <span className="page-info">Page {page} </span>
+          <button disabled={page == 15} className="next-button" onClick={()=> setpage(page + 1)}>Next &gt;</button>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
