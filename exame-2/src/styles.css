@@ -1,0 +1,72 @@
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  max-width: 200px;
+  margin: 16px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.productPrice {
+  font-size: 18px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.productName {
+  font-size: 16px;
+  color: #555;
+}
+
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.counterButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.counterButton:hover {
+  background-color: #e0e0e0;
+}
+
+.counterValue {
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+/* btn */
+.toggleButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.toggleButton2 {
+  display: none;
+}
