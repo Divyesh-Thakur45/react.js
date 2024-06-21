@@ -4,15 +4,19 @@ import "./Content.css";
 export default function Content() {
   const [data, setdata] = useState([]);
   const [page , setpage] = useState(1)
+  const [PageCount, setPageCount] = useState(0)
   const ShirtData = () => {
     fetch(`http://localhost:8080/shirts?_limit=6&_page=${page}`)
-      .then((res) => res.json())
+      .then((res) => {
+        const pages = Math.ceil(res.headers.get('X-total-Count'))
+        setPageCount(pages / 6)
+        return res.json()
+      })
       .then((data) => setdata(data))
       .catch((err) => console.log(err));
   };
   useEffect(() => {
     ShirtData();
-    console.log("helllo")
   }, [page])
   
   return (
@@ -20,7 +24,6 @@ export default function Content() {
       <div className="content">
         {data.map((e, index) => (
           <div key={index} className="card">
-         
             <div style={{ position: "relative" }}>
               <img src={e.imageUrl} alt="Casual Shirt" />
               <div className="rating">
@@ -43,7 +46,7 @@ export default function Content() {
         <div className="button-container">
           <button disabled={page == 1} className="prev-button" onClick={()=> setpage(page - 1)}>&lt; Previous</button>
           <span className="page-info">Page {page} </span>
-          <button disabled={page == 15} className="next-button" onClick={()=> setpage(page + 1)}>Next &gt;</button>
+          <button disabled={page >= PageCount} className="next-button" onClick={()=> setpage(page + 1)}>Next &gt;</button>
         </div>
       </div>
     </div>
