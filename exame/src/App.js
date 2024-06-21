@@ -17,7 +17,6 @@ export default function App() {
       return false;
     }
   };
-
   return (
     <div className="App">
       <h1>Welcome To Counter 2.O</h1>
