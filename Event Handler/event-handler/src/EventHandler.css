@@ -1,0 +1,20 @@
+/* EventHandler.css */
+
+.event-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.event-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-container h3 {
+  font-size: 18px;
+  color: #666;
+}

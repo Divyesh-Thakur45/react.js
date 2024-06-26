@@ -1,0 +1,16 @@
+/* btn */
+.toggleButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.toggleButton2 {
+  display: none;
+}
