@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0000;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #5febdf;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.react-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #00796b;
+  font-family: Arial, sans-serif;
+}
+
+.gender-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #004d40;
+}
