@@ -1,5 +1,9 @@
 import React from "react";
 import Image from "../components/image/man.png";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Tamplate = () => {
   return (
@@ -14,6 +18,12 @@ const Tamplate = () => {
             </p>
             <p>I make youtube video and Blog</p>
             <button className="btn btn-primary">I'M AVAILABLE</button>
+            <div className="w-25 d-flex justify-content-between mt-3 fs-6">
+            <FaFacebookF />
+            <FaTwitter />
+            <FaInstagram />
+            <FaGithub />
+            </div>
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src={Image} height={400} />

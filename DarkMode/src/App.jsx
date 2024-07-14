@@ -1,12 +1,18 @@
 import './App.css'
+import Footer from './Components/Footer'
 import Midsection from './Components/Midsection'
+import Navigation from './Components/Navigation'
 
 function App() {
 
   return (
-    <>
-        <Midsection />
-    </>
+
+        <div>
+          <Navigation />
+          <Midsection />
+          <Footer />
+        </div>
+    
   )
 }
 

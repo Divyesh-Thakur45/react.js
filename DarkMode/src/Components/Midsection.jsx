@@ -1,52 +1,31 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../Components/Midsection.css";
-import { AiFillMoon } from "react-icons/ai";
-import { AiFillSun } from "react-icons/ai";
+import TheemChanger, { mode } from "../ModeContext";
 
 const Midsection = () => {
-  const [Sun, setSun] = useState(false);
-  const [data,setdata] = useState([]);
+  const { Theem, ChangeTheemFun } = useContext(mode);
+  console.log(Theem);
+  const [data, setdata] = useState([]);
 
-  const fetchData = () =>{
+  const fetchData = () => {
     fetch("http://localhost:3000/shirts")
-     .then((response) => response.json())
-     .then((data) => setdata(data))
-     .catch((error) => console.error("Error:", error));
-  }
+      .then((response) => response.json())
+      .then((data) => setdata(data))
+      .catch((error) => console.error("Error:", error));
+  };
 
-  useEffect(()=>{
-    fetchData(); 
-  },[])
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <div className="logo">
-            <a href="#">TheemChanger</a>
-          </div>
-          <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search for products, brands and more"
-            />
-            <button type="submit">Search</button>
-          </div>
-          <div className="nav-links">
-            <a href="#">Login</a>
-            <a href="#">More</a>
-            <a href="#">Cart</a>
-          </div>
-          <div
-            onClick={() => setSun(!Sun)}
-            style={{ margin: "5px 12px 0px 12px", fontSize: "22px" }}
-          >
-            {Sun ? <AiFillMoon /> : <AiFillSun />}
-          </div>
-        </div>
-      </nav>
+      
 
-      <div>
-        <div className="content" style={{backgroundColor:Sun ? "black" : "#ecf0f3"}}>
+      <div className="MidContentSection">
+        <div
+          className="content"
+          style={{ backgroundColor: Theem == true ? "#ecf0f3" : "black" }}
+        >
           {data.map((e, index) => (
             <div key={index} className="card">
               <div style={{ position: "relative" }}>
@@ -68,6 +47,9 @@ const Midsection = () => {
           ))}
         </div>
       </div>
+
+      
+
     </div>
   );
 };
