@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import "../Components/Midsection.css";
+import "./Midsection.css";
 import TheemChanger, { mode } from "../ModeContext";
 
 const Midsection = () => {

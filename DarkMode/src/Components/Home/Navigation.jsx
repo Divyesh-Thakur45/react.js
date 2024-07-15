@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { AiFillMoon } from "react-icons/ai";
 import { AiFillSun } from "react-icons/ai";
-import "../Components/Navigation.css";
+import "./Navigation.css";
 import { mode } from "../ModeContext";
+import { NavLink, Route, Router, Routes } from "react-router-dom";
 
 const Navigation = () => {
   const { Theem, ChangeTheemFun } = useContext(mode);
-  console.log(Theem);
+  // console.log(Theem);
   return (
     <div>
       <nav className="navbar">
@@ -24,9 +25,10 @@ const Navigation = () => {
             <button type="submit">Search</button>
           </div>
           <div className="nav-links">
-            <a href="#">Login</a>
-            <a href="#">More</a>
-            <a href="#">Cart</a>
+          <NavLink to={"/login"} >Login</NavLink>
+          <NavLink to={"/More"} >More</NavLink>
+          <NavLink to={"/Cart"} >Cart</NavLink>
+            
           </div>
           <div
             onClick={() => ChangeTheemFun()}
@@ -36,6 +38,8 @@ const Navigation = () => {
           </div>
         </div>
       </nav>
+
+      
     </div>
   );
 };

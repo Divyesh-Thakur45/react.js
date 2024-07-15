@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Allcontext = () => {
+const Card = () => {
   return (
     <div>
-      
+      <h1>Card Page</h1>
     </div>
   )
 }
 
-export default Allcontext
+export default Card

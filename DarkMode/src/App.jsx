@@ -1,19 +1,14 @@
-import './App.css'
-import Footer from './Components/Footer'
-import Midsection from './Components/Midsection'
-import Navigation from './Components/Navigation'
+import "./App.css";
+import Navigation from "./Components/Home/Navigation";
+import Routers from "./Components/Routers";
 
 function App() {
-
   return (
-
-        <div>
-          <Navigation />
-          <Midsection />
-          <Footer />
-        </div>
-    
-  )
+    <div>
+        <Navigation />
+        <Routers />
+    </div>
+  );
 }
 
-export default App
+export default App;
