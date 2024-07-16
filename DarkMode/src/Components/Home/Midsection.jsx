@@ -19,8 +19,6 @@ const Midsection = () => {
   }, []);
   return (
     <div>
-      
-
       <div className="MidContentSection">
         <div
           className="content"
@@ -43,13 +41,16 @@ const Midsection = () => {
                   <span className="discount">{e.discount}</span>
                 </div>
               </div>
+
+              <div className="button-container">
+                <button className="btn add-to-cart">Add to Cart</button>
+                <button className="btn delete">Delete</button>
+              </div>
+              
             </div>
           ))}
         </div>
       </div>
-
-      
-
     </div>
   );
 };

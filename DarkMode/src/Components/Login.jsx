@@ -10,7 +10,7 @@ const Login = () => {
     }
     
     const [Obj,setObj] = useState(UserInfo)
-     
+
     // D-Structural Properties
     const {email, password} = Obj
 
@@ -25,14 +25,24 @@ const Login = () => {
         alert(`Email: ${Obj.email}, Password: ${Obj.password}`);
         console.log(Obj);
 
-        axios.post('https://reqres.in/api/login',{Obj})
-        .then(response => {
-            alert(response.data);
+        axios.post('https://reqres.in/api/login',Obj)
+        .then((response) => {
+            // alert(response.data);
+            console.log(response.data.token);
+            localStorage.setItem("Token", JSON.stringify(response.data.token));
         })
-        .catch(error => {
+        .catch((error) => {
             alert(error);
         });
     }
+
+    const HandleClickLogout = (e) => {
+        e.preventDefault();
+        localStorage.removeItem("Token");
+        alert("Logged Out Successfully");
+        window.location.href = "/"
+    }
+
 
   return (
     <div className="login-container">
@@ -46,7 +56,8 @@ const Login = () => {
           <form onSubmit={(e)=>HandleClick(e)}>
             <input type="email" name="email" value={email} onChange={HandleChange} placeholder="Enter Email " />
             <input type="password" name="password" value={password} onChange={HandleChange} placeholder="Enter Password" />
-            <button>Request OTP</button>
+            <button>Login</button>
+            <button onClick={HandleClickLogout}>Logout</button>
           </form>
           <p>
             By continuing, you agree to Flipkart's <a href="#">Terms of Use</a>{" "}
