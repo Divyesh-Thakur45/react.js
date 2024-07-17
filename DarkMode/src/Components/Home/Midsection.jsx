@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Midsection.css";
 import TheemChanger, { mode } from "../ModeContext";
+import { Link } from "react-router-dom";
 
 const Midsection = () => {
   const { Theem, ChangeTheemFun } = useContext(mode);
@@ -27,7 +28,9 @@ const Midsection = () => {
           {data.map((e, index) => (
             <div key={index} className="card">
               <div style={{ position: "relative" }}>
-                <img src={e.imageUrl} alt="Casual Shirt" />
+                <Link to={`/Description/${e.id}`}>
+                  <img src={e.imageUrl} alt="Casual Shirt" />
+                </Link>
                 <div className="rating">
                   <span className="star">★ 4 | 1.1k</span>
                 </div>
@@ -46,7 +49,6 @@ const Midsection = () => {
                 <button className="btn add-to-cart">Add to Cart</button>
                 <button className="btn delete">Delete</button>
               </div>
-              
             </div>
           ))}
         </div>
