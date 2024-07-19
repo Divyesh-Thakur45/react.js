@@ -26,9 +26,10 @@ const Post = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.put(`http://localhost:3000/shirts/${id}`,DataPost)
-    .then((response) => console.log(response))
-    .catch((err) => console.log(err))
+    axios
+      .put(`http://localhost:3000/shirts/${id}`, DataPost)
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
   };
 
   const handleGet = () => {

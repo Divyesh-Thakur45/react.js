@@ -5,27 +5,41 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Midsection = () => {
+  // For pagination useState
+  const [page, setpage] = useState(1);
+
   const { Theem, ChangeTheemFun } = useContext(mode);
-  console.log(Theem);
+
+  // console.log(Theem);
   const [data, setdata] = useState([]);
 
   const fetchData = () => {
-    fetch("http://localhost:3000/shirts")
-      .then((response) => response.json())
-      .then((data) => setdata(data))
-      .catch((error) => console.error("Error:", error));
+    axios
+      .get("http://localhost:3000/shirts", {
+        params: {
+          _page: page,
+          _limit: 6,
+          title: "Casual Shirt",
+        },
+      })
+      .then((res) => setdata(res.data))
+      .catch((error) => console.log(error));
   };
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [page]);
 
-  const HandleDelete = (id) =>{
+  const HandleDelete = (id) => {
     console.log(id);
-    axios.delete(`http://localhost:3000/shirts/${id}`)
-    .then((res)=>console.log(res))
-    .catch((error)=>console.log(error))
-  }
+    axios
+      .delete(`http://localhost:3000/shirts/${id}`)
+      .then((res) => {
+        console.log(res);
+        fetchData();
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
     <div>
@@ -53,16 +67,31 @@ const Midsection = () => {
                   <span className="discount">({e.discount} % OFF)</span>
                 </div>
 
-                <Link to={`/Post/${e.id}`} >Edid</Link>
+                <Link to={`/Post/${e.id}`}>Edid</Link>
               </div>
 
               <div className="button-container">
                 <button className="btn add-to-cart">Add to Cart</button>
-                <button className="btn delete" onClick={()=>HandleDelete(e.id)}>Delete</button>
+                <button
+                  className="btn delete"
+                  onClick={() => HandleDelete(e.id)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="pagination-container">
+        <button onClick={() => setpage(page - 1)} className="pagination-button">
+          Previous
+        </button>
+        <span className="page-number">Page {page}</span>
+        <button onClick={() => setpage(page + 1)} className="pagination-button">
+          Next
+        </button>
       </div>
     </div>
   );
