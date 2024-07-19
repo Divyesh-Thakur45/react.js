@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Midsection.css";
 import TheemChanger, { mode } from "../ModeContext";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Midsection = () => {
   const { Theem, ChangeTheemFun } = useContext(mode);
@@ -18,6 +19,14 @@ const Midsection = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
+  const HandleDelete = (id) =>{
+    console.log(id);
+    axios.delete(`http://localhost:3000/shirts/${id}`)
+    .then((res)=>console.log(res))
+    .catch((error)=>console.log(error))
+  }
+
   return (
     <div>
       <div className="MidContentSection">
@@ -39,15 +48,17 @@ const Midsection = () => {
                 <div className="brand">{e.brand}</div>
                 <div className="product">{e.title}</div>
                 <div className="price">
-                  <span className="current-price">{e.mrp}</span>
-                  <span className="original-price">{e.price}</span>
-                  <span className="discount">{e.discount}</span>
+                  <span className="current-price">Rs.{e.mrp}</span>
+                  <span className="original-price">Rs. {e.price}</span>
+                  <span className="discount">({e.discount} % OFF)</span>
                 </div>
+
+                <Link to={`/Post/${e.id}`} >Edid</Link>
               </div>
 
               <div className="button-container">
                 <button className="btn add-to-cart">Add to Cart</button>
-                <button className="btn delete">Delete</button>
+                <button className="btn delete" onClick={()=>HandleDelete(e.id)}>Delete</button>
               </div>
             </div>
           ))}

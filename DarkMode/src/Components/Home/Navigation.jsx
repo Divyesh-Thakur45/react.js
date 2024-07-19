@@ -13,9 +13,9 @@ const Navigation = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="logo">
-            <a href="#" onClick={() => ChangeTheemFun()}>
-              TheemChanger
-            </a>
+            
+              <NavLink to={"/"}>TheemChanger</NavLink>
+           
           </div>
           <div className="search-bar">
             <input

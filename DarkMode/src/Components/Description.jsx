@@ -18,15 +18,7 @@ const Description = () => {
     descriptionData();
   }, []);
   return (
-    // {
-    //   "imageUrl": "",
-    //   "brand": "",
-    //   "title": "",
-    //   "size": 44,
-    //   "price": "Rs. 729",
-    //   "mrp": "Rs. 2099",
-    //   "discount": "(Rs. 1370 OFF)"
-    // }
+
     <div className="product-description">
       <img
         src={description.imageUrl}
