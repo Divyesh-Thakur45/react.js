@@ -1,34 +1,38 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AiFillMoon } from "react-icons/ai";
 import { AiFillSun } from "react-icons/ai";
 import "./Navigation.css";
 import { mode } from "../ModeContext";
 import { NavLink, Route, Router, Routes } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = ({Search}) => {
   const { Theem, ChangeTheemFun } = useContext(mode);
   // console.log(Theem);
+  const [searchData, setsearchData] = useState("")
+
+  // search
+  const Search = () => {
+    console.log(searchData)
+  };
   return (
     <div>
       <nav className="navbar">
         <div className="navbar-container">
           <div className="logo">
-            
-              <NavLink to={"/"}>TheemChanger</NavLink>
-           
+            <NavLink to={"/"}>TheemChanger</NavLink>
           </div>
           <div className="search-bar">
             <input
+            onChange={(e)=>setsearchData(e.target.value)}
               type="text"
               placeholder="Search for products, brands and more"
             />
-            <button type="submit">Search</button>
+            <button type="submit" onClick={Search}>Search</button>
           </div>
           <div className="nav-links">
-          <NavLink to={"/login"} >Login</NavLink>
-          <NavLink to={"/More"} >More</NavLink>
-          <NavLink to={"/Cart"} >Cart</NavLink>
-            
+            <NavLink to={"/login"}>Login</NavLink>
+            <NavLink to={"/More"}>More</NavLink>
+            <NavLink to={"/Cart"}>Cart</NavLink>
           </div>
           <div
             onClick={() => ChangeTheemFun()}
@@ -38,8 +42,6 @@ const Navigation = () => {
           </div>
         </div>
       </nav>
-
-      
     </div>
   );
 };

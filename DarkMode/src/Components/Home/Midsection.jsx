@@ -3,12 +3,17 @@ import "./Midsection.css";
 import TheemChanger, { mode } from "../ModeContext";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Navigation from './Navigation';
 
 const Midsection = () => {
   // For pagination useState
   const [page, setpage] = useState(1);
 
   const { Theem, ChangeTheemFun } = useContext(mode);
+
+  // sort price
+  const [price, setprice] = useState(null);
+  console.log(price)
 
   // console.log(Theem);
   const [data, setdata] = useState([]);
@@ -19,8 +24,10 @@ const Midsection = () => {
         params: {
           _page: page,
           _limit: 6,
-          title: "Casual Shirt",
-        },
+          _sort: "price",
+          _order: price,
+          q : Navigation
+        }
       })
       .then((res) => setdata(res.data))
       .catch((error) => console.log(error));
@@ -28,7 +35,7 @@ const Midsection = () => {
 
   useEffect(() => {
     fetchData();
-  }, [page]);
+  }, [page,price]);
 
   const HandleDelete = (id) => {
     console.log(id);
@@ -44,6 +51,15 @@ const Midsection = () => {
   return (
     <div>
       <div className="MidContentSection">
+        <div>
+          <select onChange={(e)=> setprice(e.target.value)}>
+            <option disabled selected>
+              Price
+            </option>
+            <option value={"asc"}>High To Low</option>
+            <option value={"desc"}>Low To High</option>
+          </select>
+        </div>
         <div
           className="content"
           style={{ backgroundColor: Theem == true ? "#ecf0f3" : "black" }}

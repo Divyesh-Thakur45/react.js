@@ -178,3 +178,31 @@
     font-size: 18px;
     margin: 0 20px;
 }
+
+
+
+
+/* price */
+select {
+    width: 150px;
+    /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    /* Removes the default dropdown arrow for some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292.4 292.4"><path fill="%23aaa" d="M287 69.5L166.7 189.9c-4.9 4.9-12.8 4.9-17.7 0L5 69.5c-4.9-4.9-4.9-12.8 0-17.7s12.8-4.9 17.7 0l133.6 133.6 133.6-133.6c4.9-4.9 12.8-4.9 17.7 0 4.8 4.8 4.8 12.7-.1 17.7z"/></svg>') no-repeat right 10px center;
+    background-color: white;
+    background-size: 10px;
+}
+
+option[disabled] {
+    color: #999;
+}
+
+option {
+    padding: 10px;
+}

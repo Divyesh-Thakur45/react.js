@@ -4,6 +4,7 @@ export const mode = createContext()
 
 export default function TheemChanger({children}){
     const [Theem , setTheem] = useState(true)
+    
 
     const ChangeTheemFun = () => {
         setTheem(!Theem)
