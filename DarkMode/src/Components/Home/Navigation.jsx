@@ -5,15 +5,10 @@ import "./Navigation.css";
 import { mode } from "../ModeContext";
 import { NavLink, Route, Router, Routes } from "react-router-dom";
 
-const Navigation = ({Search}) => {
-  const { Theem, ChangeTheemFun } = useContext(mode);
-  // console.log(Theem);
-  const [searchData, setsearchData] = useState("")
-
-  // search
-  const Search = () => {
-    console.log(searchData)
-  };
+const Navigation = () => {
+  const { Theem, ChangeTheemFun , searchData , Search , getSearchData} = useContext(mode);
+  console.log(searchData);
+  
   return (
     <div>
       <nav className="navbar">
@@ -23,11 +18,12 @@ const Navigation = ({Search}) => {
           </div>
           <div className="search-bar">
             <input
-            onChange={(e)=>setsearchData(e.target.value)}
+            onChange={getSearchData}
               type="text"
               placeholder="Search for products, brands and more"
             />
             <button type="submit" onClick={Search}>Search</button>
+            
           </div>
           <div className="nav-links">
             <NavLink to={"/login"}>Login</NavLink>
