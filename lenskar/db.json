@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/a2.png",
+      "title":"Eyeglasses"
+    },
+    {
+      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/b2.png",
+      "title":"Sunglasses"
+    },
+    {
+      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/d2.png",
+      "title":"Screen Glasses"
+    },
+    {
+      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/d.png",
+      "title":"Content Lenses"
+    },
+    {
+      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/e2.png",
+      "title":"Power Sunglasses"
+    },
+    {
+      "image":"https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg",
+      "title":"Progressive lenses"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

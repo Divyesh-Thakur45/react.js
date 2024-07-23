@@ -1,0 +1,86 @@
+/* NavBar.css */
+
+.navbar {
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+}
+
+.top-bar .left-links a,
+.top-bar .right-links a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-bar .right-links span {
+    color: #333;
+}
+
+.main-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main-bar .logo img {
+    height: 40px;
+}
+
+.main-bar .search-bar input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-bar .account-links a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+.bottom-bar-main{
+    background-color: #FBF9F7;
+}
+.bottom-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* background-color: #fff; */
+    /* border-top: 1px solid #e5e5e5; */
+}
+
+.main-bar-img img {
+    /* padding: 10px; */
+    margin: 0px 5px 0px 5px;
+}
+
+.bottom-bar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.NavigationData-main{
+    background-color: #F3F3F3;
+}
+.NavigationData{
+    background-color: #fff;
+    padding: 5px 5px 10px 5px;
+    border-radius: 5px;
+}
+.NavigationData a{
+    color: #8a8888;
+    font-size: 14px;
+}
