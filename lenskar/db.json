@@ -1,38 +1,66 @@
 {
   "posts": [
     {
-      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/a2.png",
-      "title":"Eyeglasses"
+      "image": "https://static1.lenskart.com/media/desktop/img/Apr22/a2.png",
+      "title": "Eyeglasses"
     },
     {
-      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/b2.png",
-      "title":"Sunglasses"
+      "image": "https://static1.lenskart.com/media/desktop/img/Apr22/b2.png",
+      "title": "Sunglasses"
     },
     {
-      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/d2.png",
-      "title":"Screen Glasses"
+      "image": "https://static1.lenskart.com/media/desktop/img/Apr22/d2.png",
+      "title": "Screen Glasses"
     },
     {
-      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/d.png",
-      "title":"Content Lenses"
+      "image": "https://static1.lenskart.com/media/desktop/img/Apr22/d.png",
+      "title": "Content Lenses"
     },
     {
-      "image":"https://static1.lenskart.com/media/desktop/img/Apr22/e2.png",
-      "title":"Power Sunglasses"
+      "image": "https://static1.lenskart.com/media/desktop/img/Apr22/e2.png",
+      "title": "Power Sunglasses"
     },
     {
-      "image":"https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg",
-      "title":"Progressive lenses"
+      "image": "https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg",
+      "title": "Progressive lenses"
     }
   ],
-  "comments": [
+  "firstbigslider": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "https://static5.lenskart.com/media/uploads/Desktopnew_1505.jpg"
+    },
+    {
+      "image": "https://static1.lenskart.com/media/desktop/img/oct9/holiday-edit/Web-banner.jpg"
+    },
+    {
+      "image": "https://static1.lenskart.com/media/desktop/img/June24/Crystal_acetate/web-option-1CAcetate.gif"
+    },
+    {
+      "image": "https://static1.lenskart.com/media/desktop/img/NewFolder23/Desktop%20Banner.jpg"
+    },
+    {
+      "image": "https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
+    },
+    {
+      "image": "https://static5.lenskart.com/media/uploads/WEBlkair_matte_essential.gif"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "secondSlider": [
+    {
+      "title": "Round",
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png"
+    },
+    {
+      "title": "Cat-Eye",
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg"
+    },
+    {
+      "title": "Clubmaster",
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg"
+    },
+    {
+      "title": "Transparent",
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg"
+    }
+  ]
 }

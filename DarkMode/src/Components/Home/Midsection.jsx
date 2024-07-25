@@ -78,7 +78,12 @@ const Midsection = () => {
               </div>
               <div className="button-container">
                 <button className="btn add-to-cart">Add to Cart</button>
-                <button className="btn delete" onClick={() => handleDelete(e.id)}>Delete</button>
+                <button
+                  className="btn delete"
+                  onClick={() => handleDelete(e.id)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           ))}
