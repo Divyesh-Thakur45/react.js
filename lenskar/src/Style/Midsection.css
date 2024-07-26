@@ -2,14 +2,18 @@
   /* overflow-x: hidden; */
   /* display: flex; */
   /* display: flex; */
-  overflow: hidden;
-  padding: 15px 0px 0px 0px;
+  /* overflow: hidden; */
+  /* padding: 15px 0px 0px 0px; */
+  /* height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between; */
 }
 .slider-img{
   /* width: 1800px; */
-  width: 100%;
+  /* width: 100%; */
 }
-.slider-img img{
+/* .slider-img img{
   width: 100%;
   height: auto;
-}
+} */

@@ -1,14 +1,12 @@
-import './App.css';
-import Navigation from './Components/Navigation';
-import Midsection from './Components/Midsection';
-import Secondslider from './Components/Secondslider';
+import "./App.css";
+import Home from "./Components/Home";
 
 function App() {
+  
   return (
     <div className="App">
-      <Navigation />
-      <Midsection />
-      <Secondslider />
+      <Home />
+      
     </div>
   );
 }

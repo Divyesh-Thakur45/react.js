@@ -1,0 +1,151 @@
+/* FIND THE PERFECT FIT CONTAINER */
+.main-div-perfect-fit {
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+.perfectfit-main {
+    /* background-color: red; */
+    /* text-align: center; */
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    /* align-items: center; */
+}
+
+.perfectfit-sub {
+    width: 50%;
+    margin: 0px 5px 0px 0px;
+}
+
+.perfectfit-second-sub {
+    margin: 5px 0px 5px 10px;
+    height: 50%;
+}
+
+.perfectfit-main-second {
+    display: flex;
+    padding: 10px;
+}
+
+.perfectfit-main-second {
+    width: 80%;
+    margin: auto;
+}
+
+.perfectfit-sub-second {
+    margin: 0px 10px 0px 0px;
+}
+
+
+
+/* CONTACT LENSES & MORE */
+.LensesAndMore-Main {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.LensesAndMore-Sub {
+    margin: 0px 5px;
+}
+
+/* BUY IT YOUR WAY  */
+.YourWay-Main {
+    /* padding: 10px 0px 5px 0px; */
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.YourWay-Sub {
+    margin: 10px;
+}
+
+
+
+
+
+/* EYEGLASSES Slider.css */
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+    margin: 10px 0px;
+    margin: 2% auto;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.slider-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.slider-header a {
+    font-size: 16px;
+    color: #00a9a5;
+    text-decoration: none;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.slide img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.slider-controls .prev {
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.slider-controls .next {
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #ccc;
+    margin: 0px 20px 0px 0px;
+}
+
+.slider-controls .prev:hover,
+.slider-controls .next:hover {
+    color: #000;
+}

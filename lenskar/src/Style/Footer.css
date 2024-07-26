@@ -1,0 +1,104 @@
+/* Youtube Video */
+.testimonials-container {
+    background-color: #ffeb99;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonials-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.testimonials-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+}
+
+.testimonials-videos iframe {
+    max-width: 100%;
+    flex: 1;
+    min-width: 300px;
+    height: 315px;
+}
+
+
+
+/* !!!!!!!!!!!!!!!! */
+/* src/Footer.css */
+.footer-container {
+    background-color: #15153B;
+    color: #ffffff;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.footer-content {
+    text-align: start;
+    max-width: 900px;
+    /* margin: 0 auto; */
+    padding-bottom: 30px;
+}
+
+.footer-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: #38BDF8;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section .app-links img {
+    max-width: 140px;
+    margin: 0px 10px 0px 30px;
+
+}
+
+.footer-section .app-links {
+    display: flex;
+    align-items: center;
+}

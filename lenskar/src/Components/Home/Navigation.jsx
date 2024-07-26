@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
-import "../Style/Navigation.css";
+import "../../Style/Navigation.css";
 import axios from "axios";
 
 const Navigation = () => {
+  const baseurl=process.env.REACT_APP_BASE_URL
+  console.log(`${baseurl}/post`)
   const [navData, setnavData] = useState([]);
   const NavigationData = () => {
     axios
-      .get("http://localhost:3000/posts")
+      .get(`${baseurl}/posts`)
       .then((response) => setnavData(response.data))
       .catch((error) => console.log(error));
   };
