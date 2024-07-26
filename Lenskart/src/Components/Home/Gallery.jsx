@@ -1,6 +1,6 @@
 import React from "react";
-import "../../Style/Gallary.css";
-const Gallary = () => {
+import "../../Style/Gallery.css";
+const Gallery = () => {
   return (
     <div>
       {/* FREE PROGRESSIVE LENSES */}
@@ -37,7 +37,7 @@ const Gallary = () => {
 
         <div>
           <div className="line-container">
-            <span className="line-text">PREMIUM EYEWEAR</span>
+            <span className="line-text">PREMIUM EYE WEAR</span>
           </div>
           <img
             src="https://static1.lenskart.com/media/desktop/img/oct23/home/13-10-23/As%20seen%20on%20Desk.jpg"
@@ -47,7 +47,7 @@ const Gallary = () => {
 
         <div>
           <div className="line-container">
-            <span className="line-text">AS SEEN ON MOUNI ROY</span>
+            <span className="line-text">AS SEEN ON ROY</span>
           </div>
           <img
             src="https://static1.lenskart.com/media/desktop/img/23may/cannes/web.gif"
@@ -67,7 +67,7 @@ const Gallary = () => {
 
         <div>
           <div className="line-container">
-            <span className="line-text">AS SEEN ON KARAN JOHAR</span>
+            <span className="line-text">AS SEEN ON</span>
           </div>
           <img
             src="https://static1.lenskart.com/media/desktop/img/Dec22/Web_banner.gif"
@@ -87,7 +87,7 @@ const Gallary = () => {
         <div>
           <div className="line-container2">
             <span className="line-text2">
-              AQUACOLOR - GLAM UP WITH COLOR LENSES
+              GLAM UP WITH COLOR LENSES
             </span>
           </div>
           <img
@@ -478,4 +478,4 @@ const Gallary = () => {
   );
 };
 
-export default Gallary;
+export default Gallery;

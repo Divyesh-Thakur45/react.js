@@ -1,21 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "../../Style/Navigation.css";
-import axios from "axios";
+import SignIn from "../SignIn";
 
 const Navigation = () => {
-  const baseurl=process.env.REACT_APP_BASE_URL
-  console.log(`${baseurl}/post`)
-  const [navData, setnavData] = useState([]);
-  const NavigationData = () => {
-    axios
-      .get(`${baseurl}/posts`)
-      .then((response) => setnavData(response.data))
-      .catch((error) => console.log(error));
-  };
+  const [show, setshow] = useState(false);
+  // const [signUp, setsignUp] = useState( true );
+  // const HandleShow = () => {
+    
+  //   alert("Hii")
+  // };
 
-  useEffect(() => {
-    NavigationData();
-  }, []);
   return (
     <div>
       <header className="navbar">
@@ -49,7 +43,10 @@ const Navigation = () => {
           </div>
           <div className="account-links">
             <a href="#">Track Order</a>
-            <a href="#">Sign In & Sign Up</a>
+            <a href="#" >
+            <span onClick={()=>setshow(!show)}>Sign In </span>
+            
+            </a>
             <a href="#">Wishlist</a>
             <a href="#">Cart</a>
           </div>
@@ -82,20 +79,7 @@ const Navigation = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between m-auto text-center px-10 py-3 NavigationData-main">
-          {navData.map((e, i) => {
-            return (
-              <div key={i} className="NavigationData">
-                <img src={e.image} alt={e.title} width={200} />
-                <a href="#" className="">{e.title}</a>
-              </div>
-            );
-          })}
-        </div>
-        <div className="bottom-bar-main">
-          <img src="https://static1.lenskart.com/media/desktop/img/harmony/28-jun-24/Web%20Banner%201920x520.jpg"
-          alt="" />
-        </div>
+        {show ? <SignIn /> : ""}
       </header>
     </div>
   );

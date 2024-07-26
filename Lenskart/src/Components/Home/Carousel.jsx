@@ -3,10 +3,12 @@ import "../../Style/Carousel.css";
 import axios from "axios";
 
 const Carousel = () => {
+  // const baseurl=process.env.REACT_APP_BASE_URL
+  // console.log(`${baseurl}secondSlider`)
   const [Secondsliderdata, setSecondsliderdata] = useState([]);
   const SecondsliderdataFun = () => {
     axios
-      .get("http://localhost:3000/secondSlider")
+      .get("http://localhost:8080/secondSlider")
       .then((res) => setSecondsliderdata(res.data))
       .catch((err) => console.log(err));
   };
