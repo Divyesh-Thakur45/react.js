@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../../Style/Navigation.css";
 import SignIn from "../SignIn";
+import { Link, NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const [show, setshow] = useState(false);
   // const [signUp, setsignUp] = useState( true );
   // const HandleShow = () => {
-    
+
   //   alert("Hii")
   // };
 
@@ -32,10 +33,12 @@ const Navigation = () => {
         </div>
         <div className="main-bar">
           <div className="logo flex items-center">
+          <NavLink to={"/"}>
             <img
               src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg"
               alt="Lenskart Logo"
             />
+            </NavLink>
             <span>1800-202-4444</span>
           </div>
           <div className="search-bar">
@@ -43,9 +46,8 @@ const Navigation = () => {
           </div>
           <div className="account-links">
             <a href="#">Track Order</a>
-            <a href="#" >
-            <span onClick={()=>setshow(!show)}>Sign In </span>
-            
+            <a href="#">
+              <span onClick={() => setshow(!show)}>Sign In </span>
             </a>
             <a href="#">Wishlist</a>
             <a href="#">Cart</a>
@@ -53,15 +55,16 @@ const Navigation = () => {
         </div>
         <div className="flex justify-between items-center bottom-bar-main">
           <div className="bottom-bar">
-            <a href="#">EYEGLASSES</a>
-            <a href="#">SCREEN GLASSES</a>
-            <a href="#">KIDS GLASSES</a>
-            <a href="#">CONTACT LENSES</a>
-            <a href="#">SUNGLASSES</a>
-            <a href="#">HOME EYE-TEST</a>
-            <a href="#">STORE LOCATOR</a>
+            <NavLink to="/eyeglassespage">EYEGLASSES</NavLink>
+            <NavLink to="/screenglasses">SCREEN GLASSES</NavLink>
+            <NavLink to="/kidsglasses">KIDS GLASSES</NavLink>
+            <NavLink to="/contactlenses">CONTACT LENSES</NavLink>
+            <NavLink to="/sunglasses">SUNGLASSES</NavLink>
+            <NavLink to="/homeeyetest">HOME EYE-TEST</NavLink>
+            <NavLink to="/storelocator">STORE LOCATOR</NavLink>
           </div>
           <div className="main-bar-img p-10 bottom-bar flex">
+          
             <img
               src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
               alt=""

@@ -16,16 +16,24 @@ const Routers = () => {
         <Route exact path="/Login" element={<Login />} />
         <Route exact path="/Description/:id" element={<Description />} />
         <Route exact path="/Post/:id" element={<Post />} />
-        <Route exact path="/Cart" element={
-          <PrivacyPage >
-          <Card />
-          </PrivacyPage>
-          } />
-        <Route exact path="/More" element={
-          <PrivacyPage>
-            <More />
-          </PrivacyPage>
-          } />
+        <Route
+          exact
+          path="/Cart"
+          element={
+            <PrivacyPage>
+              <Card />
+            </PrivacyPage>
+          }
+        />
+        <Route
+          exact
+          path="/More"
+          element={
+            <PrivacyPage>
+              <More />
+            </PrivacyPage>
+          }
+        />
       </Routes>
     </div>
   );

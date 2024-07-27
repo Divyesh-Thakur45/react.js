@@ -23,7 +23,7 @@ const Midsection = () => {
   // const baseurl = process.env.REACT_APP_BASE_URL;
   // console.log(`${baseurl}/post`);
   // Slider
-  
+
   const bigSliderFun = () => {
     axios
       .get("http://localhost:8080/firstbigslider")

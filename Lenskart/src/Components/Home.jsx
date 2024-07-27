@@ -10,7 +10,7 @@ import Navigation from "./Home/Navigation";
 const Home = () => {
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       
       <Midsection />
       <Carousel />
