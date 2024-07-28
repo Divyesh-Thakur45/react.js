@@ -7,7 +7,11 @@
 
 .EyeGlassesSection-Left {
     background-color: #fff;
-    width: 20%;
+    width: 320px;
+    /* position: fixed; */
+    /* top: 47%; */
+    /* left: 0%; */
+    /* bottom: 0%; */
     /* height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +19,8 @@
 }
 
 .filter-section {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
 }
@@ -68,6 +73,8 @@
 
 .filter-item {
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 8px 38px 8px 20px;
 }
 
 .filter-button {
@@ -90,6 +97,7 @@
 /* EyeGlassesSection-Right  */
 .EyeGlassesSection-Right {
     /* background-color: rgb(67, 202, 40); */
+    /* margin: 0px 0px 0px 300px; */
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -18,7 +18,6 @@ const Eyeglasses = () => {
 
   return (
     <div>
-      <h1>Eyeglasses - Page</h1>
       <img
         src="https://static5.lenskart.com/media/uploads/plp-free-lenses-desk.png"
         alt=""
@@ -145,18 +144,30 @@ const Eyeglasses = () => {
               </div>
             </div>
             <div className="filter-menu">
-              <div className="filter-item">
-                <button className="filter-button">BRANDS</button>
-              </div>
-              <div className="filter-item">
-                <button className="filter-button">FRAME SIZE</button>
-              </div>
-              <div className="filter-item">
-                <button className="filter-button">PRICE</button>
-              </div>
-              <div className="filter-item">
-                <button className="filter-button">GENDER</button>
-              </div>
+              <select className="filter-item">
+                <option selected>BRANDS</option>
+                <option value="1">John Jacobs(841)</option>
+                <option value="2">Lenskart Air(516)</option>
+                <option value="3">Vincent Chase(501)</option>
+              </select>
+              <select className="filter-item">
+                <option selected>FRAME SIZE</option>
+                <option value="1">Extra Narrow(123)</option>
+                <option value="2">Narrow(524)</option>
+                <option value="3">Extra Wide(244)</option>
+              </select>
+              <select className="filter-item">
+                <option selected>PRICE</option>
+                <option value="1">Low To High</option>
+                <option value="2">High To Low</option>
+                <option value="3">1000</option>
+              </select>
+              <select className="filter-item">
+                <option selected>GENDER</option>
+                <option value="1">Kids</option>
+                <option value="2">Mans</option>
+                <option value="3">Females</option>
+              </select>
             </div>
           </div>
         </div>
