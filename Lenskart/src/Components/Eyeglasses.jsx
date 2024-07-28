@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Style/Eyeglasses.css";
 import { CiHeart } from "react-icons/ci";
+import axios from "axios";
 
 const Eyeglasses = () => {
+  const [GogglesData, setGogglesData] = useState([]);
+  const fetchGogglesData = () => {
+    axios
+      .get("http://localhost:8080/products")
+      .then((res) => setGogglesData(res.data))
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    fetchGogglesData();
+  }, []);
+
   return (
     <div>
       <h1>Eyeglasses - Page</h1>
@@ -32,67 +45,163 @@ const Eyeglasses = () => {
             <div className="filter-group">
               <h3>FRAME TYPE</h3>
               <div className="frame-options">
-                <div className="frame-option">Full Rim</div>
-                <div className="frame-option">Rimless</div>
-                <div className="frame-option">Half Rim</div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png"
+                    alt=""
+                  />
+                  <p>Full Rim</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rimless.png"
+                    alt=""
+                  />
+                  <p>Rimless</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/HalfRim.png"
+                    alt=""
+                  />
+                  <p>Half Rim</p>
+                </div>
               </div>
             </div>
 
             <div className="filter-group">
               <h3>FRAME SHAPE</h3>
               <div className="frame-options">
-                <div className="frame-option">Rectangle</div>
-                <div className="frame-option">Square</div>
-                <div className="frame-option">Round</div>
-                <div className="frame-option">Cat Eye</div>
-                <div className="frame-option">Geometric</div>
-                <div className="frame-option">Aviator</div>
-                <div className="frame-option">Wayfarer</div>
-                <div className="frame-option">Hexagonal</div>
-                <div className="frame-option">Oval</div>
-                <div className="frame-option">Clubmaster</div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rectangle.png"
+                    alt=""
+                  />
+                  <p>Rectangle</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Square.png"
+                    alt=""
+                  />
+                  <p>Square</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Round.png"
+                    alt=""
+                  />
+                  <p>Round</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/CatEye.png"
+                    alt=""
+                  />
+                  <p>Cat Eye</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Geometric.png"
+                    alt=""
+                  />
+                  <p>Geometric</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png"
+                    alt=""
+                  />
+                  <p>Aviator</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Wayfarer.png"
+                    alt=""
+                  />
+                  <p>Wayfarer</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Hexagonal.png"
+                    alt=""
+                  />
+                  <p>Hexagonal</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Oval.png"
+                    alt=""
+                  />
+                  <p>Oval</p>
+                </div>
+                <div className="frame-option">
+                  <img
+                    src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Clubmaster.png"
+                    alt=""
+                  />
+                  <p>Clubmaster</p>
+                </div>
+              </div>
+            </div>
+            <div className="filter-menu">
+              <div className="filter-item">
+                <button className="filter-button">BRANDS</button>
+              </div>
+              <div className="filter-item">
+                <button className="filter-button">FRAME SIZE</button>
+              </div>
+              <div className="filter-item">
+                <button className="filter-button">PRICE</button>
+              </div>
+              <div className="filter-item">
+                <button className="filter-button">GENDER</button>
               </div>
             </div>
           </div>
         </div>
         <div className="EyeGlassesSection-Right">
-          <div className="product-card">
-            <div className="card-header">
-              <CiHeart className="HeartIcon" />
-              <img
-                src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7876_2a_28july23.jpg"
-                alt="Lenskart Air"
-                className="product-image1"
-              />
-              <img
-                src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7875_1b_28july23.jpg"
-                alt="Lenskart Air"
-                className="product-image2"
-              />
-            </div>
-            <div className="card-body">
-              <div className="rating">
-                <span className="rating-value">4.6</span>
-                <span className="rating-count">613</span>
-              </div>
-              <h2 className="product-title">Lenskart Air</h2>
-              <div className="ColorAndPrizeSize">
-                <div>
-                  <p className="product-size">Size: Medium · Air Fusion</p>
-                  <p className="product-price">₹2000</p>
+          {GogglesData.map((el, idx) => {
+            return (
+              <div className="product-card" key={idx}>
+                <div className="card-header">
+                  <CiHeart className="HeartIcon" />
+                  <img
+                    src={el.imageUrl}
+                    alt="Lenskart Air"
+                    className="product-image1"
+                  />
+                  <img
+                    src={el.imageUrl2}
+                    alt="Lenskart Air"
+                    className="product-image2"
+                  />
                 </div>
-                <div>
-                  <div className="color-options">
-                    <span className="color-dot black"></span>
-                    <span className="color-dot blue"></span>
-                    <span className="color-dot gray"></span>
-                    <span className="color-dot more">+2</span>
+                <div className="card-body">
+                  <div className="rating">
+                    <span className="rating-value">{el.rating}</span>
+                    <span className="rating-count">{el.reviews}</span>
                   </div>
+                  <h2 className="product-title">{el.brand}</h2>
+                  <div className="ColorAndPrizeSize">
+                    <div>
+                      <p className="product-size">{el.sizeCollection}</p>
+                      <p className="product-price">₹{el.price}</p>
+                    </div>
+                    <div>
+                      <div className="color-options">
+                        <span className="color-dot black"></span>
+                        <span className="color-dot blue"></span>
+                        <span className="color-dot gray"></span>
+                        <span className="color-dot more">{el.discount}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="offer">Get FREE BLU Screen Lenses</p>
                 </div>
               </div>
-              <p className="offer">Get FREE BLU Screen Lenses</p>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>

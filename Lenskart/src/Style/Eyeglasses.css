@@ -51,17 +51,48 @@
     justify-content: center;
     font-size: 14px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .frame-option:hover {
     border: 1px solid black;
 }
 
+/* FilterMenu.css */
+.filter-menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.filter-item {
+    margin-bottom: 10px;
+}
+
+.filter-button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+
 
 /* EyeGlassesSection-Right  */
 .EyeGlassesSection-Right {
-    background-color: rgb(67, 202, 40);
+    /* background-color: rgb(67, 202, 40); */
     width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     /* height: 100vh; */
     /* display: flex; */
     /* justify-content: center; */
@@ -72,7 +103,7 @@
 .product-card {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-
+    margin: 15px 10px;
     width: 374px;
     /* position: relative; */
     font-family: Arial, sans-serif;
@@ -99,12 +130,15 @@
 }
 
 .product-image2 {
-    width: 100%;
-    height: auto;
+    width: 372px;
+    height: 189px;
+    padding: 10px;
     display: none;
+    transition: 0.5s;
 }
 
 .card-header:hover .product-image2 {
+    transition: 0.5s;
     display: block;
     cursor: pointer;
 }
