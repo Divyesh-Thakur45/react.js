@@ -1,11 +1,14 @@
-.EyeGlassesSection {
+.ScreenGlassesSection {
     /* background-color: black; */
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-.EyeGlassesSection-Left {
+
+
+/* ScreenGlasses Left Side  */
+.ScreenGlassesSection-Left {
     background-color: #fff;
     width: 320px;
     /* position: fixed; */
@@ -45,9 +48,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-.frame-option:hover{
+
+.frame-option:hover {
     cursor: pointer;
 }
+
 .frame-option {
     width: 70px;
     height: 70px;
@@ -96,8 +101,11 @@
 
 
 
+
+/* ScreenGlasses Right Side  */
+
 /* EyeGlassesSection-Right  */
-.EyeGlassesSection-Right {
+.ScreenGlassesSection-Right {
     /* background-color: rgb(67, 202, 40); */
     /* margin: 0px 0px 0px 300px; */
     width: 80%;
@@ -133,27 +141,21 @@
     top: 5%;
 }
 
-.product-image1 {
+.image {
     width: 372px;
     height: 189px;
     padding: 10px;
+    /* display: none; */
 }
 
-.product-image2 {
+.image1 {
     width: 372px;
     height: 189px;
     padding: 10px;
     display: none;
-    transition: 0.5s;
 }
-.product-image3 {
-    width: 372px;
-    height: 189px;
-    padding: 10px;
-    display: none;
-    transition: 0.5s;
-}
-.product-image4 {
+
+.image2 {
     width: 372px;
     height: 189px;
     padding: 10px;
@@ -161,17 +163,35 @@
     transition: 0.5s;
 }
 
-.card-header:hover .product-image2 {
+.image3 {
+    width: 372px;
+    height: 189px;
+    padding: 10px;
+    display: none;
+    transition: 0.5s;
+}
+
+.image4 {
+    width: 372px;
+    height: 189px;
+    padding: 10px;
+    display: none;
+    transition: 0.5s;
+}
+
+.color-dot1:hover .image1 {
     transition: 0.5s;
     display: block;
     cursor: pointer;
 }
 
-.card-header:hover .product-image1 {
+.color-dot1:hover .image {
     display: none;
-    /* opacity: 0; */
     cursor: pointer;
-    /* background-color: red; */
+}
+
+.color-dot2:hover .image2{
+    display: block;
 }
 
 .favorite-btn {
@@ -234,14 +254,48 @@
     margin-bottom: 10px;
 }
 
-.color-dot {
+.color-dot1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
-    /* border: 1px solid #ccc; */
-    outline: 1.5px dotted red !important;
+    cursor: pointer;
+    border: 1.5px dotted red !important;
 }
+
+.color-dot2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1.5px dotted red !important;
+}
+
+.color-dot3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1.5px dotted red !important;
+}
+
+.color-dot4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1.5px dotted red !important;
+}
+
+/* .color-dot3:hover .product-image3{
+    display: block;
+}
+.color-dot3:hover .product-image{
+    display: none;
+} */
 
 .black {
     background-color: #000;

@@ -10,13 +10,22 @@ import ContactLenses from "../Components/ContactLenses";
 import Sunglasses from "../Components/Sunglasses";
 import HomeEyeTest from "../Components/HomeEyeTest";
 import StoreLocator from "../Components/StoreLocator";
+import Privacy from "./Privacy";
 
 const AllRouts = () => {
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/eyeglassespage" element={<Eyeglasses />} />
+        <Route
+          exact
+          path="/eyeglassespage"
+          element={
+            <Privacy>
+              <Eyeglasses />
+            </Privacy>
+          }
+        />
         <Route exact path="/screenglasses" element={<ScreenGlasses />} />
         <Route exact path="/kidsglasses" element={<KidsGlasses />} />
         <Route exact path="/contactlenses" element={<ContactLenses />} />
