@@ -9,7 +9,8 @@
       "sizeCollection": "Size: Medium • Air Fusion",
       "discount": "+2",
       "price": 2000,
-      "frame": "random"
+      "frame": "random",
+      "id":"cds2as"
     },
     {
       "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e10235-c7-eyeglasses_g_2375_image_pla.jpg",
@@ -1390,276 +1391,436 @@
   ],
   "ScreenGlasses": [
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8389_28july23.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8388_28july23.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-transparent-full-rim-square-lenskart-blu-lb-e13526-c2_g_2161.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-grey-full-rim-square-lenskart-blu-lb-e13526-c3_vincent-chase-vc-e13526-c3-eyeglasses_g_841522_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8388_28july23.jpg",
       "rating": 4.5,
       "reviews": 256,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#76778F",
-      "color3": "#C6C6C6C",
-      "color4": "#5A564E"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8389_28july23.jpg"
+        },
+        {
+          "color": "#3A3A4E",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#C6C6C6",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-transparent-full-rim-square-lenskart-blu-lb-e13526-c2_g_2161.jpg"
+        },
+        {
+          "color": "#5A564E",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-grey-full-rim-square-lenskart-blu-lb-e13526-c3_vincent-chase-vc-e13526-c3-eyeglasses_g_841522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c2_lenskart-blu-lb-e13737-c2-eyeglasses_lenskart-blu-lb-e13737-c2-eyeglasses_eyeglasses_g_101023_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c2_lenskart-blu-lb-e13737-c2-eyeglasses_lenskart-blu-lb-e13737-c2-eyeglasses_eyeglasses_g_101023_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c2_lenskart-blu-lb-e13737-c2-eyeglasses_lenskart-blu-lb-e13737-c2-eyeglasses_eyeglasses_g_101023_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c2_lenskart-blu-lb-e13737-c2-eyeglasses_lenskart-blu-lb-e13737-c2-eyeglasses_eyeglasses_g_101023_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c2_lenskart-blu-lb-e13737-c2-eyeglasses_lenskart-blu-lb-e13737-c2-eyeglasses_eyeglasses_g_101023_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c2_lenskart-blu-lb-e13737-c2-eyeglasses_lenskart-blu-lb-e13737-c2-eyeglasses_eyeglasses_g_101023_02_2022.jpg",
       "rating": 4.5,
       "reviews": 126,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Wide • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#34385D",
-      "color2": "#CEA9A9",
-      "color3": "#7E4956",
-      "color4": "#64686C"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
       "rating": 4.5,
       "reviews": 133,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_csvfile-1679608171843-bluzp1.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_csvfile-1679608171843-bluzp1.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_csvfile-1679608171843-bluzp1.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_csvfile-1679608171843-bluzp1.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_csvfile-1679608171843-bluzp1.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_csvfile-1679608171843-bluzp1.jpg",
       "rating": 4.6,
       "reviews": 337,
       "brand": "Lenskart Hustlr Screen Glasses",
       "sizeCollection": "Size: Medium • Blue Sky",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642300116-black2.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642300116-black2.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642300116-black2.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642300116-black2.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642300116-black2.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642300116-black2.jpg",
       "rating": 4.6,
       "reviews": 337,
       "brand": "Lenskart Hustlr Screen Glasses",
       "sizeCollection": "Size: Medium • Dark Night",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg",
       "rating": 4.6,
       "reviews": 337,
       "brand": "Lenskart Hustlr Screen Glasses",
       "sizeCollection": "Size: Medium • Jade Green",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_lenskart-blu-lb-e13740-c3-eyeglasses_lenskart-blu-lb-e13740-c3-eyeglasses_g_626625_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_lenskart-blu-lb-e13740-c3-eyeglasses_lenskart-blu-lb-e13740-c3-eyeglasses_g_626625_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_lenskart-blu-lb-e13740-c3-eyeglasses_lenskart-blu-lb-e13740-c3-eyeglasses_g_626625_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_lenskart-blu-lb-e13740-c3-eyeglasses_lenskart-blu-lb-e13740-c3-eyeglasses_g_626625_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_lenskart-blu-lb-e13740-c3-eyeglasses_lenskart-blu-lb-e13740-c3-eyeglasses_g_626625_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_lenskart-blu-lb-e13740-c3-eyeglasses_lenskart-blu-lb-e13740-c3-eyeglasses_g_626625_02_2022.jpg",
       "rating": 4.5,
       "reviews": 174,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Wide • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-grey-transparent-full-rim-square-lenskart-blu-lb-e13529-c5_vincent-chase-vc-e13529-c5-eyeglasses_g_898122_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-grey-transparent-full-rim-square-lenskart-blu-lb-e13529-c5_vincent-chase-vc-e13529-c5-eyeglasses_g_898122_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-grey-transparent-full-rim-square-lenskart-blu-lb-e13529-c5_vincent-chase-vc-e13529-c5-eyeglasses_g_898122_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-grey-transparent-full-rim-square-lenskart-blu-lb-e13529-c5_vincent-chase-vc-e13529-c5-eyeglasses_g_898122_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-grey-transparent-full-rim-square-lenskart-blu-lb-e13529-c5_vincent-chase-vc-e13529-c5-eyeglasses_g_898122_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-grey-transparent-full-rim-square-lenskart-blu-lb-e13529-c5_vincent-chase-vc-e13529-c5-eyeglasses_g_898122_02_2022.jpg",
       "rating": 4.6,
       "reviews": 223,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 2000,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7905_02_01_2023.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7905_02_01_2023.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7905_02_01_2023.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7905_02_01_2023.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7905_02_01_2023.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7905_02_01_2023.jpg",
       "rating": 4.7,
       "reviews": 41,
       "brand": "Lenskart Hustlr Screen Glasses",
       "sizeCollection": "Size: Medium • Monza Red",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13738-c1_lenskart-blu-lb-e13738-c1-eyeglasses_eyeglasses_g_9138_2_123_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13738-c1_lenskart-blu-lb-e13738-c1-eyeglasses_eyeglasses_g_9138_2_123_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13738-c1_lenskart-blu-lb-e13738-c1-eyeglasses_eyeglasses_g_9138_2_123_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13738-c1_lenskart-blu-lb-e13738-c1-eyeglasses_eyeglasses_g_9138_2_123_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13738-c1_lenskart-blu-lb-e13738-c1-eyeglasses_eyeglasses_g_9138_2_123_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13738-c1_lenskart-blu-lb-e13738-c1-eyeglasses_eyeglasses_g_9138_2_123_02_2022.jpg",
       "rating": 4.5,
       "reviews": 139,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e16219-c2-eyeglasses_img_9137_26_12_2023.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e16219-c2-eyeglasses_img_9137_26_12_2023.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e16219-c2-eyeglasses_img_9137_26_12_2023.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e16219-c2-eyeglasses_img_9137_26_12_2023.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e16219-c2-eyeglasses_img_9137_26_12_2023.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e16219-c2-eyeglasses_img_9137_26_12_2023.jpg",
       "rating": 0,
       "reviews": 0,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-black-full-rim-cat-eye-lenskart-blu-c3-lb-e16057_g_3033_28_06_2023.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-black-full-rim-cat-eye-lenskart-blu-c3-lb-e16057_g_3033_28_06_2023.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-black-full-rim-cat-eye-lenskart-blu-c3-lb-e16057_g_3033_28_06_2023.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-black-full-rim-cat-eye-lenskart-blu-c3-lb-e16057_g_3033_28_06_2023.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-black-full-rim-cat-eye-lenskart-blu-c3-lb-e16057_g_3033_28_06_2023.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-black-full-rim-cat-eye-lenskart-blu-c3-lb-e16057_g_3033_28_06_2023.jpg",
       "rating": 4.7,
       "reviews": 7,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 2000,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:--blue-gunmetal-full-rim-round-lenskart-blu-lb-e14792-c2_g_3063_20_06_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:--blue-gunmetal-full-rim-round-lenskart-blu-lb-e14792-c2_g_3063_20_06_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:--blue-gunmetal-full-rim-round-lenskart-blu-lb-e14792-c2_g_3063_20_06_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:--blue-gunmetal-full-rim-round-lenskart-blu-lb-e14792-c2_g_3063_20_06_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:--blue-gunmetal-full-rim-round-lenskart-blu-lb-e14792-c2_g_3063_20_06_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:--blue-gunmetal-full-rim-round-lenskart-blu-lb-e14792-c2_g_3063_20_06_2022.jpg",
       "rating": 4.7,
       "reviews": 10,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 2000,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14284-c1_lenskart-blu-lb-e14284-c1-eyeglasses_g_929725_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14284-c1_lenskart-blu-lb-e14284-c1-eyeglasses_g_929725_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14284-c1_lenskart-blu-lb-e14284-c1-eyeglasses_g_929725_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14284-c1_lenskart-blu-lb-e14284-c1-eyeglasses_g_929725_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14284-c1_lenskart-blu-lb-e14284-c1-eyeglasses_g_929725_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14284-c1_lenskart-blu-lb-e14284-c1-eyeglasses_g_929725_02_2022.jpg",
       "rating": 4.1,
       "reviews": 11,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Wide • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-grey-transparent-full-rim-rectangle-lenskart-blu-lb-e14241-c1_lenskart-blu-lb-e14241-c1-eyeglasses_lenskart-blu-lb-e14241-c1-eyeglasses_g_4846_5july23.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-grey-transparent-full-rim-rectangle-lenskart-blu-lb-e14241-c1_lenskart-blu-lb-e14241-c1-eyeglasses_lenskart-blu-lb-e14241-c1-eyeglasses_g_4846_5july23.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-grey-transparent-full-rim-rectangle-lenskart-blu-lb-e14241-c1_lenskart-blu-lb-e14241-c1-eyeglasses_lenskart-blu-lb-e14241-c1-eyeglasses_g_4846_5july23.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-grey-transparent-full-rim-rectangle-lenskart-blu-lb-e14241-c1_lenskart-blu-lb-e14241-c1-eyeglasses_lenskart-blu-lb-e14241-c1-eyeglasses_g_4846_5july23.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-grey-transparent-full-rim-rectangle-lenskart-blu-lb-e14241-c1_lenskart-blu-lb-e14241-c1-eyeglasses_lenskart-blu-lb-e14241-c1-eyeglasses_g_4846_5july23.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-grey-transparent-full-rim-rectangle-lenskart-blu-lb-e14241-c1_lenskart-blu-lb-e14241-c1-eyeglasses_lenskart-blu-lb-e14241-c1-eyeglasses_g_4846_5july23.jpg",
       "rating": 4.3,
       "reviews": 23,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Wide • Zero Power",
       "price": 1500,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     },
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-matte-black-full-rim-square-lenskart-blu-lb-e13529-c1_vincent-chase-vc-e13529-c1-eyeglasses_g_007722_02_2022.jpg",
-      "imageUrl1": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-matte-black-full-rim-square-lenskart-blu-lb-e13529-c1_vincent-chase-vc-e13529-c1-eyeglasses_g_007722_02_2022.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-matte-black-full-rim-square-lenskart-blu-lb-e13529-c1_vincent-chase-vc-e13529-c1-eyeglasses_g_007722_02_2022.jpg",
-      "imageUrl3": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-matte-black-full-rim-square-lenskart-blu-lb-e13529-c1_vincent-chase-vc-e13529-c1-eyeglasses_g_007722_02_2022.jpg",
-      "imageUrl4": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-matte-black-full-rim-square-lenskart-blu-lb-e13529-c1_vincent-chase-vc-e13529-c1-eyeglasses_g_007722_02_2022.jpg",
+      "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-gunmetal-matte-black-full-rim-square-lenskart-blu-lb-e13529-c1_vincent-chase-vc-e13529-c1-eyeglasses_g_007722_02_2022.jpg",
       "rating": 4.6,
       "reviews": 223,
       "brand": "Lenskart BLU Screen Glasses",
       "sizeCollection": "Size: Medium • Zero Power",
       "price": 2000,
       "frame": "ScreenGlasses",
-      "color1": "#383533",
-      "color2": "#383533",
-      "color3": "#383533",
-      "color4": "#383533"
+      "Colors": [
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        },
+        {
+          "color": "#383533",
+          "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843522_02_2022.jpg"
+        }
+      ]
     }
   ],
   "posts": [

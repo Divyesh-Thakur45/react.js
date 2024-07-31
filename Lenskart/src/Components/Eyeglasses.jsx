@@ -2,29 +2,29 @@ import React, { useEffect, useState } from "react";
 import "../Style/Eyeglasses.css";
 import { CiHeart } from "react-icons/ci";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Eyeglasses = () => {
-  const [productFilter,setproductFilter] = useState(null)
-  const [brand,setbrand] = useState(null)
-  console.log(brand)
+  const [productFilter, setproductFilter] = useState(null);
+  const [brand, setbrand] = useState(null);
+  console.log(brand);
   // console.log(productFilter)
   const [GogglesData, setGogglesData] = useState([]);
   const fetchGogglesData = () => {
     axios
-      .get("http://localhost:8080/products",{
+      .get("http://localhost:8080/products", {
         params: {
           frame: productFilter,
-          brand: brand
-        }
-      }
-      )
+          brand: brand,
+        },
+      })
       .then((res) => setGogglesData(res.data))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     fetchGogglesData();
-  }, [productFilter,brand]);
+  }, [productFilter, brand]);
 
   return (
     <div>
@@ -54,21 +54,30 @@ const Eyeglasses = () => {
             <div className="filter-group">
               <h3>FRAME TYPE</h3>
               <div className="frame-options">
-                <div className="frame-option" onClick={()=>setproductFilter("FullRim")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("FullRim")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png"
                     alt=""
                   />
-                  <p >Full Rim</p>
+                  <p>Full Rim</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("RimLess")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("RimLess")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rimless.png"
                     alt=""
                   />
                   <p>Rimless</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("HalfRim")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("HalfRim")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/HalfRim.png"
                     alt=""
@@ -81,70 +90,100 @@ const Eyeglasses = () => {
             <div className="filter-group">
               <h3>FRAME SHAPE</h3>
               <div className="frame-options">
-                <div className="frame-option" onClick={()=>setproductFilter("Rectangle")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Rectangle")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rectangle.png"
                     alt=""
                   />
                   <p>Rectangle</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Square")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Square")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Square.png"
                     alt=""
                   />
                   <p>Square</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Round")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Round")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Round.png"
                     alt=""
                   />
                   <p>Round</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("CatEye")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("CatEye")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/CatEye.png"
                     alt=""
                   />
                   <p>Cat Eye</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Geometric")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Geometric")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Geometric.png"
                     alt=""
                   />
                   <p>Geometric</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Aviator")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Aviator")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png"
                     alt=""
                   />
                   <p>Aviator</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Wayfarer")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Wayfarer")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Wayfarer.png"
                     alt=""
                   />
                   <p>Wayfarer</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Hexagonal")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Hexagonal")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Hexagonal.png"
                     alt=""
                   />
                   <p>Hexagonal</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Oval")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Oval")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Oval.png"
                     alt=""
                   />
                   <p>Oval</p>
                 </div>
-                <div className="frame-option" onClick={()=>setproductFilter("Clubmaster")}>
+                <div
+                  className="frame-option"
+                  onClick={() => setproductFilter("Clubmaster")}
+                >
                   <img
                     src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Clubmaster.png"
                     alt=""
@@ -154,25 +193,28 @@ const Eyeglasses = () => {
               </div>
             </div>
             <div className="filter-menu">
-              <select className="filter-item" onClick={(e)=>setbrand(e.target.value)}>
+              <select
+                className="filter-item"
+                onClick={(e) => setbrand(e.target.value)}
+              >
                 <option>BRANDS</option>
                 <option value="John Jacobs">John Jacobs(841)</option>
                 <option value="Lenskart Air">Lenskart Air(516)</option>
                 <option value="Vincent Chase">Vincent Chase(501)</option>
               </select>
-              <select className="filter-item" onClick={()=>setbrand()}>
+              <select className="filter-item" onClick={() => setbrand()}>
                 <option>FRAME SIZE</option>
                 <option value="1">Extra Narrow(123)</option>
                 <option value="2">Narrow(524)</option>
                 <option value="3">Extra Wide(244)</option>
               </select>
-              <select className="filter-item" onClick={()=>setbrand()}>
+              <select className="filter-item" onClick={() => setbrand()}>
                 <option>PRICE</option>
                 <option value="1">Low To High</option>
                 <option value="2">High To Low</option>
                 <option value="3">1000</option>
               </select>
-              <select className="filter-item" onClick={()=>setbrand()}>
+              <select className="filter-item" onClick={() => setbrand()}>
                 <option>GENDER</option>
                 <option value="1">Kids</option>
                 <option value="2">Mans</option>
@@ -187,16 +229,18 @@ const Eyeglasses = () => {
               <div className="product-card" key={idx}>
                 <div className="card-header">
                   <CiHeart className="HeartIcon" />
-                  <img
-                    src={el.imageUrl}
-                    alt="Lenskart Air"
-                    className="product-image1"
-                  />
-                  <img
-                    src={el.imageUrl2}
-                    alt="Lenskart Air"
-                    className="product-image2"
-                  />
+                  <Link to={`/description/${el.id}`}>
+                    <img
+                      src={el.imageUrl}
+                      alt="Lenskart Air"
+                      className="product-image1"
+                    />
+                    <img
+                      src={el.imageUrl2}
+                      alt="Lenskart Air"
+                      className="product-image2"
+                    />
+                  </Link>
                 </div>
                 <div className="card-body">
                   <div className="rating">

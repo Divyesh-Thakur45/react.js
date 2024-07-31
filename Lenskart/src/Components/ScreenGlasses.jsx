@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "../Style/ScreenGlasses.css";
-import { CiHeart } from "react-icons/ci";
 import axios from "axios";
-import '../Style/ScreenGlasses.css';
+import "../Style/ScreenGlasses.css";
+import ColorChanger from "./ColorChanger";
 
 const ScreenGlasses = () => {
   const [productFilter, setproductFilter] = useState(null);
   const [brand, setbrand] = useState(null);
-  const [ScreenGlassesData , setScreenGlassesData] = useState([]);
-  const ScreenGlassesPageData = () =>{
-    axios.get(`http://localhost:8080/ScreenGlasses`)
-    .then((res)=>setScreenGlassesData(res.data))
-    .catch((err)=>console.log(err))
-  }
-  useEffect(()=>{
-    ScreenGlassesPageData()
-  },[])
+  const [ScreenGlassesData, setScreenGlassesData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8080/ScreenGlasses`)
+      .then((res) => setScreenGlassesData(res.data))
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <div>
       <img
@@ -214,35 +213,23 @@ const ScreenGlasses = () => {
           </div>
         </div>
         <div className="ScreenGlassesSection-Right">
-          {ScreenGlassesData.map((el, idx) => {
+          {ScreenGlassesData.map((obj, idx) => {
+            return <ColorChanger key={idx} obj={obj} />;
+          })}
+          {/* {ScreenGlassesData.map((el, idx) => {
             return (
               <div className="product-card" key={idx}>
                 <div className="card-header">
                   <CiHeart className="HeartIcon" />
                   <img
-                    src={el.imageUrl}
+                    src={el.imageUrlBefore}
                     alt={el.brand}
-                    className="image"
+                    className="imageUrlBefore"
                   />
                   <img
-                    src={el.imageUrl1}
+                    src={el.imageUrlAfter}
                     alt={el.brand}
-                    className="image1"
-                  />
-                  <img
-                    src={el.imageUrl2}
-                    alt={el.brand}
-                    className="image2"
-                  />
-                  <img
-                    src={el.imageUrl3}
-                    alt={el.brand}
-                    className="image3"
-                  />
-                  <img
-                    src={el.imageUrl4}
-                    alt={el.brand}
-                    className="image4"
+                    className="imageUrlAfter"
                   />
                 </div>
                 <div className="card-body">
@@ -269,7 +256,7 @@ const ScreenGlasses = () => {
                 </div>
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
     </div>
