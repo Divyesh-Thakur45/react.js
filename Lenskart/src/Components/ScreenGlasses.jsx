@@ -258,10 +258,10 @@ const ScreenGlasses = () => {
                     </div>
                     <div>
                       <div className="color-options">
-                        <span className="color-dot1" style={{ backgroundColor: el.color1 }}>15</span>
-                        <span className="color-dot2" style={{ backgroundColor: el.color2 }}></span>
-                        <span className="color-dot3" style={{ backgroundColor: el.color3 }}></span>
-                        <span className="color-dot4" style={{ backgroundColor: el.color4 }}></span>
+                        <span className="color-dot1" style={{ backgroundColor: el.color1 }}>1</span>
+                        <span className="color-dot2" style={{ backgroundColor: el.color2 }}>2</span>
+                        <span className="color-dot3" style={{ backgroundColor: el.color3 }}>3</span>
+                        <span className="color-dot4" style={{ backgroundColor: el.color4 }}>4</span>
                       </div>
                     </div>
                   </div>

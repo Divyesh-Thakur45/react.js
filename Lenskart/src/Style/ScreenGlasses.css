@@ -179,7 +179,7 @@
     transition: 0.5s;
 }
 
-.color-dot1:hover .image1 {
+/* .color-dot1:hover .image1 {
     transition: 0.5s;
     display: block;
     cursor: pointer;
@@ -188,12 +188,14 @@
 .color-dot1:hover .image {
     display: none;
     cursor: pointer;
-}
+} */
 
 .color-dot2:hover .image2{
     display: block;
 }
-
+.color-dot2:hover .image{
+    display: none;
+}
 .favorite-btn {
     position: absolute;
     top: 10px;
