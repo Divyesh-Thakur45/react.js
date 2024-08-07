@@ -50,7 +50,9 @@ const Navigation = () => {
               <span onClick={() => setshow(!show)}>Sign In </span>
             </a>
             <a href="#">Wishlist</a>
-            <a href="#">Cart</a>
+              <NavLink to="/AddToCard">
+                Cart
+              </NavLink>
           </div>
         </div>
         <div className="flex justify-between items-center bottom-bar-main">

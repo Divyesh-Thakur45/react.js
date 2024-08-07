@@ -1,0 +1,150 @@
+/* CartPage.css */
+.cart-page {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.secure {
+    display: flex;
+    align-items: center;
+}
+
+.secure span {
+    font-size: 14px;
+    color: #4caf50;
+}
+
+.CardBothSide {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 20px; */
+    width: 100%;
+}
+.cart-section{
+    width: 100%;
+    /* padding: 20px; */
+    margin: 0px 0px 10px 0px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+.CardMap,
+.cardBillSide{
+    width: 48%;
+}
+.bill-details {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.cart-header .cart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 20px 20px;
+}
+
+.cart-item {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.item-price,
+.final-price {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item-actions {
+    margin-top: 10px;
+}
+
+.item-actions a {
+    margin-right: 10px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.login-reminder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-reminder button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bill-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bill-item,
+.bill-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bill-total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.discount-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.discount-code a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.checkout-btn {
+    background: #00c853;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

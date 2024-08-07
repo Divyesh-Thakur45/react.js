@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Eyeglasses = () => {
   const [productFilter, setproductFilter] = useState(null);
   const [brand, setbrand] = useState(null);
-  console.log(brand);
+  // console.log(brand);
   // console.log(productFilter)
   const [GogglesData, setGogglesData] = useState([]);
   const fetchGogglesData = () => {

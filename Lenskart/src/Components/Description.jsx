@@ -1,14 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../Style/description.css";
 
 const Description = () => {
   const [product, setProduct] = useState({});
-  console.log(product.imageUrl);
+  // console.log(product.imageUrl);
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
+  const AddCard = (id) => {
+    axios
+      .post(`http://localhost:8080/AddToCard`, product)
+      .then((response) => console.log(response.data))
+      .catch((err) => console.log(err));
+  };
   useEffect(() => {
+    // AddCard(id)
     axios
       .get(`http://localhost:8080/products/${id}`)
       .then((res) => setProduct(res.data))
@@ -28,7 +35,11 @@ const Description = () => {
               <img src={product.imageUrl} alt="Front view" />
             </div>
             <div className="img2">
-             <img src="https://static.lenskart.com/media/desktop/img/view-360.svg" alt="Back view" className="Degree"/>
+              <img
+                src="https://static.lenskart.com/media/desktop/img/view-360.svg"
+                alt="Back view"
+                className="Degree"
+              />
               <img src={product.imageUrl2} alt="Side view" />
             </div>
           </div>
@@ -63,7 +74,11 @@ const Description = () => {
               Get it for ₹700. Coupon: EYECON
             </p>
             {/* <p className="coupon"></p> */}
-            <button className="buy-now">BUY NOW</button>
+            {/* <Link to={`/AddToCard/${id}`}> */}
+            <button className="buy-now" onClick={() => AddCard(id)}>
+              BUY NOW
+            </button>
+            {/* </Link> */}
           </div>
         </div>
       </div>

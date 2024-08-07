@@ -14,16 +14,20 @@ const ColorChanger = ({ obj }) => {
       <div className="product-card">
         <div className="card-header">
           <CiHeart className="HeartIcon" />
+          <div className="imageUrlBefore overflow-hidden h-[170px] w-[300px] flex items-center m-auto">
           <img
             src={CurrentColor.imageUrl}
             alt={obj.brand}
-            className="imageUrlBefore"
+            className=""
           />
+          </div>
+          <div className="imageUrlAfter overflow-hidden h-[170px] w-[300px] flex items-center m-auto">
           <img
             src={obj.imageUrlAfter}
             alt={obj.brand}
-            className="imageUrlAfter"
+            className=""
           />
+          </div>
         </div>
         <div className="card-body">
           <div className="rating">

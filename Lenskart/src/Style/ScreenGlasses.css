@@ -146,14 +146,14 @@
     padding: 10px;
 } */
 .imageUrlBefore {
-    width: 372px;
-    height: 189px;
+    /* width: 372px;
+    height: 189px; */
     padding: 10px;
     /* display: none; */
 }
 .imageUrlAfter {
-    width: 372px;
-    height: 189px;
+    /* width: 372px;
+    height: 189px; */
     padding: 10px;
     display: none;
 }
@@ -181,7 +181,7 @@
 }
 
 .card-body {
-    padding: 15px 15px 0px 12px;
+    padding: 0px 15px 0px 12px;
 }
 
 .rating {

@@ -12,6 +12,7 @@ import HomeEyeTest from "../Components/HomeEyeTest";
 import StoreLocator from "../Components/StoreLocator";
 import Privacy from "./Privacy";
 import Description from "./Description";
+import AddToCard from "./AddToCard";
 
 const AllRouts = () => {
   return (
@@ -33,6 +34,7 @@ const AllRouts = () => {
         <Route exact path="/sunglasses" element={<Sunglasses />} />
         <Route exact path="/homeeyetest" element={<HomeEyeTest />} />
         <Route exact path="/description/:id" element={<Description />} />
+        <Route exact path="/AddToCard" element={<AddToCard />} />
         <Route exact path="/storelocator" element={<StoreLocator />} />
         <Route path="*" element={<h1>Page Is Not Found</h1>} />
       </Routes>
