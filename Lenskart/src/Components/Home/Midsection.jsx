@@ -1,28 +1,13 @@
 import "../../Style/Midsection.css";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Midsection = () => {
   // header
   // const baseurl = process.env.REACT_APP_BASE_URL;
   // console.log(`${baseurl}/post`);
-  const [navData, setnavData] = useState([]);
   const [bigsliderdata, setbigsliderdata] = useState([]);
-  const NavigationData = () => {
-    axios
-      .get("http://localhost:8080/posts")
-      .then((response) => setnavData(response.data))
-      .catch((error) => console.log(error));
-  };
-
-  useEffect(() => {
-    NavigationData();
-  }, []);
-
-  // slider
-  // const baseurl = process.env.REACT_APP_BASE_URL;
-  // console.log(`${baseurl}/post`);
-  // Slider
 
   const bigSliderFun = () => {
     axios
@@ -37,16 +22,79 @@ const Midsection = () => {
   return (
     <div>
       <div className="flex justify-between m-auto text-center px-10 py-3 NavigationData-main">
-        {navData.map((e, i) => {
-          return (
-            <div key={i} className="NavigationData">
-              <img src={e.image} alt={e.title} width={200} />
-              <a href="#" className="">
-                {e.title}
-              </a>
-            </div>
-          );
-        })}
+        <Link to={"/eyeglassespage"}>
+          <div className="NavigationData">
+            <img
+              src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png"
+              alt="Eyeglasses"
+              width={200}
+            />
+            <a href="#" className="">
+              Eyeglasses
+            </a>
+          </div>
+        </Link>
+
+        {/* 2 */}
+        <Link to={"/screenglasses"}>
+          <div className="NavigationData">
+            <img
+              src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png"
+              alt="Sunglasses"
+              width={200}
+            />
+            <a href="#" className="">
+              Sunglasses
+            </a>
+          </div>
+        </Link>
+        {/* 3 */}
+        <div className="NavigationData">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Apr22/d2.png"
+            alt="Screen Glasses"
+            width={200}
+          />
+          <a href="#" className="">
+            Screen Glasses
+          </a>
+        </div>
+
+        {/* 4 */}
+        <div className="NavigationData">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Apr22/d.png"
+            alt="Content Lenses"
+            width={200}
+          />
+          <a href="#" className="">
+            Content Lenses
+          </a>
+        </div>
+
+        {/* 5 */}
+        <div className="NavigationData">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png"
+            alt="Power Sunglasses"
+            width={200}
+          />
+          <a href="#" className="">
+            Power Sunglasses
+          </a>
+        </div>
+
+        {/* 6 */}
+        <div className="NavigationData">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg"
+            alt="Progressive lenses"
+            width={200}
+          />
+          <a href="#" className="">
+            Progressive lenses
+          </a>
+        </div>
       </div>
       <div className="bottom-bar-main">
         <img
