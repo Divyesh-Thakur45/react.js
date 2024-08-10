@@ -314,6 +314,7 @@ const Gallery = () => {
         />
       </div>
 
+
       {/* EYEGLASSES second slider */}
       <div className="slider-container">
         <div className="slider-header">

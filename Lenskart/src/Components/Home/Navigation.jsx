@@ -32,7 +32,7 @@ const Navigation = () => {
           </div>
         </div>
         <div className="main-bar">
-          <div className="logo flex items-center">
+          <div className="logo flex">
           <NavLink to={"/"}>
             <img
               src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg"
@@ -55,7 +55,7 @@ const Navigation = () => {
               </NavLink>
           </div>
         </div>
-        <div className="flex justify-between items-center bottom-bar-main">
+        <div className="flex justify-between items-center bottom-bar-main NavLinkAll">
           <div className="bottom-bar">
             <NavLink to="/eyeglassespage">EYEGLASSES</NavLink>
             <NavLink to="/screenglasses">SCREEN GLASSES</NavLink>

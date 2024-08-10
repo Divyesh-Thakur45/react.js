@@ -2,19 +2,13 @@
     text-align: center;
     padding: 20px;
     display: flex;
-    /* background-color: red; */
     align-items: center;
     margin: 0px 10px;
     justify-content: space-around;
-    /* width: 100%; */
-    /* height: auto; */
-    /* overflow: hidden; */
 }
 
 .wearTrend {
-    /* width: 25%; */
     font-size: 3rem;
-    /* margin-bottom: 5px; */
     color: #333333;
     text-align: start;
 }
@@ -31,14 +25,10 @@
 
 .trend-items-main {
     display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
     overflow-x: auto;
 }
 
 .trend-item {
-    /* width: 25%; */
-    /* background-color: red; */
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #333333;
@@ -68,7 +58,51 @@
     background-color: #008c9e;
 }
 
+/* Media Queries */
+@media (max-width: 576px) {
+    .trend-section {
+        flex-direction: column;
+    }
 
+    .wearTrend {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .trend-items-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trend-item img {
+        width: 200px;
+    }
+
+    .trend-item {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .wearTrend {
+        font-size: 2.5rem;
+    }
+
+    .trend-item img {
+        width: 220px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .wearTrend {
+        font-size: 2.8rem;
+    }
+
+    .trend-item img {
+        width: 230px;
+    }
+}
 
 /* LineWithText.css */
 .line-container {
@@ -77,7 +111,6 @@
     justify-content: center;
     position: relative;
     margin: 20px 0;
-    /* overflow: hidden; */
 }
 
 .line-text {
@@ -106,9 +139,6 @@
     left: 100%;
     margin-left: 15px;
 }
-
-
-
 
 /* LineWithText.css 2nd */
 .line-container2 {
@@ -147,3 +177,51 @@
     margin-left: 15px;
 }
 
+/* Responsive Adjustments for LineWithText */
+@media (max-width: 576px) {
+
+    .line-text,
+    .line-text2 {
+        font-size: 12px;
+    }
+
+    .line-text::before,
+    .line-text::after,
+    .line-text2::before,
+    .line-text2::after {
+        /* width: 100%; */
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .line-text,
+    .line-text2 {
+        font-size: 25px;
+    }
+
+    .line-text::before,
+    .line-text::after,
+    .line-text2::before,
+    .line-text2::after {
+        /* width: 120%; */
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .line-text,
+    .line-text2 {
+        font-size: 28px;
+    }
+
+    .line-text::before,
+    .line-text::after,
+    .line-text2::before,
+    .line-text2::after {
+        /* width: 130%; */
+        display: none;
+    }
+}
