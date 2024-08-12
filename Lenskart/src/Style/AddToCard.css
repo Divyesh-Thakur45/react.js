@@ -30,7 +30,8 @@
     /* padding: 20px; */
     width: 100%;
 }
-.cart-section{
+
+.cart-section {
     width: 100%;
     /* padding: 20px; */
     margin: 0px 0px 10px 0px;
@@ -39,10 +40,12 @@
     border: 1px solid #e0e0e0;
     border-radius: 5px;
 }
+
 .CardMap,
-.cardBillSide{
+.cardBillSide {
     width: 48%;
 }
+
 .bill-details {
     background: #fff;
     padding: 20px;
@@ -147,4 +150,111 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+
+
+
+
+
+/* Responsive styles for screen sizes 300px - 576px */
+@media (max-width: 576px) {
+    .cart-page{
+        padding: 0px 5px;
+    }
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .CardBothSide {
+        flex-direction: column;
+    }
+
+    .cardBillSide {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .CardMap {
+        width: 100%;
+    }
+
+    .cart-item img {
+        height: auto;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .item-title {
+        font-size: 14px;
+    }
+
+    .item-price,
+    .final-price {
+        font-size: 14px;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for screen sizes 576px - 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+    .CardBothSide {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .cardBillSide {
+        width: 35%;
+    }
+
+    .CardMap {
+        width: 65%;
+    }
+
+    .cart-item img {
+        height: 90px;
+    }
+
+    .item-title {
+        font-size: 15px;
+    }
+
+    .item-price,
+    .final-price {
+        font-size: 15px;
+    }
+}
+
+/* Responsive styles for screen sizes 768px - 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .CardBothSide {
+        padding: 15px;
+    }
+
+    .cardBillSide {
+        width: 40%;
+    }
+
+    .CardMap {
+        width: 60%;
+    }
+
+    .cart-item img {
+        height: 95px;
+    }
+
+    .item-title {
+        font-size: 16px;
+    }
+
+    .item-price,
+    .final-price {
+        font-size: 16px;
+    }
 }

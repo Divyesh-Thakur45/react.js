@@ -358,14 +358,15 @@
         height: auto;
         padding: 0px;
     }
+
     .product-image1 {
         width: 250px;
         height: 150px;
         padding: 10px;
         background-color: red;
     }
-    
-    
+
+
 
     .HeartIcon {
         font-size: 24px;
@@ -375,7 +376,7 @@
     }
 
     .card-body {
-        padding: 10px;
+        padding: 0px;
     }
 
     .product-title {
@@ -386,15 +387,18 @@
     .product-price {
         font-size: 12px;
     }
+
     .ColorAndPrizeSize {
         display: flex;
         flex-direction: column;
         /* align-items: center;
         margin-bottom: 10px; */
     }
+
     .offer {
-        font-size: 10px;
-        padding: 3px;
+        font-size: 4px;
+        padding: 0px;
+        /* display: none; */
     }
 
     .color-dot {
@@ -407,7 +411,7 @@
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .EyeGlassesSection-Right {
         width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .product-card {
@@ -493,4 +497,38 @@
         width: 20px;
         height: 20px;
     }
+}
+
+/* Pagination */
+.botton-page-button{
+    /* text-align: center;
+    align-items: center;
+    width: 300%;
+    margin: auto; */
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+}
+
+.page-number {
+    font-size: 18px;
+    margin: 0 20px;
 }

@@ -9,8 +9,10 @@ const Eyeglasses = () => {
   const [productFilter, setproductFilter] = useState(null);
   const [brand, setbrand] = useState(null);
   const [price, setprice] = useState(null);
-  const [gender , setgender] = useState("");
-  const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } = useContext(search);
+  const [gender, setgender] = useState("");
+  const [page, setPage] = useState(1);
+  const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } =
+    useContext(search);
   // console.log(productFilter);
   console.log(gender);
   // console.log(productFilter)
@@ -19,6 +21,8 @@ const Eyeglasses = () => {
     axios
       .get("http://localhost:8080/products", {
         params: {
+          _page: page,
+          _limit: 6,
           frame: productFilter,
           brand: brand,
           gender: gender,
@@ -33,7 +37,7 @@ const Eyeglasses = () => {
 
   useEffect(() => {
     fetchGogglesData();
-  }, [productFilter, brand,price,gender]);
+  }, [productFilter, brand, price, gender]);
 
   return (
     <div>
@@ -219,14 +223,21 @@ const Eyeglasses = () => {
               </select>
               <select
                 className="filter-item"
-                onChange ={(e) => setprice(e.target.value)}
+                onChange={(e) => setprice(e.target.value)}
               >
-                <option disabled selected>PRICE</option>
-                <option value="asc" >Low To High</option>
+                <option disabled selected>
+                  PRICE
+                </option>
+                <option value="asc">Low To High</option>
                 <option value="desc">High To Low</option>
               </select>
-              <select className="filter-item" onClick={(e) => setgender(e.target.value)}>
-                <option disabled selected>GENDER</option>
+              <select
+                className="filter-item"
+                onClick={(e) => setgender(e.target.value)}
+              >
+                <option disabled selected>
+                  GENDER
+                </option>
                 <option value="Kids">Kids</option>
                 <option value="Mans">Mans</option>
                 <option value="Females">Females</option>
@@ -278,6 +289,23 @@ const Eyeglasses = () => {
               </div>
             );
           })}
+          <div className="botton-page-button">
+            <div className="pagination-container">
+              <button
+                onClick={() => page > 1 && setPage(page - 1)}
+                className="pagination-button"
+              >
+                Previous
+              </button>
+              <span className="page-number">Page {page}</span>
+              <button
+                onClick={() => setPage(page + 1)}
+                className="pagination-button"
+              >
+                Next
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
