@@ -5,21 +5,13 @@
     display: flex;
 }
 
+/* Default styles for larger screens */
 .EyeGlassesSection-Left {
     background-color: #fff;
     width: 320px;
-    /* position: fixed; */
-    /* top: 47%; */
-    /* left: 0%; */
-    /* bottom: 0%; */
-    /* height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .filter-section {
-    /* width: 300px; */
     width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
@@ -45,9 +37,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-.frame-option:hover{
+
+.frame-option:hover {
     cursor: pointer;
 }
+
 .frame-option {
     width: 70px;
     height: 70px;
@@ -58,7 +52,6 @@
     justify-content: center;
     font-size: 14px;
     text-align: center;
-    display: flex;
     flex-direction: column;
 }
 
@@ -66,7 +59,6 @@
     border: 1px solid black;
 }
 
-/* FilterMenu.css */
 .filter-menu {
     display: flex;
     flex-direction: column;
@@ -93,6 +85,98 @@
 .filter-button:hover {
     background-color: #f0f0f0;
 }
+
+/* Media Queries */
+
+/* For screen sizes between 300px and 576px */
+@media (max-width: 576px) {
+
+    .EyeGlassesSection-Left {
+        width: 100%;
+        display: none;
+    }
+
+    .filter-section {
+        padding: 10px;
+    }
+
+    .frame-option {
+        width: 60px;
+        height: 60px;
+        margin: 3px;
+    }
+
+    .filter-menu {
+        width: 100%;
+    }
+
+    .filter-item {
+        padding: 6px 20px;
+    }
+}
+
+/* For screen sizes between 576px and 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+    .EyeGlassesSection-Left {
+        width: 100%;
+    }
+
+    .filter-section {
+        padding: 15px;
+    }
+
+    .frame-option {
+        width: 65px;
+        height: 65px;
+        margin: 4px;
+    }
+
+    .filter-menu {
+        width: 100%;
+    }
+
+    .filter-item {
+        padding: 7px 30px;
+    }
+}
+
+/* For screen sizes between 768px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .EyeGlassesSection-Left {
+        width: 100%;
+    }
+
+    .filter-section {
+        padding: 20px;
+    }
+
+    .frame-option {
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+    }
+
+    .filter-menu {
+        width: 100%;
+    }
+
+    .filter-item {
+        padding: 8px 38px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,4 +340,157 @@
     text-align: center;
     color: #757575;
     font-size: 12px;
+}
+
+/* For screens between 300px and 576px */
+@media only screen and (max-width: 576px) {
+    .EyeGlassesSection-Right {
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-card {
+        width: 100px;
+        margin: 0px;
+    }
+
+    .card-header {
+        height: auto;
+        padding: 0px;
+    }
+    .product-image1 {
+        width: 250px;
+        height: 150px;
+        padding: 10px;
+        background-color: red;
+    }
+    
+    
+
+    .HeartIcon {
+        font-size: 24px;
+        right: 10px;
+        top: 10px;
+        display: none;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 12px;
+    }
+
+    .product-size,
+    .product-price {
+        font-size: 12px;
+    }
+    .ColorAndPrizeSize {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        margin-bottom: 10px; */
+    }
+    .offer {
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .color-dot {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* For screens between 576px and 768px */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .EyeGlassesSection-Right {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        width: 48%;
+        margin: 10px 5px;
+    }
+
+    .card-header {
+        height: 30vh;
+    }
+
+    .product-image1,
+    .product-image2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .HeartIcon {
+        font-size: 26px;
+    }
+
+    .product-title {
+        font-size: 13px;
+    }
+
+    .product-size,
+    .product-price {
+        font-size: 13px;
+    }
+
+    .offer {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .color-dot {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* For screens between 768px and 992px */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .EyeGlassesSection-Right {
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card {
+        width: 30%;
+        margin: 10px 5px;
+    }
+
+    .card-header {
+        height: 28vh;
+    }
+
+    .product-image1,
+    .product-image2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .HeartIcon {
+        font-size: 28px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .product-size,
+    .product-price {
+        font-size: 14px;
+    }
+
+    .offer {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .color-dot {
+        width: 20px;
+        height: 20px;
+    }
 }

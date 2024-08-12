@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../../Style/Navigation.css";
 import SignIn from "../SignIn";
 import { Link, NavLink } from "react-router-dom";
+import { search } from "../UseContext";
 
 const Navigation = () => {
   const [show, setshow] = useState(false);
+  const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } = useContext(search);
+  console.log(searchData)
+  // const [searchData, setsearchData] = useState();
   // const [signUp, setsignUp] = useState( true );
   // const HandleShow = () => {
 
@@ -33,16 +37,20 @@ const Navigation = () => {
         </div>
         <div className="main-bar">
           <div className="logo flex">
-          <NavLink to={"/"}>
-            <img
-              src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg"
-              alt="Lenskart Logo"
-            />
+            <NavLink to={"/"}>
+              <img
+                src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg"
+                alt="Lenskart Logo"
+              />
             </NavLink>
             <span>1800-202-4444</span>
           </div>
           <div className="search-bar">
-            <input type="text" placeholder="What are you looking for?" />
+            <input
+              type="text"
+              onChange={(GetDataOfSearch)}
+              placeholder="What are you looking for?"
+            />
           </div>
           <div className="account-links">
             <a href="#">Track Order</a>
@@ -50,9 +58,7 @@ const Navigation = () => {
               <span onClick={() => setshow(!show)}>Sign In </span>
             </a>
             <a href="#">Wishlist</a>
-              <NavLink to="/AddToCard">
-                Cart
-              </NavLink>
+            <NavLink to="/AddToCard">Cart</NavLink>
           </div>
         </div>
         <div className="flex justify-between items-center bottom-bar-main NavLinkAll">
@@ -66,7 +72,6 @@ const Navigation = () => {
             <NavLink to="/storelocator">STORE LOCATOR</NavLink>
           </div>
           <div className="main-bar-img p-10 bottom-bar flex">
-          
             <img
               src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
               alt=""

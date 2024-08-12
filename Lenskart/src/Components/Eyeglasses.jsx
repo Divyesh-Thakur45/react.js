@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../Style/Eyeglasses.css";
 import { CiHeart } from "react-icons/ci";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { search } from "./UseContext";
 
 const Eyeglasses = () => {
   const [productFilter, setproductFilter] = useState(null);
   const [brand, setbrand] = useState(null);
-  // console.log(brand);
+  const [price, setprice] = useState(null);
+  const [gender , setgender] = useState("");
+  const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } = useContext(search);
+  // console.log(productFilter);
+  console.log(gender);
   // console.log(productFilter)
   const [GogglesData, setGogglesData] = useState([]);
   const fetchGogglesData = () => {
@@ -16,6 +21,10 @@ const Eyeglasses = () => {
         params: {
           frame: productFilter,
           brand: brand,
+          gender: gender,
+          _sort: "price",
+          _order: price,
+          q: searchData,
         },
       })
       .then((res) => setGogglesData(res.data))
@@ -24,7 +33,7 @@ const Eyeglasses = () => {
 
   useEffect(() => {
     fetchGogglesData();
-  }, [productFilter, brand]);
+  }, [productFilter, brand,price,gender]);
 
   return (
     <div>
@@ -202,23 +211,25 @@ const Eyeglasses = () => {
                 <option value="Lenskart Air">Lenskart Air(516)</option>
                 <option value="Vincent Chase">Vincent Chase(501)</option>
               </select>
-              <select className="filter-item" onClick={() => setbrand()}>
+              <select className="filter-item">
                 <option>FRAME SIZE</option>
                 <option value="1">Extra Narrow(123)</option>
                 <option value="2">Narrow(524)</option>
                 <option value="3">Extra Wide(244)</option>
               </select>
-              <select className="filter-item" onClick={() => setbrand()}>
-                <option>PRICE</option>
-                <option value="1">Low To High</option>
-                <option value="2">High To Low</option>
-                <option value="3">1000</option>
+              <select
+                className="filter-item"
+                onChange ={(e) => setprice(e.target.value)}
+              >
+                <option disabled selected>PRICE</option>
+                <option value="asc" >Low To High</option>
+                <option value="desc">High To Low</option>
               </select>
-              <select className="filter-item" onClick={() => setbrand()}>
-                <option>GENDER</option>
-                <option value="1">Kids</option>
-                <option value="2">Mans</option>
-                <option value="3">Females</option>
+              <select className="filter-item" onClick={(e) => setgender(e.target.value)}>
+                <option disabled selected>GENDER</option>
+                <option value="Kids">Kids</option>
+                <option value="Mans">Mans</option>
+                <option value="Females">Females</option>
               </select>
             </div>
           </div>
