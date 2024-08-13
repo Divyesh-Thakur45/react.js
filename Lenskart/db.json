@@ -349,7 +349,7 @@
       "sizeCollection": "Size:, Narrow • Blend Edit",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "1b0"
     },
     {
@@ -361,7 +361,7 @@
       "sizeCollection": "Size: Wide • John Jacobs",
       "price": 3500,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c1"
     },
     {
@@ -373,7 +373,7 @@
       "sizeCollection": "Size: Medium • Air Essentials",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c2"
     },
     {
@@ -385,7 +385,7 @@
       "sizeCollection": "Size: Narrow • Blend Edit",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c3"
     },
     {
@@ -397,7 +397,7 @@
       "sizeCollection": "Size: Wide • John Jacobs",
       "price": 3500,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c4"
     },
     {
@@ -409,7 +409,7 @@
       "sizeCollection": "Size: Narrow • John Jacobs",
       "price": 3500,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c5"
     },
     {
@@ -421,7 +421,7 @@
       "sizeCollection": "Size: Wide • Air Essentials",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c6"
     },
     {
@@ -433,7 +433,7 @@
       "sizeCollection": "Size: Medium • Air Fusion",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c7"
     },
     {
@@ -445,7 +445,7 @@
       "sizeCollection": "Size: Narrow • Sleek Steel",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c8"
     },
     {
@@ -457,7 +457,7 @@
       "sizeCollection": "Size: Medium • Air Play",
       "price": 2000,
       "frame": "FullRim",
-      "gender":"Mans",
+      "gender": "Mans",
       "id": "c9"
     },
     {
@@ -854,7 +854,7 @@
       "sizeCollection": "Size: Wide • Air Fusion",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "h5"
     },
     {
@@ -866,7 +866,7 @@
       "sizeCollection": "Size: Medium • Blend Edit",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "h6"
     },
     {
@@ -878,7 +878,7 @@
       "sizeCollection": "Size: Medium •",
       "price": 3500,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "h7"
     },
     {
@@ -890,7 +890,7 @@
       "sizeCollection": "Size: Medium • John Jacobs",
       "price": 5000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "h8"
     },
     {
@@ -902,7 +902,7 @@
       "sizeCollection": "Size: Narrow • Air Fusion",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "h9"
     },
     {
@@ -914,7 +914,7 @@
       "sizeCollection": "Size: Medium • John Jacobs",
       "price": 3500,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "1h0"
     },
     {
@@ -926,7 +926,7 @@
       "sizeCollection": "Size: Wide • Sleek Steel",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i1"
     },
     {
@@ -938,7 +938,7 @@
       "sizeCollection": "Size: Medium • Pro Grip",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i2"
     },
     {
@@ -950,7 +950,7 @@
       "sizeCollection": "Size: Medium • Air Prism",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i3"
     },
     {
@@ -962,7 +962,7 @@
       "sizeCollection": "Size: Medium • John Jacobs",
       "price": 5000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i4"
     },
     {
@@ -974,7 +974,7 @@
       "sizeCollection": "Size: Extra Narrow • Air Flex",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i5"
     },
     {
@@ -986,7 +986,7 @@
       "sizeCollection": "Size: Narrow • Air Flex",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i6"
     },
     {
@@ -998,7 +998,7 @@
       "sizeCollection": "Size: Medium • Sleek Steel",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i7"
     },
     {
@@ -1010,7 +1010,7 @@
       "sizeCollection": "Size: Medium • Pro Grip",
       "price": 2000,
       "frame": "Round",
-      "gender":"Females",
+      "gender": "Females",
       "id": "i8"
     },
     {
@@ -1407,7 +1407,7 @@
       "sizeCollection": "Size: Narrow • John Jacobs",
       "price": 5000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "m4"
     },
     {
@@ -1419,7 +1419,7 @@
       "sizeCollection": "Size: 2-5 yrs • Mini me",
       "price": 1000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "m5"
     },
     {
@@ -1431,7 +1431,7 @@
       "sizeCollection": "Size: Medium • JJ GILDED JEWELS",
       "price": 3500,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "m6"
     },
     {
@@ -1443,7 +1443,7 @@
       "sizeCollection": "Size: Extra Narrow • Owndays",
       "price": 5000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "m7"
     },
     {
@@ -1455,7 +1455,7 @@
       "sizeCollection": "Size: 5-8 yrs • Clippy Hooper",
       "price": 1000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "m8"
     },
     {
@@ -1467,7 +1467,7 @@
       "sizeCollection": "Size: 2-5 yrs • Lenskart Junior",
       "price": 1000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "m9"
     },
     {
@@ -1479,7 +1479,7 @@
       "sizeCollection": "Size: Medium",
       "price": 5000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "1m0"
     },
     {
@@ -1491,7 +1491,7 @@
       "sizeCollection": "Size: 2-5 yrs • Lenskart Junior",
       "price": 1000,
       "frame": "Oval",
-      "gender" : "Kids",
+      "gender": "Kids",
       "id": "dca1"
     },
     {
@@ -1584,7 +1584,8 @@
           "color": "#5A564E",
           "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-grey-full-rim-square-lenskart-blu-lb-e13526-c3_vincent-chase-vc-e13526-c3-eyeglasses_g_841522_02_2022.jpg"
         }
-      ]
+      ],
+      "id": "75ba"
     },
     {
       "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-rectangle-lenskart-blu-lb-e13737-c1_lenskart-blu-lb-e13737-c1-eyeglasses_eyeglasses_g_9569_223_02_2022.jpg",
@@ -1611,7 +1612,8 @@
           "color": "#64686c",
           "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-transparent-blue-full-rim-rectangle-lenskart-blu-lb-e13737-c3_lenskart-blu-lb-e13737-full-rim-rec-eye-c3-eyeglasses_lenskart-blu-lb-e13737-full-rim-rec-eye-c3-eyeglasses_eyeglasses_g_0725_123_02_2022.jpg"
         }
-      ]
+      ],
+      "id": "0c58"
     },
     {
       "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-grey-full-rim-rectangle-lenskart-blu-lb-e13527-c1_vincent-chase-vc-e13527-c1-eyeglasses_g_840922_02_2022.jpg",
@@ -1638,7 +1640,8 @@
           "color": "#e28c6c",
           "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-orange-full-rim-rectangle-lenskart-blu-lb-e13527-c5_vincent-chase-vc-e13527-c5-eyeglasses_g_839622_02_2022.jpg"
         }
-      ]
+      ],
+      "id": "92e4"
     },
     {
       "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-blue-full-rim-square-lenskart-blu-lb-e13526-c4_vincent-chase-vc-e13526-c4-eyeglasses_g_843422_02_2022.jpg",
@@ -1665,7 +1668,8 @@
           "color": "#383533",
           "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8389_28july23.jpg"
         }
-      ]
+      ],
+      "id": "f841"
     },
     {
       "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-dark-night-full-rim-hustlr-eyeglasses_csvfile-1679642282404-black1.jpg",
@@ -1692,7 +1696,8 @@
           "color": "#BCCDBF",
           "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-jade-green-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c35_csvfile-1683891330074-g_6823.jpg"
         }
-      ]
+      ],
+      "id": "9134"
     },
     {
       "imageUrlAfter": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13740-c1_lenskart-blu-lb-e13740-c1-eyeglasses_eyeglasses_g_958523_02_2022.jpg",
@@ -1719,48 +1724,57 @@
           "color": "#EDB496",
           "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e13740-c7-eyeglasses_g_2533_23_06_2023.jpg"
         }
-      ]
+      ],
+      "id": "8254"
     }
   ],
-  "posts": [
-    
-  ],
+  "posts": [],
   "firstbigslider": [
     {
-      "image": "https://static5.lenskart.com/media/uploads/Desktopnew_1505.jpg"
+      "image": "https://static5.lenskart.com/media/uploads/Desktopnew_1505.jpg",
+      "id": "5eb3"
     },
     {
-      "image": "https://static1.lenskart.com/media/desktop/img/oct9/holiday-edit/Web-banner.jpg"
+      "image": "https://static1.lenskart.com/media/desktop/img/oct9/holiday-edit/Web-banner.jpg",
+      "id": "f842"
     },
     {
-      "image": "https://static1.lenskart.com/media/desktop/img/June24/Crystal_acetate/web-option-1CAcetate.gif"
+      "image": "https://static1.lenskart.com/media/desktop/img/June24/Crystal_acetate/web-option-1CAcetate.gif",
+      "id": "188c"
     },
     {
-      "image": "https://static1.lenskart.com/media/desktop/img/NewFolder23/Desktop%20Banner.jpg"
+      "image": "https://static1.lenskart.com/media/desktop/img/NewFolder23/Desktop%20Banner.jpg",
+      "id": "8483"
     },
     {
-      "image": "https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
+      "image": "https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg",
+      "id": "e6fe"
     },
     {
-      "image": "https://static5.lenskart.com/media/uploads/WEBlkair_matte_essential.gif"
+      "image": "https://static5.lenskart.com/media/uploads/WEBlkair_matte_essential.gif",
+      "id": "735b"
     }
   ],
   "secondSlider": [
     {
       "title": "Round",
-      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png"
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png",
+      "id": "f64b"
     },
     {
       "title": "Cat-Eye",
-      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg"
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg",
+      "id": "d5ac"
     },
     {
       "title": "Clubmaster",
-      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg"
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg",
+      "id": "be07"
     },
     {
       "title": "Transparent",
-      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg"
+      "image": "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg",
+      "id": "584e"
     }
   ],
   "AddToCard": [
@@ -1787,6 +1801,17 @@
       "discount": "+2",
       "price": 2000,
       "frame": "random"
+    },
+    {
+      "id": "k9",
+      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/black-grey-full-rim-wayfarer-hooper-play-hp-e15914l-c1-eyeglasses__dsc1505_14_05_2024.jpg",
+      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15914l-c1-eyeglasses_g_1929_12_09_2023.jpg",
+      "rating": 4.8,
+      "reviews": 11,
+      "brand": "Hooper",
+      "sizeCollection": "Size: 8-12 yrs • Hooper Play",
+      "price": 1000,
+      "frame": "Wayfarer"
     }
   ]
 }

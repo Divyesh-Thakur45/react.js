@@ -9,7 +9,7 @@ const Eyeglasses = () => {
   const [productFilter, setproductFilter] = useState(null);
   const [brand, setbrand] = useState(null);
   const [price, setprice] = useState(null);
-  const [gender, setgender] = useState("");
+  const [gender, setgender] = useState(null);
   const [page, setPage] = useState(1);
   const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } =
     useContext(search);
@@ -28,7 +28,7 @@ const Eyeglasses = () => {
           gender: gender,
           _sort: "price",
           _order: price,
-          q: searchData,
+          q: searchData ? searchData :null,
         },
       })
       .then((res) => setGogglesData(res.data))
@@ -37,7 +37,7 @@ const Eyeglasses = () => {
 
   useEffect(() => {
     fetchGogglesData();
-  }, [productFilter, brand, price, gender]);
+  }, [productFilter, brand, price, gender,page,searchData]);
 
   return (
     <div>
@@ -248,43 +248,45 @@ const Eyeglasses = () => {
         <div className="EyeGlassesSection-Right">
           {GogglesData.map((el, idx) => {
             return (
-              <div className="product-card" key={idx}>
-                <div className="card-header">
-                  <CiHeart className="HeartIcon" />
-                  <Link to={`/description/${el.id}`}>
-                    <img
-                      src={el.imageUrl}
-                      alt="Lenskart Air"
-                      className="product-image1"
-                    />
-                    <img
-                      src={el.imageUrl2}
-                      alt="Lenskart Air"
-                      className="product-image2"
-                    />
-                  </Link>
-                </div>
-                <div className="card-body">
-                  <div className="rating">
-                    <span className="rating-value">{el.rating}</span>
-                    <span className="rating-count">{el.reviews}</span>
+              <div className="card">
+                <div key={idx}>
+                  <div className="card-header">
+                    <CiHeart className="HeartIcon" />
+                    <Link to={`/description/${el.id}`}>
+                      <img
+                        src={el.imageUrl}
+                        alt="Lenskart Air"
+                        className="product-image1"
+                      />
+                      <img
+                        src={el.imageUrl2}
+                        alt="Lenskart Air"
+                        className="product-image2"
+                      />
+                    </Link>
                   </div>
-                  <h2 className="product-title">{el.brand}</h2>
-                  <div className="ColorAndPrizeSize">
-                    <div>
-                      <p className="product-size">{el.sizeCollection}</p>
-                      <p className="product-price">₹{el.price}</p>
+                  <div className="card-body">
+                    <div className="rating">
+                      <span className="rating-value">{el.rating}</span>
+                      <span className="rating-count">{el.reviews}</span>
                     </div>
-                    <div>
-                      <div className="color-options">
-                        <span className="color-dot black"></span>
-                        <span className="color-dot blue"></span>
-                        <span className="color-dot gray"></span>
-                        <span className="color-dot more">{el.discount}</span>
+                    <h2 className="product-title">{el.brand}</h2>
+                    <div className="ColorAndPrizeSize">
+                      <div>
+                        <p className="product-size">{el.sizeCollection}</p>
+                        <p className="product-price">₹{el.price}</p>
+                      </div>
+                      <div>
+                        <div className="color-options">
+                          <span className="color-dot black"></span>
+                          <span className="color-dot blue"></span>
+                          <span className="color-dot gray"></span>
+                          <span className="color-dot more">{el.discount}</span>
+                        </div>
                       </div>
                     </div>
+                    <p className="offer">Get FREE BLU Screen Lenses</p>
                   </div>
-                  <p className="offer">Get FREE BLU Screen Lenses</p>
                 </div>
               </div>
             );

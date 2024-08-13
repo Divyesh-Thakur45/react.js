@@ -2,6 +2,10 @@ import "../../Style/Midsection.css";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css/pagination";
 
 const Midsection = () => {
   // header
@@ -104,13 +108,28 @@ const Midsection = () => {
       </div>
 
       <div className="slider">
-        {bigsliderdata.map((e, idx) => {
-          return (
-            <div className="slider-img" key={idx}>
-              <img src={e.image} alt="" />
-            </div>
-          );
-        })}
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+        >
+          {bigsliderdata.map((e, idx) => {
+            return (
+              <SwiperSlide>
+                <div className="slider-img" key={idx}>
+                  <img src={e.image} alt="" />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
 
       {/* _________________ */}
