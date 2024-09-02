@@ -4,6 +4,8 @@ import Home from "./Home";
 import Product from "./Product";
 import Login from "./Login";
 import Privatepage from "./Privatepage";
+import Description from "./Description";
+import EditPage from "./EditPage";
 
 const AllRoutes = () => {
   return (
@@ -13,6 +15,8 @@ const AllRoutes = () => {
         <Route path="/Product" element={<Product />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Privatepage" element={<Privatepage />} />
+        <Route path="/EditPage" element={<EditPage />} />
+        <Route path="/Description/:id" element={<Description />} />
       </Routes>
     </div>
   );

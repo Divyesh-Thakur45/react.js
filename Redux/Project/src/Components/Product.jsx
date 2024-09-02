@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const { data, loading, isError } = useSelector(
@@ -43,11 +44,13 @@ const Product = () => {
             className="max-w-sm rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 bg-white"
             key={id}
           >
-            <img
-              className="m-auto h-48 md:h-56 lg:h-64"
-              src={image}
-              alt={title}
-            />
+            <Link to={`/description/${id}`}>
+              <img
+                className="m-auto h-48 md:h-56 lg:h-64"
+                src={image}
+                alt={title}
+              />
+            </Link>
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-800 mb-2">
                 {title}
