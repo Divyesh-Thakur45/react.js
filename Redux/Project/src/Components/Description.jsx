@@ -4,7 +4,12 @@ import { Link, useParams } from "react-router-dom";
 
 const Description = () => {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
+  const [FormImage, setFormImage] = useState("");
+  const [FormTitle, setFormTitle] = useState();
+  const [FormCatogory, setCatogory] = useState();
+  const [FormPrice, setPrice] = useState();
+  console.log(FormImage)
   const [data, setData] = useState({});
   const { title, price, category, image } = data;
   const DescriptionData = () => {
@@ -39,6 +44,7 @@ const Description = () => {
             className="m-auto h-64 mt-2 object-center"
             src={image}
             alt={title}
+            onChange={(e) => setFormImage(e.target.value)}
           />
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">{title}</h2>
@@ -48,9 +54,11 @@ const Description = () => {
             </p>
 
             <div className="flex justify-between items-center">
-              <Link to={"/EditPage"}><button className="bg-green-500 text-white px-6 py-2 rounded-full shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-red-300 transition-transform duration-300">
-                Edid
-              </button></Link>
+              <Link to={"/EditPage"}>
+                <button className="bg-green-500 text-white px-6 py-2 rounded-full shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-red-300 transition-transform duration-300">
+                  Edid
+                </button>
+              </Link>
               <button className="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-transform duration-300">
                 Add to Cart
               </button>
