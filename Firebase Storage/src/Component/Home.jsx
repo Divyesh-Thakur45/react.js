@@ -43,7 +43,9 @@ const Home = () => {
                   </div>
                 </div>
                 <div>
-                  <Link to={`/EditProduct/${el.id}`} ><button className="Edit">Edit</button></Link>
+                  <Link to={`/EditProduct/${el.id}`}>
+                    <button className="Edit">Edit</button>
+                  </Link>
                   <button
                     className="Delete"
                     onClick={() => DeleteProduct(el.id)}
