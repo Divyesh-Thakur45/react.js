@@ -1,9 +1,16 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Product = () => {
+  const [page, setpage] = useState(1);
+  const [search, setsearch] = useState(null);
+  // console.log(search);
+  const [category, setcategory] = useState(null);
+  // console.log(category);
+  const [price, setprice] = useState(null);
+  // console.log(price);
   const { data, loading, isError } = useSelector(
     (store) => store.ProductReducer
   );
@@ -11,7 +18,16 @@ const Product = () => {
   const ProductShow = () => {
     dispatch({ type: "PRODUCT_LOADING" });
     axios
-      .get("http://localhost:3000/posts")
+      .get("http://localhost:3000/posts", {
+        params: {
+          _page: page,
+          _limit: 4,
+          _sort: "price",
+          _order: price,
+          category: category,
+          title : search ,
+        },
+      })
       .then((response) => {
         dispatch({ type: "PRODUCT_Data", payload: response.data });
         console.log(response.data);
@@ -21,23 +37,62 @@ const Product = () => {
         console.log(error);
       });
   };
-  const DeleteProduct = (id) => {
-    // console.log(id)
-    axios
-      .delete(`http://localhost:3000/posts/${id}`)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
-  };
+  // const DeleteProduct = (id) => {
+  //   console.log(id)
+  //   axios
+  //     .delete(`http://localhost:3000/posts/${id}`)
+  // };
   useEffect(() => {
-    DeleteProduct();
+    // DeleteProduct();
     ProductShow();
-  }, []);
+  }, [data,page,price,category,search]);
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
         Product Page
       </h1>
       <hr className="mb-8 border-gray-300" />
+      <div className="flex justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 mb-5">
+        <div className="Category">
+          <select
+            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+            name=""
+            id=""
+            onChange={(e) => setcategory(e.target.value)}
+          >
+            <option value="">Select</option>
+            <option value="men's clothing">Men's clothing</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="electronics">Electronics</option>
+            <option value="women's clothing">Women's clothing</option>
+          </select>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            placeholder="Search"
+            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+            name=""
+            id=""
+            onChange={(e) => setsearch(e.target.value)}
+          />
+        </div>
+
+        <div>
+          <select
+            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+            name=""
+            id=""
+            onChange={(e) => setprice(e.target.value)}
+          >
+            <option value="">Price</option>
+            <option value="asc">A to Z</option>
+            <option value="desc">Z to A</option>
+          </select>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {data.map(({ id, title, price, category, image }) => (
           <div
@@ -71,6 +126,23 @@ const Product = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex items-center justify-center space-x-4 mt-20">
+        <button
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
+          disabled={ page == 1}
+          onClick={() => setpage(page - 1)} // Assuming you have an increment function
+        >
+          -
+        </button>
+        <span className="text-gray-700 font-medium">Page: {page}</span>
+        <button
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
+          disabled={ page == 5}
+          onClick={() => setpage(page + 1)} // Assuming you have a decrement function
+        >
+          +
+        </button>
       </div>
     </div>
   );
