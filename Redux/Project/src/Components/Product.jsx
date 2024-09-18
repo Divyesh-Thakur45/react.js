@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { ProductShow } from "../Redux/Product/action";
 
 const Product = () => {
   const [page, setpage] = useState(1);
@@ -15,28 +16,7 @@ const Product = () => {
     (store) => store.ProductReducer
   );
   const dispatch = useDispatch();
-  const ProductShow = () => {
-    dispatch({ type: "PRODUCT_LOADING" });
-    axios
-      .get("http://localhost:3000/posts", {
-        params: {
-          _page: page,
-          _limit: 4,
-          _sort: "price",
-          _order: price,
-          category: category,
-          title : search ,
-        },
-      })
-      .then((response) => {
-        dispatch({ type: "PRODUCT_Data", payload: response.data });
-        console.log(response.data);
-      })
-      .catch((error) => {
-        dispatch({ type: "PRODUCT_Error" });
-        console.log(error);
-      });
-  };
+
   // const DeleteProduct = (id) => {
   //   console.log(id)
   //   axios
@@ -44,8 +24,8 @@ const Product = () => {
   // };
   useEffect(() => {
     // DeleteProduct();
-    ProductShow();
-  }, [data,page,price,category,search]);
+    dispatch(ProductShow());
+  }, [data, page, price, category, search]);
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
@@ -130,7 +110,7 @@ const Product = () => {
       <div className="flex items-center justify-center space-x-4 mt-20">
         <button
           className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
-          disabled={ page == 1}
+          disabled={page == 1}
           onClick={() => setpage(page - 1)} // Assuming you have an increment function
         >
           -
@@ -138,7 +118,7 @@ const Product = () => {
         <span className="text-gray-700 font-medium">Page: {page}</span>
         <button
           className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
-          disabled={ page == 5}
+          disabled={page == 5}
           onClick={() => setpage(page + 1)} // Assuming you have a decrement function
         >
           +
