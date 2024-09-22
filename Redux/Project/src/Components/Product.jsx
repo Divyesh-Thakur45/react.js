@@ -17,15 +17,31 @@ const Product = () => {
   );
   const dispatch = useDispatch();
 
-  // const DeleteProduct = (id) => {
-  //   console.log(id)
-  //   axios
-  //     .delete(`http://localhost:3000/posts/${id}`)
-  // };
+  const DeleteProduct = (id) => {
+    console.log(id)
+    axios
+      .delete(`http://localhost:3000/posts/${id}`)
+      .then((response) => (
+        dispatch(ProductShow),
+        alert("Data deleted successfully")
+      ))
+      .catch((error) => console.log(error))
+  };
+  const dataObj = {
+    
+          _page: page,
+          _limit: 4,
+          _sort: "price",
+          _order: price,
+          category: category,
+          title : search ,
+      
+  };
+  // dispatch(dataObj);
   useEffect(() => {
     // DeleteProduct();
-    dispatch(ProductShow());
-  }, [data, page, price, category, search]);
+    dispatch(ProductShow);
+  }, []);
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">

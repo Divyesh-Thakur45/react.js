@@ -2,7 +2,7 @@ import React from 'react'
 
 const Privatepage = () => {
   return (
-    <div>Privatepage</div>
+    <div>Add</div>
   )
 }
 
