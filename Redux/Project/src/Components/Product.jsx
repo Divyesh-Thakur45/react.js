@@ -6,9 +6,10 @@ import { ProductShow } from "../Redux/Product/action";
 
 const Product = () => {
   const [page, setpage] = useState(1);
+  const [limit, setlimit] = useState(0);
   const [search, setsearch] = useState(null);
   // console.log(search);
-  const [category, setcategory] = useState(null);
+  const [category, setcategory] = useState([]);
   // console.log(category);
   const [price, setprice] = useState(null);
   // console.log(price);
@@ -17,58 +18,118 @@ const Product = () => {
   );
   const dispatch = useDispatch();
 
+  const multipleFilter = (e) =>{
+    let value = e.target.value;
+    if(category.includes(value)){
+      setcategory(category.filter((e)=> e !== value))
+    }
+    else{
+      setcategory([...category, value]);
+    }
+  }
+
   const DeleteProduct = (id) => {
-    console.log(id)
+    console.log(id);
     axios
       .delete(`http://localhost:3000/posts/${id}`)
-      .then((response) => (
-        dispatch(ProductShow),
-        alert("Data deleted successfully")
-      ))
-      .catch((error) => console.log(error))
+      .then(
+        (response) => (
+          dispatch(ProductShow), alert("Data deleted successfully")
+        )
+      )
+      .catch((error) => console.log(error));
   };
-  const dataObj = {
-    
-          _page: page,
-          _limit: 4,
-          _sort: "price",
-          _order: price,
-          category: category,
-          title : search ,
-      
+
+  const mainObj = {
+    param: {
+      _page: page,
+      _limit: 4,
+      _sort: "price",
+      _order: price,
+      category: category,
+      title: search,
+    },
+    setlimit,
   };
+  // console.log(dataObj.params);
   // dispatch(dataObj);
   useEffect(() => {
     // DeleteProduct();
+    // dispatch(fetchProducts);
+    dispatch(ProductShow(mainObj));
+
     dispatch(ProductShow);
-  }, []);
-  return (
+  }, [page, search, category, price]);
+  return loading ? <h1>Loading..</h1> : isError ? <h1>Something want wrong .</h1> : (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
         Product Page
       </h1>
       <hr className="mb-8 border-gray-300" />
-      <div className="flex justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 mb-5">
-        <div className="Category">
-          <select
-            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
-            name=""
-            id=""
-            onChange={(e) => setcategory(e.target.value)}
-          >
-            <option value="">Select</option>
-            <option value="men's clothing">Men's clothing</option>
-            <option value="jewelery">Jewelery</option>
-            <option value="electronics">Electronics</option>
-            <option value="women's clothing">Women's clothing</option>
-          </select>
+      <div className="main flex justify-center items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 mb-5">
+        <div className="multiple-filter flex flex-col space-y-2">
+          <div className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              value="men's clothing"
+              name=""
+              id=""
+              onClick={(e)=>multipleFilter(e)}
+              className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+            />
+            <label htmlFor="" className="text-gray-700">
+              Men's clothing
+            </label>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              value="jewelery"
+              name=""
+              id=""
+              onClick={(e)=>multipleFilter(e)}
+              className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+            />
+            <label htmlFor="" className="text-gray-700">
+              Jewelery
+            </label>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              value="electronics"
+              name=""
+              id=""
+              onClick={(e)=>multipleFilter(e)}
+              className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+            />
+            <label htmlFor="" className="text-gray-700">
+              Electronics
+            </label>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              value="women's clothing"
+              name=""
+              id=""
+              onClick={(e)=>multipleFilter(e)}
+              className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+            />
+            <label htmlFor="" className="text-gray-700">
+              Women's clothing
+            </label>
+          </div>
         </div>
 
         <div>
           <input
             type="text"
             placeholder="Search"
-            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500"
             name=""
             id=""
             onChange={(e) => setsearch(e.target.value)}
@@ -77,7 +138,7 @@ const Product = () => {
 
         <div>
           <select
-            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+            className="block w-full md:w-auto p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500"
             name=""
             id=""
             onChange={(e) => setprice(e.target.value)}
@@ -115,9 +176,6 @@ const Product = () => {
                 >
                   Delete
                 </button>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300">
-                  Add to Cart
-                </button>
               </div>
             </div>
           </div>
@@ -134,7 +192,7 @@ const Product = () => {
         <span className="text-gray-700 font-medium">Page: {page}</span>
         <button
           className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
-          disabled={page == 5}
+          disabled={page == Math.ceil(limit / 4)}
           onClick={() => setpage(page + 1)} // Assuming you have a decrement function
         >
           +

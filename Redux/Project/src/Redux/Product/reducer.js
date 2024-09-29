@@ -7,11 +7,11 @@ const intialstate = {
 export const reducer = (state = intialstate, action) => {
   switch (action.type) {
     case "PRODUCT_LOADING":
-      return { ...state, loading: true };
+      return { data: false, isError: false, loading: true };
     case "PRODUCT_Data":
-      return { ...state, data: action.payload };
+      return { isError: false, loading: false, data: action.payload };
     case "PRODUCT_Error":
-      return { ...state, isError: true };
+      return { loading: false, data: false, isError: true };
     default:
       return state;
   }

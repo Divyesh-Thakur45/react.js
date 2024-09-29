@@ -1,7 +1,10 @@
+.ShowBtn{
+    display: none;
+}
 .EyeGlassesSection {
     /* background-color: black; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
 }
 
@@ -9,6 +12,7 @@
 .EyeGlassesSection-Left {
     background-color: #fff;
     width: 320px;
+    display: block;
 }
 
 .filter-section {
@@ -90,10 +94,14 @@
 
 /* For screen sizes between 300px and 576px */
 @media (max-width: 576px) {
-
+    .EyeGlassesSection{
+        position: relative;
+    }
     .EyeGlassesSection-Left {
-        width: 100%;
-        display: none;
+        width: 90%;
+        /* display: none; */
+        position: absolute;
+        z-index: 999;
     }
 
     .filter-section {
@@ -217,13 +225,13 @@
 
 .product-image1 {
     width: 372px;
-    height: 189px;
+    /* height: 189px; */
     padding: 10px;
 }
 
 .product-image2 {
     width: 372px;
-    height: 189px;
+    /* height: 189px; */
     padding: 10px;
     display: none;
     transition: 0.5s;
@@ -343,7 +351,8 @@
 /* For screens between 300px and 576px */
 @media only screen and (max-width: 576px) {
     .EyeGlassesSection-Right {
-        width: 50%;
+        margin: auto;
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -358,9 +367,9 @@
     }
 
     .product-image1 {
-        width: 250px;
+        /* width: 250px;
         height: 150px;
-        padding: 10px;
+        padding: 10px; */
         /* background-color: red; */
     }
 
@@ -408,8 +417,8 @@
 /* For screens between 576px and 768px */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .EyeGlassesSection-Right {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .product-card {
@@ -455,7 +464,7 @@
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .EyeGlassesSection-Right {
         width: 95%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .product-card {
@@ -498,12 +507,13 @@
 }
 
 /* Pagination */
-.botton-page-button{
+.botton-page-button {
     /* text-align: center;
     align-items: center;
     width: 300%;
     margin: auto; */
 }
+
 .pagination-container {
     display: flex;
     justify-content: center;

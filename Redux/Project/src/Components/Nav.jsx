@@ -23,10 +23,10 @@ const Nav = () => {
         Login
       </NavLink>
       <NavLink
-        to="/PrivatePage"
+        to="/AddCard"
         className="text-white font-medium hover:text-gray-400 transition-colors duration-300"
       >
-        PrivatePage
+        Add to Card
       </NavLink>
     </div>
   );

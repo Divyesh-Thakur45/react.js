@@ -1,4 +1,5 @@
 import axios from "axios";
+import { PRODUCT_Data, PRODUCT_Error, PRODUCT_LOADING } from "../ActionType";
 // {
 //   params: {
 //     _page: page,
@@ -9,17 +10,20 @@ import axios from "axios";
 //     title : search ,
 //   },
 // }
-export const ProductShow =(dispatch) => {
-  console.log(dispatch)
-    dispatch({ type: "PRODUCT_LOADING" });
+export const ProductShow = (mainObj)=>(dispatch) => {
+  console.log(mainObj)
+    dispatch({ type: PRODUCT_LOADING });
     axios
-      .get("http://localhost:3000/posts")
+      .get("http://localhost:3000/posts",{
+        params: mainObj.param,
+      })
       .then((response) => {
-        dispatch({ type: "PRODUCT_Data", payload: response.data });
+        dispatch({ type: PRODUCT_Data, payload: response.data });
         console.log(response.data);
+        mainObj.setlimit(response.headers["x-total-count"]);
       })
       .catch((error) => {
-        dispatch({ type: "PRODUCT_Error" });
+        dispatch({ type: PRODUCT_Error });
         console.log(error);
       });
   };

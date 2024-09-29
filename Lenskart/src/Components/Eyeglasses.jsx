@@ -4,6 +4,8 @@ import { CiHeart } from "react-icons/ci";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { search } from "./UseContext";
+import { AiOutlineAlignLeft } from "react-icons/ai";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Eyeglasses = () => {
   const [productFilter, setproductFilter] = useState(null);
@@ -11,6 +13,9 @@ const Eyeglasses = () => {
   const [price, setprice] = useState(null);
   const [gender, setgender] = useState(null);
   const [page, setPage] = useState(1);
+  const [pageLimit, setPageLimit] = useState(0);
+  const [open, setopen] = useState(true);
+
   const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } =
     useContext(search);
   // console.log(productFilter);
@@ -28,16 +33,20 @@ const Eyeglasses = () => {
           gender: gender,
           _sort: "price",
           _order: price,
-          q: searchData ? searchData :null,
+          q: searchData ? searchData : null,
         },
       })
-      .then((res) => setGogglesData(res.data))
+      .then(
+        (res) => (
+          setPageLimit(res.headers["x-total-count"]), setGogglesData(res.data)
+        )
+      )
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     fetchGogglesData();
-  }, [productFilter, brand, price, gender,page,searchData]);
+  }, [productFilter, brand, price, gender, page, searchData]);
 
   return (
     <div>
@@ -45,21 +54,43 @@ const Eyeglasses = () => {
         src="https://static5.lenskart.com/media/uploads/plp-free-lenses-desk.png"
         alt=""
       />
+      <div className="ShowBtn">
+        <AiOutlineAlignLeft
+          style={{ display: open ? "block" : "none" }}
+          onClick={() => setopen(false)}
+        />
+        <AiOutlineCloseCircle
+          style={{ display: open ? "none" : "block" }}
+          onClick={() => setopen(true)}
+        />
+      </div>
       <div className="EyeGlassesSection">
-        <div className="EyeGlassesSection-Left">
+        <div
+          className="EyeGlassesSection-Left"
+          // style={{ display: open ? "none" : "block" }}
+        >
           <div className="filter-section">
             <div className="filter-group">
               <h3>AGE GROUP</h3>
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onClick={() => setproductFilter("Aviator")}
+                />
                 2-5 yrs(21)
               </label>
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onClick={() => setproductFilter("HalfRim")}
+                />
                 5-8 yrs(40)
               </label>
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onClick={() => setproductFilter("FullRim")}
+                />
                 8-12 yrs(53)
               </label>
             </div>
@@ -210,13 +241,13 @@ const Eyeglasses = () => {
                 className="filter-item"
                 onClick={(e) => setbrand(e.target.value)}
               >
-                <option>BRANDS</option>
+                {/* <option value={null}>BRANDS</option> */}
                 <option value="John Jacobs">John Jacobs(841)</option>
                 <option value="Lenskart Air">Lenskart Air(516)</option>
                 <option value="Vincent Chase">Vincent Chase(501)</option>
               </select>
               <select className="filter-item">
-                <option>FRAME SIZE</option>
+                {/* <option>FRAME SIZE</option> */}
                 <option value="1">Extra Narrow(123)</option>
                 <option value="2">Narrow(524)</option>
                 <option value="3">Extra Wide(244)</option>
@@ -235,7 +266,7 @@ const Eyeglasses = () => {
                 className="filter-item"
                 onClick={(e) => setgender(e.target.value)}
               >
-                <option disabled selected>
+                <option disabled selected value={null}>
                   GENDER
                 </option>
                 <option value="Kids">Kids</option>
@@ -291,23 +322,25 @@ const Eyeglasses = () => {
               </div>
             );
           })}
-          <div className="botton-page-button">
-            <div className="pagination-container">
-              <button
-                onClick={() => page > 1 && setPage(page - 1)}
-                className="pagination-button"
-              >
-                Previous
-              </button>
-              <span className="page-number">Page {page}</span>
-              <button
-                onClick={() => setPage(page + 1)}
-                className="pagination-button"
-              >
-                Next
-              </button>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="botton-page-button">
+        <div className="pagination-container">
+          <button
+            disabled={page === 1}
+            onClick={() => page > 1 && setPage(page - 1)}
+            className="pagination-button"
+          >
+            Previous
+          </button>
+          <span className="page-number">Page {page}</span>
+          <button
+            disabled={page === pageLimit / 6}
+            onClick={() => setPage(page + 1)}
+            className="pagination-button"
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>

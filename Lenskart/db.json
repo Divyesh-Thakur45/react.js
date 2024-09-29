@@ -1778,39 +1778,16 @@
   ],
   "AddToCard": [
     {
-      "id": "cds2as",
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7876_2a_28july23.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7875_1b_28july23.jpg",
-      "rating": 4.6,
-      "reviews": 613,
-      "brand": "Lenskart Air",
-      "sizeCollection": "Size: Medium • Air Fusion",
-      "discount": "+2",
-      "price": 2000,
-      "frame": "random"
-    },
-    {
-      "id": "cds2as",
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7876_2a_28july23.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7875_1b_28july23.jpg",
-      "rating": 4.6,
-      "reviews": 613,
-      "brand": "Lenskart Air",
-      "sizeCollection": "Size: Medium • Air Fusion",
-      "discount": "+2",
-      "price": 2000,
-      "frame": "random"
-    },
-    {
-      "id": "k9",
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/black-grey-full-rim-wayfarer-hooper-play-hp-e15914l-c1-eyeglasses__dsc1505_14_05_2024.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15914l-c1-eyeglasses_g_1929_12_09_2023.jpg",
-      "rating": 4.8,
-      "reviews": 11,
+      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/purple-full-rim-oval-kids-2-5-yrs-flexi-hooper-hp-e15972s-c2-eyeglasses_g_9077_17_08_2023.jpg",
+      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/purple-full-rim-oval-kids-2-5-yrs-flexi-hooper-hp-e15972s-c2-eyeglasses_g_9077_17_08_2023.jpg",
+      "rating": 2,
+      "reviews": 25,
       "brand": "Hooper",
-      "sizeCollection": "Size: 8-12 yrs • Hooper Play",
+      "sizeCollection": "Size: 2-5 yrs • Mini me",
       "price": 1000,
-      "frame": "Wayfarer"
+      "frame": "Oval",
+      "gender": "Kids",
+      "id": "m5"
     }
   ]
 }

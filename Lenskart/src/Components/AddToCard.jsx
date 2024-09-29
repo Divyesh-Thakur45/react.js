@@ -5,13 +5,29 @@ import axios from "axios";
 
 const AddToCard = () => {
   // const { id } = useParams();
+  // console.log(id);
   const [card, setcard] = useState([]);
   // console.log(id);
-  useEffect(() => {
+  const deleteData = (id) =>{
+    axios.delete(`http://localhost:8080/AddToCard/${id}`)
+    .then((res)=>(
+      alert("Delete Data Success"),
+      addTOCard()
+    )
+    )
+    .catch((errr)=>console.error(errr));
+  }
+
+  const addTOCard = () =>{
     axios
       .get(`http://localhost:8080/AddToCard`)
       .then((res) => setcard(res.data))
       .catch((err) => console.log(err));
+
+  }
+  useEffect(() => {
+    addTOCard();
+      deleteData();
   }, []);
   return (
     <div>
@@ -53,7 +69,7 @@ const AddToCard = () => {
                             Final Price ₹{obj.price}
                           </span>
                           <div className="item-actions">
-                            <a href="#">Remove |</a>
+                            <a href="#" onClick={()=>deleteData(obj.id)}>Remove |</a>
                             <a href="#">Repeat</a>
                           </div>
                         </div>

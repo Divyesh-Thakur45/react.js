@@ -9,7 +9,7 @@ const Description = () => {
   const [FormTitle, setFormTitle] = useState();
   const [FormCatogory, setCatogory] = useState();
   const [FormPrice, setPrice] = useState();
-  console.log(FormImage)
+  console.log(FormImage);
   const [data, setData] = useState({});
   const { title, price, category, image } = data;
   const DescriptionData = () => {
@@ -60,7 +60,7 @@ const Description = () => {
                 </button>
               </Link>
               <button className="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-transform duration-300">
-                Add to Cart
+                <Link to={`/AddCard/${id}`}>Add to Cart</Link>
               </button>
             </div>
           </div>

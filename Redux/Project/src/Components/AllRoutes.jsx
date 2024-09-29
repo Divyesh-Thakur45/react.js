@@ -6,6 +6,7 @@ import Login from "./Login";
 import Privatepage from "./Privatepage";
 import Description from "./Description";
 import EditPage from "./EditPage";
+import AddCard from "./AddCard";
 
 const AllRoutes = () => {
   return (
@@ -14,7 +15,7 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Privatepage" element={<Privatepage />} />
+        <Route path="/AddCard/:id" element={<AddCard />} />
         <Route path="/EditPage/:id" element={<EditPage />} />
         <Route path="/Description/:id" element={<Description />} />
       </Routes>
