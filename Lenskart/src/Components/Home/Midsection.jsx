@@ -15,7 +15,7 @@ const Midsection = () => {
 
   const bigSliderFun = () => {
     axios
-      .get("http://localhost:8080/firstbigslider")
+      .get("https://all-json-server-osax.onrender.com/firstbigslider")
       .then((res) => setbigsliderdata(res.data))
       .catch((err) => alert(err));
   };

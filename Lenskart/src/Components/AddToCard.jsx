@@ -9,7 +9,7 @@ const AddToCard = () => {
   const [card, setcard] = useState([]);
   // console.log(id);
   const deleteData = (id) =>{
-    axios.delete(`http://localhost:8080/AddToCard/${id}`)
+    axios.delete(`https://all-json-server-osax.onrender.com/AddToCard/${id}`)
     .then((res)=>(
       alert("Delete Data Success"),
       addTOCard()
@@ -20,7 +20,7 @@ const AddToCard = () => {
 
   const addTOCard = () =>{
     axios
-      .get(`http://localhost:8080/AddToCard`)
+      .get(`https://all-json-server-osax.onrender.com/AddToCard`)
       .then((res) => setcard(res.data))
       .catch((err) => console.log(err));
 

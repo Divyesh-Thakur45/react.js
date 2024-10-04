@@ -10,14 +10,14 @@ const Description = () => {
   // console.log(id);
   const AddCard = (id) => {
     axios
-      .post(`http://localhost:8080/AddToCard`, product)
+      .post(`https://all-json-server-osax.onrender.com/AddToCard`, product)
       .then((response) => console.log(response.data))
       .catch((err) => console.log(err));
   };
   useEffect(() => {
     // AddCard(id)
     axios
-      .get(`http://localhost:8080/products/${id}`)
+      .get(`https://all-json-server-osax.onrender.com/products/${id}`)
       .then((res) => setProduct(res.data))
       .catch((err) => console.log(err));
   }, []);

@@ -1778,16 +1778,15 @@
   ],
   "AddToCard": [
     {
-      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/purple-full-rim-oval-kids-2-5-yrs-flexi-hooper-hp-e15972s-c2-eyeglasses_g_9077_17_08_2023.jpg",
-      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/purple-full-rim-oval-kids-2-5-yrs-flexi-hooper-hp-e15972s-c2-eyeglasses_g_9077_17_08_2023.jpg",
-      "rating": 2,
-      "reviews": 25,
-      "brand": "Hooper",
-      "sizeCollection": "Size: 2-5 yrs • Mini me",
-      "price": 1000,
-      "frame": "Oval",
-      "gender": "Kids",
-      "id": "m5"
+      "imageUrl": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13346-c2-eyeglasses_g_5794.jpg",
+      "imageUrl2": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13346-c2-eyeglasses_g_5793.jpg",
+      "rating": 4.7,
+      "reviews": 64,
+      "brand": "John Jacobs",
+      "sizeCollection": "Size: Wide • John Jacobs",
+      "price": 3500,
+      "frame": "Rectangle",
+      "id": "1f0"
     }
   ]
 }

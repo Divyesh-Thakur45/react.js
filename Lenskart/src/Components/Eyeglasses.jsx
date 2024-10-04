@@ -24,7 +24,7 @@ const Eyeglasses = () => {
   const [GogglesData, setGogglesData] = useState([]);
   const fetchGogglesData = () => {
     axios
-      .get("http://localhost:8080/products", {
+      .get("https://all-json-server-osax.onrender.com/products", {
         params: {
           _page: page,
           _limit: 6,

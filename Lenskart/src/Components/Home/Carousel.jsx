@@ -8,7 +8,7 @@ const Carousel = () => {
   const [Secondsliderdata, setSecondsliderdata] = useState([]);
   const SecondsliderdataFun = () => {
     axios
-      .get("http://localhost:8080/secondSlider")
+      .get("https://all-json-server-osax.onrender.com/secondSlider")
       .then((res) => setSecondsliderdata(res.data))
       .catch((err) => console.log(err));
   };

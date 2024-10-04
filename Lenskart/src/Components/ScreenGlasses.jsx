@@ -11,7 +11,7 @@ const ScreenGlasses = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/ScreenGlasses`)
+      .get(`https://all-json-server-osax.onrender.com/ScreenGlasses`)
       .then((res) => setScreenGlassesData(res.data))
       .catch((err) => console.log(err));
   }, []);
