@@ -1,6 +1,3 @@
-.ShowBtn{
-    display: none;
-}
 .EyeGlassesSection {
     /* background-color: black; */
     width: 100%;
@@ -94,6 +91,9 @@
 
 /* For screen sizes between 300px and 576px */
 @media (max-width: 576px) {
+    .ShowBtn{
+        display: block;
+    }
     .EyeGlassesSection{
         position: relative;
     }

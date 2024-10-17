@@ -55,19 +55,16 @@ const Eyeglasses = () => {
         alt=""
       />
       <div className="ShowBtn">
-        <AiOutlineAlignLeft
-          style={{ display: open ? "block" : "none" }}
-          onClick={() => setopen(false)}
-        />
-        <AiOutlineCloseCircle
-          style={{ display: open ? "none" : "block" }}
-          onClick={() => setopen(true)}
-        />
+        {open ? (
+          <AiOutlineAlignLeft onClick={() => setopen(false)} />
+        ) : (
+          <AiOutlineCloseCircle onClick={() => setopen(true)} />
+        )}
       </div>
       <div className="EyeGlassesSection">
         <div
           className="EyeGlassesSection-Left"
-          // style={{ display: open ? "none" : "block" }}
+          style={{ display: open ? "none" : "block" }}
         >
           <div className="filter-section">
             <div className="filter-group">
