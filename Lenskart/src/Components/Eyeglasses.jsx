@@ -54,7 +54,7 @@ const Eyeglasses = () => {
         src="https://static5.lenskart.com/media/uploads/plp-free-lenses-desk.png"
         alt=""
       />
-      <div className="ShowBtn">
+      <div className="ShowBtn sm:hidden block">
         {open ? (
           <AiOutlineAlignLeft onClick={() => setopen(false)} />
         ) : (
@@ -63,8 +63,7 @@ const Eyeglasses = () => {
       </div>
       <div className="EyeGlassesSection">
         <div
-          className="EyeGlassesSection-Left"
-          style={{ display: open ? "none" : "block" }}
+          className={`EyeGlassesSection-Left transform duration-500 ${open ? "sm:-translate-x-0 -translate-x-[400px]" : "sm:-translate-x-[400px] -translate-x-0"}`}
         >
           <div className="filter-section">
             <div className="filter-group">
