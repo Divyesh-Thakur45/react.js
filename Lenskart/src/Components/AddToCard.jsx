@@ -8,17 +8,17 @@ const AddToCard = () => {
   // console.log(id);
   const [card, setcard] = useState([]);
   // console.log(id);
-  const deleteData = (id) =>{
+  const deleteData = (id) => {
     axios.delete(`https://all-json-server-osax.onrender.com/AddToCard/${id}`)
-    .then((res)=>(
-      alert("Delete Data Success"),
-      addTOCard()
-    )
-    )
-    .catch((errr)=>console.error(errr));
+      .then((res) => (
+        alert("Delete Data Success"),
+        addTOCard()
+      )
+      )
+      .catch((errr) => console.error(errr));
   }
 
-  const addTOCard = () =>{
+  const addTOCard = () => {
     axios
       .get(`https://all-json-server-osax.onrender.com/AddToCard`)
       .then((res) => setcard(res.data))
@@ -27,7 +27,7 @@ const AddToCard = () => {
   }
   useEffect(() => {
     addTOCard();
-      deleteData();
+    deleteData();
   }, []);
   return (
     <div>
@@ -69,7 +69,7 @@ const AddToCard = () => {
                             Final Price ₹{obj.price}
                           </span>
                           <div className="item-actions">
-                            <a href="#" onClick={()=>deleteData(obj.id)}>Remove |</a>
+                            <a href="#" onClick={() => deleteData(obj.id)}>Remove |</a>
                             <a href="#">Repeat</a>
                           </div>
                         </div>

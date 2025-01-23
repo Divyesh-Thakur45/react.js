@@ -18,7 +18,6 @@ const Eyeglasses = () => {
 
   const { GetDataOfSearch, SetDataOfSearch, searchData, setsearchData } =
     useContext(search);
-  // console.log(productFilter);
   console.log(gender);
   // console.log(productFilter)
   const [GogglesData, setGogglesData] = useState([]);

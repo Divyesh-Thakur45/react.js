@@ -31,9 +31,8 @@ const SignIn = () => {
         style={{ display: close ? "none" : "block" }}
       >
         <div
-          className={`sign-in-card bg-white shadow-lg p-6 rounded-lg mx-auto ${
-            close ? "hidden" : "block"
-          } max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl`}
+          className={`sign-in-card bg-white shadow-lg p-6 rounded-lg mx-auto ${close ? "hidden" : "block"
+            } max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl`}
         >
           <button
             className="close-btn text-gray-500 text-2xl font-bold float-right"

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { auth } from "./Service/firebase";
 
 const Privacy = ({ children }) => {
-   const [user] = useAuthState(auth) // const isAuth = true;
-   console.log(user)
+  const [user] = useAuthState(auth) // const isAuth = true;
+  console.log(user)
   if (!user) {
-    alert("Please Login First );");
+    alert("Please Login First");
     return <SignIn />;
   } else {
     return children;
