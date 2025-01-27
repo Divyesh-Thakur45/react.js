@@ -1,0 +1,224 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.main-technology {
+    background-color: #00223F;
+}
+
+.left {
+    width: 70%;
+}
+
+.left-main {
+    background-image: url("../../assets/SVGS/svgexport-4.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 850px;
+    width: 100%;
+    top: -20%;
+    left: 0%;
+    z-index: 999;
+    /* background-blend-mode: overlay; */
+}
+
+.landingPage {
+    position: relative;
+    /* height: 950px; */
+}
+
+.light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 650px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #435E76;
+}
+
+.circle {
+    position: absolute;
+    border: 1px solid #4a7497;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 999;
+}
+
+.small-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #435E76;
+}
+
+.sub-small-circel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #00223F;
+}
+
+.sub-small-circel h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.sub-small-circel p {
+    font-size: 12px;
+    text-align: center;
+    color: #00223F;
+    font-weight: 600;
+}
+
+.available {
+    font-weight: 400;
+}
+
+.right {
+
+    /* background-color: red; */
+    height: 50%;
+    z-index: 999;
+}
+
+.right-side-content {
+    margin: 60px 0px 0px 0px;
+}
+
+.right h3 {
+    font-family: 'Ubuntu';
+    font-weight: 200;
+    font-size: 47px;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
+    color: #fff;
+}
+
+.right h1 {
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
+    color: #fff;
+}
+
+.right h2 {
+    /* font-family: 'Ubuntu'; */
+    font-weight: 300;
+    color: #fff;
+    font-size: 34px;
+}
+
+.right h4 {
+    color: #80acd3;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 50%;
+    transform: translateX(-125%);
+    background-color: #4a7497;
+}
+
+.sub-circle {
+    display: flex;
+    /* position: relative; */
+    /* right: 20%; */
+    /* margin: 15% 0px 0px 0px; */
+}
+
+.outer {
+    height: 167px;
+    width: 167px;
+    /* border: 1px solid #fff; */
+    border: 1px solid #4a7497;
+    border-radius: 50%;
+    margin: 0px 25px 0px 15px;
+    position: relative;
+    top: 70%;
+    right: 60%;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+    margin: auto;
+    background: transparent;
+    transition: all 0.8;
+}
+
+.inner:hover {
+    background-color: #435E76;
+    cursor: pointer;
+}
+
+.innerContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 22px auto;
+    /* background-color: red; */
+}
+
+.clockimag {
+    width: 50px;
+    margin: auto;
+    /* background-color: #fff; */
+    /* display: block; */
+}
+
+.innerContent p {
+    /* font-size: 20px; */
+    color: #fff;
+    /* font-weight: 600; */
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 12px 0px 0px 0px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
