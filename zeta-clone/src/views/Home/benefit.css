@@ -18,17 +18,20 @@
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
     color: #fff;
 }
-.main-box{
+
+.main-box {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 95%;
     margin: auto;
 }
-.box{
+
+.box {
     text-align: center;
     /* background-color: #fff; */
     margin: 10px;
 }
+
 .box-round-main {
     height: 150px;
     width: 150px;
@@ -49,9 +52,15 @@
     transform: translate(-50%, -50%);
 }
 
+.box-img {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
 .box h4 {
     font-family: 'Ubuntu';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 25px;
     line-height: 1.16;
     margin: 33px 0 30px 0;
@@ -82,4 +91,35 @@
     color: #80acd3;
     /* opacity: 0; */
     transition: all .3s ease-in-out;
+}
+
+.learn-btn img {
+    margin: 0 10px 0 0;
+}
+.buttom-btn{
+    /* background-color: #fff; */
+    text-align: center;
+    margin: auto;
+    width: 270px;
+    padding: 5% 0%;
+}
+.blueArrow {
+    display: none;
+}
+.WhiteArrow{
+    margin: 0px 10px 0px 0px;
+}
+.btm-btn{
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px 45px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #80acd3;
+    background-color: #80acd3;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
 }

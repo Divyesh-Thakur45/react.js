@@ -4,7 +4,8 @@ import "./technology.css";
 import clock from "../../assets/SVGS/clock.svg"
 import costumize from "../../assets/SVGS/customize.svg"
 import innovation from "../../assets/SVGS/innovation.svg"
-// import landingPage from "../../assets/SVGS/svgexport-4.svg"
+import landingPage from "../../assets/SVGS/svgexport-4.svg"
+import line from "../../assets/images/mainline.png";
 
 const Technology = () => {
     return (
@@ -12,7 +13,8 @@ const Technology = () => {
             <div className='main'>
                 <div className="left">
                     <div className='left-main'>
-                        {/* <img src={light} alt="" className='light' /> */}
+                        <img src={landingPage} className='landingPage' alt="" />
+                        <img src={light} alt="" className='light' />
                     </div>
                     <div>
                         <div className="circle">
@@ -33,6 +35,7 @@ const Technology = () => {
                         <h4>ZETA – Your Partner for the Pharmaceutical and Biotech Industry!</h4>
                     </div>
                     <div className='main-circle'>
+                        <img src={line} alt="" className='mainLine' />
                         <ul className='sub-circle'>
                             <li>
                                 <div className="outer">

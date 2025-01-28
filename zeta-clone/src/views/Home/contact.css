@@ -1,0 +1,121 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.contact-page {
+    background-color: #022E55;
+}
+
+.sub-contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* background-color: red; */
+    width: 60%;
+    padding: 100px 0;
+}
+
+.contact-dp-border {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.dp {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dp-img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.detail {
+    text-align: center;
+}
+
+.name {
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.name span {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #80acd3;
+}
+
+.sales {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.53846154;
+    color: #80acd3;
+}
+
+.right-side {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.title span {
+    font-weight: bold;
+}
+
+.title-btn button {
+    background-color: #80acd3;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.arrow {
+    display: none;
+}
+
+.title-btn button:hover {
+    background-color: #fff;
+    color: #80acd3;
+}
+
+.title-btn button:hover .arrow {
+    display: block;
+}
+
+.title-btn button:hover .WhiteArrow {
+    display: none;
+}

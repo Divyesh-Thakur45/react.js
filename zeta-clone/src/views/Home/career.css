@@ -1,0 +1,131 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.career-page {
+    /* position: relative; */
+    /* width: 100%; */
+    /* object-fit: cover; */
+    overflow: hidden;
+}
+
+.bg-img {
+    width: 100%;
+    height: 854px;
+    object-fit: cover;
+}
+
+.gradiant-blue {
+    position: absolute;
+    width: 100%;
+    top: -12%;
+    right: 0%;
+    /* top: 550%; */
+}
+
+.contant {
+    /* background-color: red; */
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.contant h3 {
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.33333333;
+    color: #80acd3;
+    margin: 0 0 40px 0;
+}
+
+.contant h1 {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 1.15789474;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #00223e;
+    max-width: 662px;
+    width: 100%;
+    margin: 0;
+}
+
+.contant strong {
+    font-weight: 800;
+}
+
+.btn {
+    font-family: 'Ubuntu';
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #96e8ca;
+    border: 1px solid #96e8ca;
+    color: #00223e;
+    box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
+    padding: 8px 30px;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.btn img {
+    margin: 0 20px 0 0;
+}
+
+.bottom-circle {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    top: 50%;
+    right: 5%;
+    z-index: 999;
+    background-color: rgba(128, 172, 211, 0.5);
+}
+
+.bottom-small-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+.bottom-sub-small-circel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #00223F;
+}
+
+.bottom-sub-small-circel h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.bottom-sub-small-circel p {
+    font-size: 12px;
+    text-align: center;
+    color: #00223F;
+    font-weight: 600;
+}
+
+.bottom-available {
+    font-weight: 400;
+}

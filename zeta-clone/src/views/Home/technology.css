@@ -20,22 +20,22 @@
 }
 
 .left-main {
-    background-image: url("../../assets/SVGS/svgexport-4.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     position: relative;
-    height: 850px;
-    width: 100%;
-    top: -20%;
+    /* height: 850px    ; */
+    /* width: 100%; */
+    top: -10%;
     left: 0%;
     z-index: 999;
     /* background-blend-mode: overlay; */
 }
 
 .landingPage {
+    height: 100%;
+    width: 100%;
+    z-index: 99;
     position: relative;
-    /* height: 950px; */
+    /* position: relative; */
+    /* height: 1050px; */
 }
 
 .light {
@@ -44,7 +44,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 650px;
-    z-index: -1;
+    z-index: 1;
     border-radius: 50%;
     background-color: #435E76;
 }
@@ -155,12 +155,23 @@
     transform: translateX(-125%);
     background-color: #4a7497;
 }
-
+.main-circle{
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    height: 167px;
+    width: 167px;
+    border-radius: 50%;
+    transition: all 0.8;
+}
+.mainLine{
+    position: relative;
+    top: 121%;
+    right: 165%;
+}
 .sub-circle {
     display: flex;
-    /* position: relative; */
-    /* right: 20%; */
-    /* margin: 15% 0px 0px 0px; */
+    margin: 0% 0px 0px 0px;
 }
 
 .outer {

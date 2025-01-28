@@ -410,6 +410,7 @@
     margin-top: 16px;
     color: #fff;
 }
+
 /* round-6 */
 .round_6 {
     /* background-color: red; */
@@ -557,6 +558,7 @@
     margin-top: 16px;
     color: #fff;
 }
+
 /* round-8 */
 .round_8 {
     /* background-color: red; */
@@ -629,6 +631,7 @@
     margin-top: 16px;
     color: #fff;
 }
+
 /* round-9 */
 .round_9 {
     /* background-color: red; */
@@ -702,11 +705,17 @@
     margin-top: 16px;
     color: #fff;
 }
+
 /* Line */
 .animation {
     margin: auto;
     width: 33%;
     /* background-color: #fff; */
+    
+}
+
+.animation-drop {
+    position: absolute;
 }
 
 .LineEnd {
