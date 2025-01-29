@@ -6,7 +6,7 @@ import Benefits from '../Home/Benefits';
 import Contact from '../Home/Contact';
 import Career from '../Home/Career';
 
-const Home = () => {
+const Hero = () => {
   return (
     <div >
       <Technology />
@@ -19,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero
