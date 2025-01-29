@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0%;
     padding: 0%;
@@ -30,9 +31,6 @@
 
 .two-button {
     display: flex;
-    /* background-color: #fff; */
-    /* width: 40%; */
-    /* justify-content: space-between; */
 }
 
 .webnar-btn img {
@@ -73,7 +71,6 @@
 
 .footer-bottom {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     width: 90%;
     margin: 2% auto;
@@ -113,7 +110,6 @@
 .text ul li {
     margin: 20px 0 0 0;
     position: relative;
-    /* background-color: red; */
 }
 
 .text {
@@ -126,7 +122,6 @@
 
 .text ul li a {
     position: relative;
-    /* background-color: yellow; */
     color: #fff;
     text-decoration: none;
     line-height: normal;
@@ -153,15 +148,18 @@
     left: 0;
     background-color: #80acd3;
 }
-.di{
+
+.di {
     position: relative;
 }
+
 .di:hover {
     color: #80acd3;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-.line-2{
+
+.line-2 {
     position: absolute;
     bottom: -20%;
     left: 50%;
@@ -170,8 +168,91 @@
     margin: auto;
     transition: all 0.5s ease-in-out;
 }
+
 .di:hover .line-2 {
     width: 100%;
     left: -10%;
     background-color: #80acd3;
+}
+
+/* Media Queries */
+
+/* 300px to <576px */
+@media screen and (max-width: 575px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .two-button {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom>div {
+        margin-bottom: 20px;
+    }
+}
+
+/* 576px to 768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .footer-top {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom>div {
+        margin-bottom: 15px;
+    }
+
+    .two-button {
+        justify-content: space-between;
+    }
+}
+
+/* 768px to 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer-top {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .webnar-btn,
+    .subscribe-btn {
+        padding: 8px 25px;
+    }
+}
+
+/* 992px to 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .footer-bottom {
+        justify-content: space-between;
+    }
+
+    .webnar-btn,
+    .subscribe-btn {
+        padding: 10px 30px;
+    }
 }

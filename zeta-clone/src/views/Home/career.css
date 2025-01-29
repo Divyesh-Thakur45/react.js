@@ -1,13 +1,10 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .career-page {
-    /* position: relative; */
-    /* width: 100%; */
-    /* object-fit: cover; */
     overflow: hidden;
 }
 
@@ -22,16 +19,15 @@
     width: 100%;
     top: -12%;
     right: 0%;
-    /* top: 550%; */
 }
 
 .contant {
-    /* background-color: red; */
     display: inline-block;
     position: absolute;
     top: 56%;
     left: 20%;
     transform: translate(-50%, -50%);
+    text-align: center; /* Center-align for smaller screens */
 }
 
 .contant h3 {
@@ -64,6 +60,7 @@
     font-family: 'Ubuntu';
     display: flex;
     align-items: center;
+    justify-content: center; /* Center-align button contents */
     border-radius: 5px;
     background-color: #96e8ca;
     border: 1px solid #96e8ca;
@@ -76,7 +73,7 @@
 }
 
 .btn img {
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .bottom-circle {
@@ -128,4 +125,200 @@
 
 .bottom-available {
     font-weight: 400;
+}
+
+/* Media Queries */
+
+/* 300px to 576px */
+@media (max-width: 576px) {
+    .bg-img {
+        height: 500px;
+    }
+
+    .gradiant-blue {
+        top: -10%;
+    }
+
+    .contant {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .contant h3 {
+        font-size: 20px;
+    }
+
+    .contant h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    .btn img {
+        margin: 0 8px 0 0;
+    }
+
+    .bottom-circle {
+        height: 120px;
+        width: 120px;
+    }
+
+    .bottom-small-circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .bottom-sub-small-circel {
+        height: 90px;
+        width: 90px;
+    }
+
+    .bottom-sub-small-circel h1 {
+        font-size: 20px;
+    }
+
+    .bottom-sub-small-circel p {
+        font-size: 10px;
+    }
+}
+
+/* 576px to 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+    .bg-img {
+        height: 600px;
+    }
+
+    .contant {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .contant h3 {
+        font-size: 24px;
+    }
+
+    .contant h1 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .btn {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+
+    .bottom-circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .bottom-small-circle {
+        height: 130px;
+        width: 130px;
+    }
+
+    .bottom-sub-small-circel {
+        height: 120px;
+        width: 120px;
+    }
+
+    .bottom-sub-small-circel h1 {
+        font-size: 28px;
+    }
+
+    .bottom-sub-small-circel p {
+        font-size: 11px;
+    }
+}
+
+/* 768px to 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .bg-img {
+        height: 700px;
+    }
+
+    .contant h3 {
+        font-size: 28px;
+    }
+
+    .contant h1 {
+        font-size: 48px;
+    }
+
+    .btn {
+        padding: 10px 28px;
+        font-size: 18px;
+    }
+
+    .bottom-circle {
+        height: 170px;
+        width: 170px;
+    }
+
+    .bottom-small-circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .bottom-sub-small-circel {
+        height: 140px;
+        width: 140px;
+    }
+
+    .bottom-sub-small-circel h1 {
+        font-size: 32px;
+    }
+
+    .bottom-sub-small-circel p {
+        font-size: 12px;
+    }
+}
+
+/* 992px to 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .bg-img {
+        height: 800px;
+    }
+
+    .contant h3 {
+        font-size: 28px;
+    }
+
+    .contant h1 {
+        font-size: 52px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .bottom-circle {
+        height: 180px;
+        width: 180px;
+    }
+
+    .bottom-small-circle {
+        height: 160px;
+        width: 160px;
+    }
+
+    .bottom-sub-small-circel {
+        height: 150px;
+        width: 150px;
+    }
+
+    .bottom-sub-small-circel h1 {
+        font-size: 36px;
+    }
+
+    .bottom-sub-small-circel p {
+        font-size: 12px;
+    }
 }

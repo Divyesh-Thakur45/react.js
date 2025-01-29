@@ -14,7 +14,6 @@
 .inside-img {
     width: 100%;
     height: 700px;
-    /* background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0)); */
     object-fit: cover;
 }
 
@@ -23,10 +22,6 @@
     top: 40%;
     margin: 0px 0px 0px 900px;
     z-index: 999;
-    /* background-color: red; */
-    /* right: 0%; */
-    /* top: 0%; */
-    /* width: 5%; */
 }
 
 .headline {
@@ -70,20 +65,6 @@
     margin: 0px 10px 0px 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .left-arrow {
     position: absolute;
     top: 50%;
@@ -102,13 +83,11 @@
     cursor: pointer;
 }
 
-/* Custom dots wrapper */
 .custom-dots-wrapper {
     display: flex;
     justify-content: center;
 }
 
-/* Custom dots list */
 .custom-dots-wrapper ul {
     list-style: none;
     padding: 0;
@@ -117,7 +96,6 @@
     gap: 10px;
 }
 
-/* Individual dot */
 .custom-dot {
     background-color: #00223e;
     width: 3px;
@@ -127,8 +105,125 @@
     transition: all 0.3s ease;
 }
 
-/* Active dot */
 .custom-dot:hover {
     background-color: #435e76;
     scale: 4;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .inside-img {
+        height: 600px;
+    }
+
+    .text-container-inside {
+        margin: 0px 0px 0px 700px;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .subline {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .inside-img {
+        height: 500px;
+    }
+
+    .text-container-inside {
+        margin: 0px 0px 0px 500px;
+    }
+
+    .headline {
+        font-size: 35px;
+    }
+
+    .subline {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 5px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inside-img {
+        height: 400px;
+    }
+
+    .text-container-inside {
+        margin: 0px auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .headline {
+        font-size: 30px;
+    }
+
+    .subline {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .inside-img {
+        height: 300px;
+    }
+
+    .text-container-inside {
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .headline {
+        font-size: 25px;
+    }
+
+    .subline {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        width: 50px;
+        height: 50px;
+    }
+    .custom-dot{
+        display: none;
+    }
+    .left-arrow {
+        top: 95%;
+        left: 30%;
+    }
+    
+    .right-arrow {
+        top: 95%;
+        right: 30%;
+    }
 }

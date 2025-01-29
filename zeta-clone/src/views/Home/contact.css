@@ -1,6 +1,6 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,9 +13,9 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    /* background-color: red; */
     width: 60%;
     padding: 100px 0;
+    flex-wrap: wrap;
 }
 
 .contact-dp-border {
@@ -45,6 +45,7 @@
 
 .detail {
     text-align: center;
+    margin-top: 10px;
 }
 
 .name {
@@ -73,6 +74,7 @@
 
 .right-side {
     text-align: center;
+    margin-top: 20px;
 }
 
 .title {
@@ -100,6 +102,7 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
 }
 
@@ -118,4 +121,109 @@
 
 .title-btn button:hover .WhiteArrow {
     display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .sub-contact-page {
+        width: 70%;
+        padding: 80px 0;
+    }
+
+    .contact-dp-border {
+        height: 220px;
+        width: 220px;
+    }
+
+    .dp {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .sub-contact-page {
+        width: 80%;
+        padding: 60px 0;
+    }
+
+    .contact-dp-border {
+        height: 200px;
+        width: 200px;
+    }
+
+    .dp {
+        width: 180px;
+        height: 180px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .title-btn button {
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .sub-contact-page {
+        width: 90%;
+        padding: 50px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-dp-border {
+        height: 180px;
+        width: 180px;
+    }
+
+    .dp {
+        width: 160px;
+        height: 160px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .title-btn button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sub-contact-page {
+        width: 95%;
+        padding: 40px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+.contact-dp-border{
+    margin: auto;
+}
+    .contact-dp-border {
+        height: 150px;
+        width: 150px;
+    }
+
+    .dp {
+        width: 130px;
+        height: 130px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .title-btn button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
 }

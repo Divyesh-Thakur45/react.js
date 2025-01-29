@@ -17,6 +17,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
     color: #fff;
+    text-align: center;
 }
 
 .main-box {
@@ -24,11 +25,11 @@
     grid-template-columns: repeat(4, 1fr);
     width: 95%;
     margin: auto;
+    gap: 20px;
 }
 
 .box {
     text-align: center;
-    /* background-color: #fff; */
     margin: 10px;
 }
 
@@ -74,7 +75,6 @@
     font-size: 13px;
     line-height: 1.53846154;
     text-shadow: 0 3px 15px rgba(0, 0, 0, 0.16);
-    /* opacity: 0; */
     color: #fff;
     transition: all .3s ease-in-out;
 }
@@ -87,29 +87,30 @@
     font-family: 'Ubuntu';
     font-weight: bold;
     font-size: 17px;
-    line-height: .94117647;
     color: #80acd3;
-    /* opacity: 0; */
     transition: all .3s ease-in-out;
 }
 
 .learn-btn img {
     margin: 0 10px 0 0;
 }
-.buttom-btn{
-    /* background-color: #fff; */
+
+.buttom-btn {
     text-align: center;
     margin: auto;
     width: 270px;
     padding: 5% 0%;
 }
+
 .blueArrow {
     display: none;
 }
-.WhiteArrow{
+
+.WhiteArrow {
     margin: 0px 10px 0px 0px;
 }
-.btm-btn{
+
+.btm-btn {
     margin: auto;
     border-radius: 5px;
     padding: 10px 45px;
@@ -122,4 +123,97 @@
     background-color: #80acd3;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .main-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box-round-main {
+        height: 140px;
+        width: 140px;
+    }
+
+    .box-sub-round {
+        height: 120px;
+        width: 120px;
+    }
+
+    .box h4 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .main-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-round-main {
+        height: 130px;
+        width: 130px;
+    }
+
+    .box-sub-round {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+    .main-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .box-round-main {
+        height: 120px;
+        width: 120px;
+    }
+
+    .box-sub-round {
+        height: 100px;
+        width: 100px;
+    }
+
+    .box h4 {
+        font-size: 18px;
+    }
+
+    .box span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-box {
+        grid-template-columns: 1fr;
+    }
+    .box-round-main {
+        height: 100px;
+        width: 100px;
+    }
+
+    .box-sub-round {
+        height: 80px;
+        width: 80px;
+    }
+
+    .box h4 {
+        font-size: 16px;
+    }
+
+    .box span {
+        font-size: 11px;
+    }
+
+    .learn-btn {
+        font-size: 14px;
+    }
 }

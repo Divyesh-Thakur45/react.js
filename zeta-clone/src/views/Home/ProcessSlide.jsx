@@ -12,7 +12,7 @@ import RightArrow from "../../assets/SVGS/svgexport-12.svg";
 import Arrow from "../../assets/SVGS/svgexport-10.svg";
 
 const ProcessSlide = () => {
-    const sliderRef = useRef(null); // Reference for the Slider instance
+    const sliderRef = useRef(null); 
     var settings = {
         dots: true,
         infinite: true,

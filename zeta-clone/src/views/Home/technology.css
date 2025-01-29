@@ -1,6 +1,6 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,12 +21,9 @@
 
 .left-main {
     position: relative;
-    /* height: 850px    ; */
-    /* width: 100%; */
     top: -10%;
     left: 0%;
-    z-index: 999;
-    /* background-blend-mode: overlay; */
+    z-index: 99;
 }
 
 .landingPage {
@@ -34,8 +31,6 @@
     width: 100%;
     z-index: 99;
     position: relative;
-    /* position: relative; */
-    /* height: 1050px; */
 }
 
 .light {
@@ -43,7 +38,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 650px;
+    /* height: 650px; */
     z-index: 1;
     border-radius: 50%;
     background-color: #435E76;
@@ -56,7 +51,7 @@
     width: 200px;
     border-radius: 50%;
     top: 50%;
-    z-index: 999;
+    z-index: 99;
 }
 
 .small-circle {
@@ -86,7 +81,7 @@
     color: #fff;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0;
 }
 
 .sub-small-circel p {
@@ -101,30 +96,17 @@
 }
 
 .right {
-
-    /* background-color: red; */
     height: 50%;
-    z-index: 999;
+    z-index: 99;
 }
 
 .right-side-content {
-    margin: 60px 0px 0px 0px;
+    margin: 60px 0 0 0;
 }
 
-.right h3 {
-    font-family: 'Ubuntu';
-    font-weight: 200;
-    font-size: 47px;
-    line-height: 1;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
-    color: #fff;
-}
-
+.right h3,
 .right h1 {
     font-family: 'Ubuntu';
-    font-weight: 600;
     font-size: 47px;
     line-height: 1;
     letter-spacing: 0.025em;
@@ -134,7 +116,6 @@
 }
 
 .right h2 {
-    /* font-family: 'Ubuntu'; */
     font-weight: 300;
     color: #fff;
     font-size: 34px;
@@ -155,32 +136,34 @@
     transform: translateX(-125%);
     background-color: #4a7497;
 }
-.main-circle{
+
+.main-circle {
     position: absolute;
     top: 57%;
     left: 45%;
     height: 167px;
     width: 167px;
     border-radius: 50%;
-    transition: all 0.8;
+    transition: all 0.8s;
 }
-.mainLine{
+
+.mainLine {
     position: relative;
     top: 121%;
     right: 165%;
 }
+
 .sub-circle {
     display: flex;
-    margin: 0% 0px 0px 0px;
+    margin: 0;
 }
 
 .outer {
     height: 167px;
     width: 167px;
-    /* border: 1px solid #fff; */
     border: 1px solid #4a7497;
     border-radius: 50%;
-    margin: 0px 25px 0px 15px;
+    margin: 0 25px 0 15px;
     position: relative;
     top: 70%;
     right: 60%;
@@ -194,9 +177,8 @@
     height: 145px;
     width: 145px;
     border-radius: 50%;
-    margin: auto;
     background: transparent;
-    transition: all 0.8;
+    transition: all 0.8s;
 }
 
 .inner:hover {
@@ -210,26 +192,217 @@
     text-align: center;
     justify-content: center;
     margin: 22px auto;
-    /* background-color: red; */
 }
 
 .clockimag {
     width: 50px;
     margin: auto;
-    /* background-color: #fff; */
-    /* display: block; */
 }
 
 .innerContent p {
-    /* font-size: 20px; */
     color: #fff;
-    /* font-weight: 600; */
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 20px;
     line-height: 1.1;
-    margin: 12px 0px 0px 0px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    margin: 12px 0 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .main-technology {
+        overflow: hidden;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .circle {
+        height: 120px;
+        width: 120px;
+        top: 30%;
+    }
+
+    .small-circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .sub-small-circel {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        height: 80px;
+        width: 80px;
+        border: none;
+    }
+
+    .sub-small-circel h1 {
+        font-size: 22px;
+        margin: 20px 0 0;
+    }
+
+    .sub-small-circel p {
+        font-size: 12px;
+    }
+
+    .right {
+        padding: 0px 10px 150px 10px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .right h3,
+    .right h1 {
+        font-size: 28px;
+    }
+
+    .right h2 {
+        font-size: 24px;
+    }
+
+    .right h4 {
+        font-size: 20px;
+    }
+
+    .line::before {
+        display: none;
+    }
+
+    .main-circle {
+        top: 200%;
+        left: 0%;
+        right: 0%;
+        height: 80px;
+        width: 80px;
+    }
+    .mainLine {
+        display: none;
+    }
+
+    .sub-circle {
+        display: flex;
+        margin: 0;
+    }
+
+    .outer {
+        height: 80px;
+        width: 80px;
+        margin: 0 0px 0 15px;
+        top: 0%;
+        right: 0%;
+    }
+
+    .inner {
+        height: 100%;
+        width: 100%;
+    }
+
+    .inner img {
+        display: none;
+    }
+
+    .innerContent p {
+        font-size: 14px;
+        margin: 0%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .right h3,
+    .right h1 {
+        font-size: 36px;
+    }
+
+    .right h2 {
+        font-size: 28px;
+    }
+
+    .right h4 {
+        font-size: 24px;
+    }
+
+    .main-circle,
+    .outer {
+        height: 140px;
+        width: 140px;
+    }
+
+    .inner {
+        height: 120px;
+        width: 120px;
+    }
+
+    .clockimag {
+        width: 40px;
+    }
+
+    .innerContent p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .left {
+        width: 60%;
+    }
+
+    .right {
+        width: 35%;
+    }
+
+    .right h3,
+    .right h1 {
+        font-size: 40px;
+    }
+
+    .right h2 {
+        font-size: 30px;
+    }
+
+    .right h4 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .left {
+        width: 65%;
+    }
+
+    .right {
+        width: 30%;
+    }
+
+    .right h3,
+    .right h1 {
+        font-size: 44px;
+    }
+
+    .right h2 {
+        font-size: 32px;
+    }
+
+    .right h4 {
+        font-size: 28px;
+    }
 }

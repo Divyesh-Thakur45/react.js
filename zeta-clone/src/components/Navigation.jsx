@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../assets/images/zeta-logo.svg"
 import { CiSearch } from "react-icons/ci";
 import "./nav.css"
+import Headroom from 'react-headroom';
 
 const Navigation = () => {
     return (
@@ -17,23 +18,28 @@ const Navigation = () => {
                         <span className='EN'>EN</span>
                     </div>
                 </div>
-                <nav className='nav'>
-                    <div>
-                        <img src={logo} width="138" height="122" alt="ZETA" className='logo' />
-
+                <Headroom className='headroom'
+                    downTolerance={5000}
+                >
+                    <div className='main-nav pinned'>
+                        <nav className='nav'>
+                            <div>
+                                <img src={logo} width="138" height="122" alt="ZETA" className='logo' />
+                            </div>
+                            <div className='main-sub-nav'>
+                                <ul className='sub-nav'>
+                                    <li><a href="">SERVICES<span className='anim'></span></a></li>
+                                    <li><a href="">SOLUTIONS<span className='anim'></span></a></li>
+                                    <li><a href="">PRODUCTS<span className='anim'></span></a></li>
+                                    <li><a href="">INNOVATION<span className='anim'></span></a></li>
+                                    <li><a href="">COMPANY<span className='anim'></span></a></li>
+                                    <li><a href="">JOBS<span className='anim'></span></a></li>
+                                    <div className=''><CiSearch className='search-icone' /></div>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
-                    <div className='main-sub-nav'>
-                        <ul className='sub-nav'>
-                            <li><a href="">SERVICES<span className='anim'></span></a></li>
-                            <li><a href="">SOLUTIONS<span className='anim'></span></a></li>
-                            <li><a href="">PRODUCTS<span className='anim'></span></a></li>
-                            <li><a href="">INNOVATION<span className='anim'></span></a></li>
-                            <li><a href="">COMPANY<span className='anim'></span></a></li>
-                            <li><a href="">JOBS<span className='anim'></span></a></li>
-                            <div className=''><CiSearch className='search-icone' /></div>
-                        </ul>
-                    </div>
-                </nav>
+                </Headroom>
             </div>
         </div>
     )
