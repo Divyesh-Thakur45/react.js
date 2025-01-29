@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./footer.css"
 import logo from "../assets/SVGS/Logo.svg"
 import whiteArrow from "../assets/SVGS/svgexport-31.svg";
@@ -6,6 +6,7 @@ import call from "../assets/SVGS/svgexport-33.svg";
 import email from "../assets/SVGS/svgexport-34.svg";
 
 const Footer = () => {
+  const [firstShow, setfirstShow] = useState(false)
   return (
     <div className='footer-page'>
       <div className="footer-top">
@@ -25,17 +26,19 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="first">
-          <h1 className='title-head'>ZETA Holding <br />
+          <h1 className='title-head' onClick={() => setfirstShow(!firstShow)}>ZETA Holding <br />
             Headquarter</h1>
-          <p>Zetaplatz 1, 8501 Lieboch <br />
-            Austria</p>
-          <div className='selft-detail'>
-            <img src={call} alt="" />
-            <span className='di'>+91 8347346187<span className='line-2'></span></span>
-          </div>
-          <div className='selft-detail'>
-            <img src={email} alt="" />
-            <span className='di'>office@zeta.com<span className='line-2'></span></span>
+          <div className='' style={{ display: firstShow ? "none" : "block" }}>
+            <p>Zetaplatz 1, 8501 Lieboch <br />
+              Austria</p>
+            <div className='selft-detail'>
+              <img src={call} alt="" />
+              <span className='di'>+91 8347346187<span className='line-2'></span></span>
+            </div>
+            <div className='selft-detail'>
+              <img src={email} alt="" />
+              <span className='di'>office@zeta.com<span className='line-2'></span></span>
+            </div>
           </div>
         </div>
         <div className="second">

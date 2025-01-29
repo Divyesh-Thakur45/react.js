@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../assets/images/zeta-logo.svg"
 import { CiSearch } from "react-icons/ci";
 import "./nav.css"
 import Headroom from 'react-headroom';
+import { HiOutlineBars3BottomRight } from "react-icons/hi2";
+import { IoClose } from "react-icons/io5";
 
 const Navigation = () => {
+    const [show, setShow] = useState(true)
     return (
         <div className='navigation-main'>
             <div className='navigation'>
@@ -21,13 +24,23 @@ const Navigation = () => {
                 <Headroom className='headroom'
                     downTolerance={5000}
                 >
-                    <div className='main-nav pinned'>
+                    <div className='main-nav'>
                         <nav className='nav'>
-                            <div>
-                                <img src={logo} width="138" height="122" alt="ZETA" className='logo' />
+                            <div className='mini-nav'>
+                                <div>
+                                    <img src={logo} width="138" height="122" alt="ZETA" className='logo' />
+                                </div>
+                                <div>
+                                    {/* Toggle button */}
+                                    {show ? (
+                                        <IoClose className="close" onClick={() => setShow(!show)} />
+                                    ) : (
+                                        <HiOutlineBars3BottomRight className="open" onClick={() => setShow(!show)} />
+                                    )}
+                                </div>
                             </div>
                             <div className='main-sub-nav'>
-                                <ul className='sub-nav'>
+                                <ul className={`sub-nav lg:block`}>
                                     <li><a href="">SERVICES<span className='anim'></span></a></li>
                                     <li><a href="">SOLUTIONS<span className='anim'></span></a></li>
                                     <li><a href="">PRODUCTS<span className='anim'></span></a></li>

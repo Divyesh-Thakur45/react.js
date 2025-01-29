@@ -116,18 +116,11 @@
     font-family: 'Ubuntu';
     font-weight: 300;
     font-size: 16px;
-    line-height: 1.125;
+    line-height: 1.5;
     color: #fff;
 }
 
-.text ul li a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    line-height: normal;
-    font-weight: 100;
-    transition: all 0.5s ease-in-out;
-}
+
 
 .text ul li:hover a {
     color: #80acd3;
@@ -185,6 +178,34 @@
         text-align: center;
     }
 
+    .first,
+    .second,
+    .third,
+    .fourth {
+        width: 90%;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: #002A4D;
+    }
+
+    .text ul li a {
+        font-size: 13px;
+        font-weight: 100;
+        display: flex;
+        align-items: start;
+    }
+
+    .first p,
+    .selft-detail {
+        text-align: start;
+        font-size: 13px;
+    }
+
+    .title-head {
+        font-size: 13px;
+        color: #80acd3;
+    }
+
     .two-button {
         flex-direction: column;
         gap: 10px;
@@ -192,6 +213,7 @@
 
     .webnar-btn {
         width: 100%;
+        margin: 0%;
     }
 
     .subscribe-btn {

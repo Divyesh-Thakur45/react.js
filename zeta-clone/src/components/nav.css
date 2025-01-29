@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.open {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
 .navigation-main {
     background-color: #00223F;
     z-index: 999;
@@ -92,8 +100,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove default padding */
 }
 
 .sub-nav li {
@@ -110,7 +120,8 @@
     font-size: 18px;
     color: #fff;
     position: relative;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
+    /* Remove underline from links */
 }
 
 .anim {
@@ -133,27 +144,85 @@
     font-size: 23px;
     color: #fff;
     font-weight: bold;
-    cursor: pointer; /* Add pointer cursor for better UX */
+    cursor: pointer;
+    /* Add pointer cursor for better UX */
 }
 
 /* Media Queries */
 
 /* 300px to <576px */
 @media screen and (max-width: 575px) {
-    .headroom{
+    .headroom {
+        /* display: none; */
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .sub-nav-child {
         display: none;
     }
+
+    .mini-nav {
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        height: 50px;
+        /* background-color: yellow; */
+        left: 0%;
+        right: 0%;
+        background-color: #00223F;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .open {
+        /* background-color: #fff; */
+        color: #fff;
+        font-size: 38px;
+        display: block;
+    }
+
+    .close {
+        color: #fff;
+        font-size: 38px;
+        display: block;
+    }
+
+    .sub-nav {
+        display: none;
+    }
+
     .sub-nav-child {
         flex-direction: column;
         align-items: flex-end;
     }
-    .nav-child{
+
+    .nav-child {
         margin: 0%;
     }
+
     .nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
+        /* flex-direction: column; */
+        background-color: #00223F;
+        z-index: 999;
+        position: relative;
+        height: 100%;
+        padding: 0px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-icone {
+        display: none;
     }
 
     .main-sub-nav {
