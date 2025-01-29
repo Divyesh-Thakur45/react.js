@@ -6,6 +6,7 @@
 
 .navigation-main {
     background-color: #00223F;
+    z-index: 999;
 }
 
 .navigation {
@@ -16,7 +17,11 @@
 .sub-nav-child {
     display: flex;
     justify-content: flex-end;
-    margin: 0 0 25px 0;
+    padding: 0 0 10px 0;
+    z-index: 999;
+    background-color: #00223F;
+    position: sticky;
+    width: 95%;
 }
 
 .headroom {
@@ -25,16 +30,14 @@
 }
 
 .main-nav {
-    z-index: 9999;
+    position: sticky;
+    top: 0;
+    /* z-index: 9999; */
     width: 100%;
     background-color: rgba(0, 34, 62, 0.8);
 }
 
 .nav {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: sticky;
     display: flex;
     width: 90%;
     height: 70px;
@@ -89,6 +92,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
 }
 
 .sub-nav li {
@@ -105,6 +110,7 @@
     font-size: 18px;
     color: #fff;
     position: relative;
+    text-decoration: none; /* Remove underline from links */
 }
 
 .anim {
@@ -127,6 +133,7 @@
     font-size: 23px;
     color: #fff;
     font-weight: bold;
+    cursor: pointer; /* Add pointer cursor for better UX */
 }
 
 /* Media Queries */
@@ -140,7 +147,9 @@
         flex-direction: column;
         align-items: flex-end;
     }
-
+    .nav-child{
+        margin: 0%;
+    }
     .nav {
         flex-direction: column;
         height: auto;

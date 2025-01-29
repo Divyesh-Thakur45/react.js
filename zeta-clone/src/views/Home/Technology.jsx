@@ -27,6 +27,9 @@ const Technology = () => {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <img src={line} alt="" className='mainLine' />
+                </div>
                 <div className="right">
                     <div className='right-side-content'>
                         <h3>Evolution</h3>
@@ -35,7 +38,6 @@ const Technology = () => {
                         <h4>ZETA – Your Partner for the Pharmaceutical and Biotech Industry!</h4>
                     </div>
                     <div className='main-circle'>
-                        <img src={line} alt="" className='mainLine' />
                         <ul className='sub-circle'>
                             <li>
                                 <div className="outer">
