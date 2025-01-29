@@ -12,15 +12,15 @@ import RightArrow from "../../assets/SVGS/svgexport-12.svg";
 import Arrow from "../../assets/SVGS/svgexport-10.svg";
 
 const ProcessSlide = () => {
-    const sliderRef = useRef(null); 
+    const sliderRef = useRef(null);
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         arrows: false,
         customPaging: (i) => (
             <div className="custom-dot">
@@ -44,7 +44,7 @@ const ProcessSlide = () => {
                 onClick={() => sliderRef.current.slickPrev()} // Go to previous slide
             />
             <Slider ref={sliderRef} {...settings}>
-                <div className="">
+                <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_1} alt="" className="inside-img" />
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
@@ -62,7 +62,7 @@ const ProcessSlide = () => {
                         </button>
                     </div>
                 </div>
-                <div>
+                <div className="slide-screen">
 
                     <div className="relative">
                         <img src={slider_2} alt="" className="inside-img" />
@@ -81,7 +81,7 @@ const ProcessSlide = () => {
                         </button>
                     </div>
                 </div>
-                <div>
+                <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_3} alt="" className="inside-img" />
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
@@ -99,7 +99,7 @@ const ProcessSlide = () => {
                         </button>
                     </div>
                 </div>
-                <div>
+                <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_4} alt="" className="inside-img" />
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>

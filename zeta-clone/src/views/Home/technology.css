@@ -145,6 +145,7 @@
     /* background-color: yellow; */
     position: absolute;
     right: 50%;
+    bottom: 15%;
     /* width: 100%; */
     margin: auto;
     /* margin: 0px 50px 0px 0px; */
@@ -156,8 +157,9 @@
 
 .mainLine {
     position: relative;
-    top: 50%;
-    left: 0%;
+    top: 65%;
+    right: 230%;
+    z-index: 99;
 }
 
 .sub-circle {
@@ -227,13 +229,14 @@
     .left {
         width: 100%;
     }
+
     .right {
         margin: auto;
         width: 90%;
         padding: 10px;
         text-align: center;
     }
-    
+
     .circle {
         height: 120px;
         width: 120px;
@@ -288,10 +291,12 @@
         /* height: 80px;
         width: 80px; */
     }
+
     .mainLine {
         display: none;
     }
-    .main-circle{
+
+    .main-circle {
         position: relative;
         width: 100%;
         top: 50%;
@@ -299,6 +304,7 @@
         margin: auto;
         display: inline-block;
     }
+
     .sub-circle {
         display: flex;
         justify-content: space-evenly;

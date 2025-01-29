@@ -41,6 +41,12 @@
     border: 1px solid #435E76;
     position: relative;
     margin: auto;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.box-round-main:hover .box-sub-round {
+    background-color: #435E76;
 }
 
 .box-sub-round {
@@ -48,7 +54,7 @@
     width: 130px;
     border-radius: 50%;
     position: absolute;
-    background-color: #435E76;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -193,17 +199,22 @@
 }
 
 @media (max-width: 576px) {
+    .heading h1 {
+        font-size: 32px;
+    }
+
     .main-box {
         grid-template-columns: 1fr;
     }
+
     .box-round-main {
-        height: 100px;
-        width: 100px;
+        height: 180px;
+        width: 180px;
     }
 
     .box-sub-round {
-        height: 80px;
-        width: 80px;
+        height: 150px;
+        width: 150px;
     }
 
     .box h4 {
@@ -216,5 +227,10 @@
 
     .learn-btn {
         font-size: 14px;
+    }
+
+    .btm-btn {
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }

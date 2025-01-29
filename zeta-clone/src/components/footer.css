@@ -190,6 +190,20 @@
         gap: 10px;
     }
 
+    .webnar-btn {
+        width: 100%;
+    }
+
+    .subscribe-btn {
+        /* width: 100%; */
+        font-size: 14px;
+        padding: 10px 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* Prevents text wrapping */
+        overflow: hidden;
+    }
+
     .footer-bottom {
         flex-direction: column;
         align-items: center;

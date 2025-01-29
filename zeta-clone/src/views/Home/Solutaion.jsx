@@ -18,140 +18,140 @@ import drop from "../../assets/SVGS/svgexport-14.svg";
 import RightTop from "../../assets/SVGS/rightTop.svg"
 import LeftBottom from "../../assets/SVGS/LeftBottom.svg"
 import RightBottom from "../../assets/SVGS/RightBottom.svg"
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { useEffect } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from 'react';
 
 const Solutaion = () => {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   gsap.from('.round_1', {
-  //     x: 10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".sub_round_1",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_2', {
-  //     x: -10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_2",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_3', {
-  //     x: 10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_3",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_4', {
-  //     x: -10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_4",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_5', {
-  //     x: 10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_5",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_6', {
-  //     x: 10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_6",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_7', {
-  //     x: 10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_7",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_8', {
-  //     x: 10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_8",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  //   gsap.from('.round_9', {
-  //     x: -10,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 1,
-  //     scrollTrigger: {
-  //       trigger: ".round_9",
-  //       start: "top 60%", 
-  //       end: "top 50%",
-  //       scrub: 2,
-  //       toggleActions: "play reverse play reverse",
-  //       // markers: true,
-  //     }
-  //   })
-  // }, [])
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.round_1', {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".sub_round_1",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_2', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_2",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_3', {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_3",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_4', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_4",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_5', {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_5",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_6', {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_6",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_7', {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_7",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_8', {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_8",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+    gsap.from('.round_9', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".round_9",
+        start: "top 60%", 
+        end: "top 50%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+      }
+    })
+  }, [])
   return (
     <div className='solution-page'>
       <div className='center-content'>
