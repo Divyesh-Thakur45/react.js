@@ -152,26 +152,34 @@
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .sub-contact-page {
-        width: 80%;
-        padding: 60px 0;
+        width: 90%;
+        padding: 50px 0;
+        flex-direction: column;
+        text-align: center;
     }
 
+    /* .left-side {
+        margin: auto;
+    } */
+
     .contact-dp-border {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
+        margin: auto;
     }
 
     .dp {
-        width: 180px;
-        height: 180px;
+        width: 220px;
+        height: 220px;
     }
 
     .title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .title-btn button {
         padding: 8px 20px;
+        font-size: 14px;
     }
 }
 
@@ -183,14 +191,19 @@
         text-align: center;
     }
 
+    /* .left-side {
+        margin: auto;
+    } */
+
     .contact-dp-border {
-        height: 180px;
-        width: 180px;
+        height: 250px;
+        width: 250px;
+        margin: auto;
     }
 
     .dp {
-        width: 160px;
-        height: 160px;
+        width: 220px;
+        height: 220px;
     }
 
     .title {
@@ -216,13 +229,13 @@
     }
 
     .contact-dp-border {
-        height: 150px;
-        width: 150px;
+        height: 230px;
+        width: 230px;
     }
 
     .dp {
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
     }
 
     .title {

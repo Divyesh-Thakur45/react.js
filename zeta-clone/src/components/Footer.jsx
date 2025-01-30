@@ -50,11 +50,11 @@ const Footer = () => {
           <h1 className='title-head'>Company</h1>
           <div className="text">
             <ul>
-              <li><a href="">About <span className='underline'></span></a></li>
-              <li><a href="">Locations<span className='underline'></span></a></li>
-              <li><a href="">Contact<span className='underline'></span></a></li>
-              <li><a href="">Career<span className='underline'></span></a></li>
-              <li><a href="">Vacancies<span className='underline'></span></a></li>
+              <li><a href="">About </a></li>
+              <li><a href="">Locations</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Career</a></li>
+              <li><a href="">Vacancies</a></li>
             </ul>
           </div>
         </div>
@@ -62,12 +62,12 @@ const Footer = () => {
           <h1 className='title-head'>INFO & ESSENTIALS</h1>
           <div className="text">
             <ul>
-              <li><a href="">Success Stories<span className='underline'></span></a></li>
-              <li><a href="">ZETA Videos<span className='underline'></span></a></li>
-              <li><a href="">Events<span className='underline'></span></a></li>
-              <li><a href="">Media Relations<span className='underline'></span></a></li>
-              <li><a href="">Downloads<span className='underline'></span></a></li>
-              <li><a href="">FAQs<span className='underline'></span></a></li>
+              <li><a href="">Success Stories</a></li>
+              <li><a href="">ZETA Videos</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Media Relations</a></li>
+              <li><a href="">Downloads</a></li>
+              <li><a href="">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -75,11 +75,11 @@ const Footer = () => {
           <h1 className='title-head'>LEGAL</h1>
           <div className="text">
             <ul>
-              <li><a href="">Data protection<span className='underline'></span></a></li>
-              <li><a href="">Legal notice<span className='underline'></span></a></li>
-              <li><a href="">General terms and conditions<span className='underline'></span></a></li>
-              <li><a href="">Compliance<span className='underline'></span></a></li>
-              <li><a href="">Cookies<span className='underline'></span></a></li>
+              <li><a href="">Data protection</a></li>
+              <li><a href="">Legal notice</a></li>
+              <li><a href="">General terms and conditions</a></li>
+              <li><a href="">Compliance</a></li>
+              <li><a href="">Cookies</a></li>
             </ul>
           </div>
         </div>

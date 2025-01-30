@@ -136,7 +136,7 @@
 /* Media Queries */
 @media (max-width: 1200px) and (min-width: 992px) {
     .main-box {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .box-round-main {
@@ -156,7 +156,7 @@
 
 @media (max-width: 992px) and (min-width: 768px) {
     .main-box {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .box-round-main {

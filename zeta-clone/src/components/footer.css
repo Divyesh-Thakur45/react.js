@@ -300,44 +300,148 @@
 /* 576px to 768px */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .footer-top {
+
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-bottom {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
     }
 
-    .footer-bottom>div {
-        margin-bottom: 15px;
+    .first,
+    .second,
+    .third,
+    .fourth {
+        top: 0%;
+        text-align: start;
+        margin: 20px 0 0 0;
+    }
+
+    .text ul li a {
+        font-size: 13px;
+        font-weight: 100;
+        display: flex;
+        align-items: start;
+    }
+
+    .first p,
+    .selft-detail {
+        font-size: 13px;
+    }
+
+    .title-head {
+        font-size: 13px;
+        color: #fff;
     }
 
     .two-button {
-        justify-content: space-between;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .webnar-btn {
+        /* width: 100%; */
+        margin: 0%;
+    }
+
+    .subscribe-btn {
+        /* width: 100%; */
+        font-size: 14px;
+        padding: 10px 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* Prevents text wrapping */
+        overflow: hidden;
+    }
+
+    .footer-end {
+        flex-direction: column;
+    }
+
+    .start,
+    .middle-icones,
+    .end {
+        margin: 0 0 10px 0;
     }
 }
 
 /* 768px to 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .footer-bottom {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
     .footer-top {
-        justify-content: space-between;
+
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
     }
 
-    .logo {
-        width: 80px;
-        height: 80px;
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
     }
 
-    .webnar-btn,
+    .first,
+    .second,
+    .third,
+    .fourth {
+        top: 0%;
+        text-align: start;
+        margin: 20px 0 0 0;
+    }
+
+    .selft-detail span {
+        font-size: 13px;
+    }
+
+    .text ul li a {
+        font-size: 13px;
+        font-weight: 100;
+        display: flex;
+        align-items: start;
+    }
+
+    .first p,
+    .selft-detail {
+        font-size: 10px;
+    }
+
+    .title-head {
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .two-button {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .webnar-btn {
+        /* width: 100%; */
+        margin: 0%;
+    }
+
     .subscribe-btn {
-        padding: 8px 25px;
+        /* width: 100%; */
+        font-size: 14px;
+        padding: 10px 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* Prevents text wrapping */
+        overflow: hidden;
+    }
+
+    .footer-end {
+        flex-direction: row;
+    }
+
+    .start,
+    .middle-icones,
+    .end {
+        margin: 0 0 10px 0;
     }
 }
 

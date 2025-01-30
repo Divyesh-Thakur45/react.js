@@ -173,9 +173,9 @@
 
     .text-container-inside {
         margin: 0px auto;
-        left: 0;
-        right: 0;
-        text-align: center;
+        left: 100px;
+        top: 100px;
+        text-align: start;
     }
 
     .headline {
