@@ -7,11 +7,13 @@
 }
 
 .footer-page {
+    max-width: 1600px;
+    margin: auto;
     background-color: #00223E;
 }
 
 .footer-top {
-    padding: 15px 0px;
+    padding: 15px 10px;
     width: 90%;
     margin: auto;
     display: flex;
@@ -19,12 +21,12 @@
     align-items: center;
 }
 
-.logo {
+.footer-logo {
     width: 100px;
     height: 100px;
 }
 
-.logo img {
+.footer-logo img {
     width: 100%;
     height: 100%;
 }
@@ -71,9 +73,10 @@
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
-    margin: 2% auto;
+    padding: 0 0 20px 0;
+    /* margin: 2% auto; */
 }
 
 .title-head {
@@ -109,7 +112,8 @@
 
 .text ul li {
     margin: 20px 0 0 0;
-    position: relative;
+    /* position: relative; */
+    /* display: inline; */
 }
 
 .text {
@@ -120,20 +124,22 @@
     color: #fff;
 }
 
-
-
 .text ul li:hover a {
+    position: relative;
     color: #80acd3;
+    /* background-color: #fff; */
 }
 
 .underline {
     position: absolute;
     bottom: -20%;
-    left: 50%;
+    left: 0%;
+    /* display: inline-block; */
     height: 1px;
-    width: 1%;
+    width: 12%;
     margin: auto;
     transition: all 0.5s ease-in-out;
+    background-color: #fff;
 }
 
 .text ul li:hover .underline {
@@ -166,6 +172,49 @@
     width: 100%;
     left: -10%;
     background-color: #80acd3;
+}
+
+.footer-btm-line {
+    border-top: 1px solid #80acd3;
+    margin: 0 0 20px 0;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    padding: 0px 0 10px 0;
+
+}
+
+.middle-icones {
+    display: flex;
+    align-items: center;
+}
+
+.icones {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 10px 0 0;
+    border: 1px solid #80acd3;
+}
+
+.icones img {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start,
+.end p {
+    color: #80acd3;
 }
 
 /* Media Queries */
@@ -227,6 +276,7 @@
     }
 
     .footer-bottom {
+        margin: auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -234,6 +284,16 @@
 
     .footer-bottom>div {
         margin-bottom: 20px;
+    }
+
+    .footer-end {
+        flex-direction: column;
+    }
+
+    .start,
+    .middle-icones,
+    .end {
+        margin: 0 0 10px 0;
     }
 }
 

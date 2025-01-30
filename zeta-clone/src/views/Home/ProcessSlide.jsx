@@ -13,8 +13,9 @@ import Arrow from "../../assets/SVGS/svgexport-10.svg";
 
 const ProcessSlide = () => {
     const sliderRef = useRef(null);
-    var settings = {
-        dots: true,
+
+    const settings = {
+        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -24,7 +25,7 @@ const ProcessSlide = () => {
         arrows: false,
         customPaging: (i) => (
             <div className="custom-dot">
-                <span className={`dot ${i === 0 ? "" : ""}`}></span>
+                <span className={`dot ${i === 0 ? "active" : ""}`}></span>
             </div>
         ),
         appendDots: (dots) => (
@@ -43,17 +44,18 @@ const ProcessSlide = () => {
                 className="left-arrow"
                 onClick={() => sliderRef.current.slickPrev()} // Go to previous slide
             />
+
+            {/* Slider */}
             <Slider ref={sliderRef} {...settings}>
                 <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_1} alt="" className="inside-img" />
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
                     </div>
-
                     <div className="text-container-inside">
                         <div className="headline">Digitalization</div>
                         <h3 className="subline">
-                            Get to know the digital twin   <br />
+                            Get to know the digital twin <br />
                             of your production plant!
                         </h3>
                         <button className="btn">
@@ -63,7 +65,6 @@ const ProcessSlide = () => {
                     </div>
                 </div>
                 <div className="slide-screen">
-
                     <div className="relative">
                         <img src={slider_2} alt="" className="inside-img" />
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
@@ -107,7 +108,7 @@ const ProcessSlide = () => {
                     <div className="text-container-inside">
                         <div className="headline">Digitalization</div>
                         <h3 className="subline">
-                            Get to know the digital twin   <br />
+                            Get to know the digital twin <br />
                             of your production plant!
                         </h3>
                         <button className="btn">
@@ -117,6 +118,7 @@ const ProcessSlide = () => {
                     </div>
                 </div>
             </Slider>
+
             {/* Right Arrow */}
             <img
                 src={RightArrow}

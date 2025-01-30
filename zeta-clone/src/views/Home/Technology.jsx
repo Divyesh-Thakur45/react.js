@@ -5,7 +5,8 @@ import clock from "../../assets/SVGS/clock.svg"
 import costumize from "../../assets/SVGS/customize.svg"
 import innovation from "../../assets/SVGS/innovation.svg"
 import landingPage from "../../assets/SVGS/svgexport-4.svg"
-import line from "../../assets/images/mainline.png";
+// import line from "../../assets/images/mainline.png";
+
 
 const Technology = () => {
     return (
@@ -13,8 +14,12 @@ const Technology = () => {
             <div className='main'>
                 <div className="left">
                     <div className='left-main'>
-                        <img src={landingPage} className='landingPage' alt="" />
-                        <img src={light} alt="" className='light' />
+                        <div className='landingPage'>
+                            <img src={landingPage} alt="" />
+                            <div className='light'>
+                                <img src={light} alt="" />
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <div className="circle">
@@ -26,9 +31,6 @@ const Technology = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <img src={line} alt="" className='mainLine' />
                 </div>
                 <div className="right">
                     <div className='right-side-content'>

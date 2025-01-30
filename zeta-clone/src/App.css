@@ -1,0 +1,15 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-app {
+    overflow: hidden;
+    background-color: #00223F;
+
+}
+
+.sub-app {
+    /* max-width: 1700px; */
+    /* background-color: #00223F; */
+    margin: auto;
+}

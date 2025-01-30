@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-.contact-page {
+.contact-page-main {
     background-color: #022E55;
+}
+
+.contact-page {
+    max-width: 1600px;
+    margin: auto;
 }
 
 .sub-contact-page {
@@ -205,9 +210,11 @@
         flex-direction: column;
         text-align: center;
     }
-.contact-dp-border{
-    margin: auto;
-}
+
+    .contact-dp-border {
+        margin: auto;
+    }
+
     .contact-dp-border {
         height: 150px;
         width: 150px;

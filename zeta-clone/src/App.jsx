@@ -6,10 +6,12 @@ import AllRoutes from './routes/AllRoutes'
 function App() {
 
   return (
-    <div>
-      <Navigation />
-      <AllRoutes />
-      <Footer />
+    <div className='main-app'>
+      <div className="sub-app">
+        <Navigation />
+        <AllRoutes />
+        <Footer />
+      </div>
     </div>
   )
 }

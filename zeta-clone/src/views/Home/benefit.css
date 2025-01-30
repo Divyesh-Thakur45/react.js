@@ -6,25 +6,27 @@
 
 .benefit-page {
     background-color: #00223E;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .heading h1 {
     font-family: 'Ubuntu';
     font-weight: 600;
-    font-size: 47px;
+    font-size: 55px;
     line-height: 1;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.050em;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
     color: #fff;
     text-align: center;
-    padding: 35px 0;
+    padding: 80px 0;
 }
 
 .main-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 95%;
+    width: 90%;
     margin: auto;
     gap: 20px;
 }
@@ -35,10 +37,10 @@
 }
 
 .box-round-main {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
-    border: 1px solid #435E76;
+    border: 2px solid #435E76;
     position: relative;
     margin: auto;
     transition: all 0.5s ease-in-out;
@@ -50,11 +52,10 @@
 }
 
 .box-sub-round {
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

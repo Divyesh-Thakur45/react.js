@@ -41,6 +41,8 @@
 
 .center-content {
     position: relative;
+    max-width: 1530px;
+    margin: auto;
 }
 
 /* Round-1 */
@@ -67,11 +69,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 70px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 .sub_round_1:hover .sub_child_round_1 {
@@ -176,11 +178,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 97px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(140%);
+    transform: translateX(145%);
 }
 
 .sub_child_round_2 {
@@ -250,11 +252,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 80px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 .sub_child_round_3 {
@@ -398,11 +400,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 80px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 .sub_child_round_5 {
@@ -471,11 +473,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 80px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 .sub_child_round_6 {
@@ -546,11 +548,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 70px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 .sub_child_round_7 {
@@ -619,11 +621,11 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100px;
+    width: 80px;
     display: block;
     background-color: rgba(128, 172, 211, 0.5);
     top: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 .sub_child_round_8 {

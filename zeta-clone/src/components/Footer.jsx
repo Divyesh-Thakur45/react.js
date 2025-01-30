@@ -4,13 +4,18 @@ import logo from "../assets/SVGS/Logo.svg"
 import whiteArrow from "../assets/SVGS/svgexport-31.svg";
 import call from "../assets/SVGS/svgexport-33.svg";
 import email from "../assets/SVGS/svgexport-34.svg";
+import linkdin from "../assets/SVGS/svgexport-35.svg";
+import facebook from "../assets/SVGS/svgexport-36.svg";
+import youtube from "../assets/SVGS/svgexport-37.svg";
+import v from "../assets/SVGS/svgexport-38.svg";
+import insta from "../assets/SVGS/svgexport-39.svg";
 
 const Footer = () => {
   const [firstShow, setfirstShow] = useState(false)
   return (
     <div className='footer-page'>
       <div className="footer-top">
-        <div className="logo">
+        <div className="footer-logo">
           <img src={logo} alt="" />
         </div>
         <div className="two-button">
@@ -79,7 +84,32 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className='color-[#fff]' />
+      <hr className='footer-btm-line' />
+      <div className="footer-end">
+        <div className="start">
+          © 2025 ZETA
+        </div>
+        <div className="middle-icones">
+          <div className="icones">
+            <img src={linkdin} alt="" />
+          </div>
+          <div className="icones">
+            <img src={facebook} alt="" />
+          </div>
+          <div className="icones">
+            <img src={youtube} alt="" />
+          </div>
+          <div className="icones">
+            <img src={v} alt="" />
+          </div>
+          <div className="icones">
+            <img src={insta} alt="" />
+          </div>
+        </div>
+        <div className="end">
+          <p>made by Rittler & Co</p>
+        </div>
+      </div>
     </div>
   )
 }
