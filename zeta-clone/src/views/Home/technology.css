@@ -64,8 +64,27 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    animation: fade-in-out infinite 5s linear 0s;
+    animation: example 8s infinite;
 }
+
+@keyframes example {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        /* Element is visible */
+    }
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        /* Element is visible */
+    }
+}
+
 
 .starImg2 {
     animation: fade-in-out infinite 5s linear -2.5s;
@@ -76,6 +95,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    animation: example 10s infinite;
 }
 
 .starImg3 {
@@ -87,6 +107,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    animation: example 3s infinite;
 }
 
 .starImg4 {
@@ -98,6 +119,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    animation: example 12s infinite;
 }
 
 .starImg5 {
@@ -108,6 +130,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    animation: example 10s infinite;
 }
 
 .lightImg {
@@ -463,7 +486,8 @@
         min-height: 30%;
         max-width: 20%;
     }
-    .main-circle::before{
+
+    .main-circle::before {
         display: none;
     }
 
@@ -602,11 +626,13 @@
         font-size: 14px;
         margin: 0%;
     }
+
     .stars {
         min-height: 30%;
         max-width: 12%;
     }
-    .main-circle::before{
+
+    .main-circle::before {
         display: none;
     }
 }
@@ -744,11 +770,13 @@
         font-size: 14px;
         margin: 0%;
     }
+
     .stars {
         min-height: 30%;
         max-width: 10%;
     }
-    .main-circle::before{
+
+    .main-circle::before {
         display: none;
     }
 }
@@ -886,11 +914,13 @@
         font-size: 14px;
         margin: 0%;
     }
+
     .stars {
         min-height: 30%;
         max-width: 8%;
     }
-    .main-circle::before{
+
+    .main-circle::before {
         display: none;
     }
 }
@@ -1030,11 +1060,13 @@
         font-size: 14px;
         margin: 0%;
     }
+
     .stars {
         min-height: 30%;
         max-width: 5%;
     }
-    .main-circle::before{
+
+    .main-circle::before {
         display: none;
     }
 }
