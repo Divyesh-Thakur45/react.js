@@ -6,10 +6,15 @@
     font-family: 'Ubuntu';
 }
 
-.footer-page {
+/* .footer-page {} */
+.footericone {
+    display: none;
+}
+
+.main-top {
+    background-color: #00223E;
     max-width: 1600px;
     margin: auto;
-    background-color: #00223E;
 }
 
 .footer-top {
@@ -69,6 +74,12 @@
     background-color: #80acd3;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
+}
+
+.main-middle {
+    background-color: #00223E;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .footer-bottom {
@@ -175,8 +186,14 @@
 }
 
 .footer-btm-line {
+    max-width: 8000px;
     border-top: 1px solid #80acd3;
     margin: 0 0 20px 0;
+}
+
+.end-of-footer {
+    max-width: 1600px;
+    margin: auto;
 }
 
 .footer-end {
@@ -185,7 +202,7 @@
     width: 90%;
     margin: auto;
     align-items: center;
-    padding: 0px 0 10px 0;
+    padding: 20px 0 10px 0;
 
 }
 
@@ -253,6 +270,11 @@
     .title-head {
         font-size: 13px;
         color: #80acd3;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        justify-content: space-evenly;
     }
 
     .two-button {
@@ -294,6 +316,16 @@
     .middle-icones,
     .end {
         margin: 0 0 10px 0;
+    }
+
+    .footericone {
+        display: block;
+        text-align: end;
+    }
+
+    .footer-none {
+        display: none;
+        margin: 10px 0 0 0;
     }
 }
 
@@ -367,6 +399,7 @@
     .end {
         margin: 0 0 10px 0;
     }
+
 }
 
 /* 768px to 992px */
@@ -448,7 +481,6 @@
 /* 992px to 1200px */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .footer-top {
-
         flex-direction: row;
         align-items: center;
         text-align: center;

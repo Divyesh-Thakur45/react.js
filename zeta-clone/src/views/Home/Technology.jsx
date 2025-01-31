@@ -5,11 +5,11 @@ import clock from "../../assets/SVGS/clock.svg"
 import costumize from "../../assets/SVGS/customize.svg"
 import innovation from "../../assets/SVGS/innovation.svg"
 import landingPage from "../../assets/SVGS/svgexport-4.svg"
+import brainimage from "../../assets/images/brain-new.png"
 import star from "../../assets/images/star.png"
 import star2 from "../../assets/images/star-2.png"
 import star3 from "../../assets/images/star-3.png"
 import star4 from "../../assets/images/star-4.png"
-// import line from "../../assets/images/mainline.png";
 
 
 const Technology = () => {
@@ -21,16 +21,21 @@ const Technology = () => {
                         <img src={landingPage} alt="" className='landingPageImg' />
                         <div className='light'>
                             <img src={light} alt="" className='lightImg' />
+                            <div className="stars">
+                                <img src={star} className='starImg1' alt="" />
+                                <img src={star2} className='starImg2' alt="" />
+                                <img src={star3} className='starImg3' alt="" />
+                                <img src={star4} className='starImg4' alt="" />
+                                <img src={star} className='starImg5' alt="" />
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div className="circle">
-                            <div className="small-circle">
-                                <div className="sub-small-circel">
-                                    <h1>60</h1>
-                                    <p>VACANCIES <br /><span className='available'>available</span>!</p>
-                                </div>
-                            </div>
+                </div>
+                <div className="circle">
+                    <div className="small-circle">
+                        <div className="sub-small-circel">
+                            <h1>51</h1>
+                            <p>VACANCIES <br /><span className='available'>available</span>!</p>
                         </div>
                     </div>
                 </div>
@@ -76,6 +81,9 @@ const Technology = () => {
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div className="fixed-round">
+                    <img src={brainimage} alt="" className='brainImage' />
                 </div>
             </div>
         </div>
