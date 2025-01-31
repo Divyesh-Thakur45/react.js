@@ -32,7 +32,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".sub_round_1",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -46,7 +46,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_2",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -60,7 +60,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_3",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -74,7 +74,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_4",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -88,7 +88,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_5",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -102,7 +102,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_6",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -116,7 +116,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_7",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -130,7 +130,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_8",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -144,7 +144,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_9",
-        start: "top 60%", 
+        start: "top 60%",
         end: "top 50%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -160,8 +160,8 @@ const Solutaion = () => {
           <p>We have developed <strong>a unique solution</strong> for implementing your project efficiently and successfully!</p>
         </div>
         <div className="animation">
-          <img src={drop} alt="" className='animation-drop'/>
-          <img src={line} alt="" className='animation-line'/>
+          <img src={drop} alt="" className='animation-drop' />
+          <img src={line} alt="" className='animation-line' />
         </div>
         <div className="all_rounds">
           <div className="round_1">
@@ -279,7 +279,6 @@ const Solutaion = () => {
         </button>
         <div className="msg">
           <p>No, I need more info!</p>
-          <div className='line'></div>
         </div>
       </div>
       <div className="images">

@@ -21,6 +21,7 @@
     margin: auto;
     z-index: 999;
     max-width: 1600px;
+    background-color: #00223E;
     /* Ensure full width */
 }
 
@@ -41,6 +42,7 @@
 .headroom {
     position: sticky;
     z-index: 999;
+    background-color: #00223E;
 }
 
 .main-nav {

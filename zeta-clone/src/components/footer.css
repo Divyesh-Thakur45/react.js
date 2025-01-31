@@ -447,12 +447,153 @@
 
 /* 992px to 1200px */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .footer-bottom {
-        justify-content: space-between;
+    .footer-top {
+
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
     }
 
-    .webnar-btn,
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        top: 0%;
+        text-align: start;
+        margin: 20px 0 0 0;
+    }
+
+    .selft-detail span {
+        font-size: 13px;
+    }
+
+    .text ul li a {
+        font-size: 13px;
+        font-weight: 100;
+        display: flex;
+        align-items: start;
+    }
+
+    .first p,
+    .selft-detail {
+        font-size: 10px;
+    }
+
+    .title-head {
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .two-button {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .webnar-btn {
+        /* width: 100%; */
+        margin: 0%;
+    }
+
     .subscribe-btn {
-        padding: 10px 30px;
+        /* width: 100%; */
+        font-size: 14px;
+        padding: 10px 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* Prevents text wrapping */
+        overflow: hidden;
+    }
+
+    .footer-end {
+        flex-direction: row;
+    }
+
+    .start,
+    .middle-icones,
+    .end {
+        margin: 0 0 10px 0;
+    }
+}
+
+
+/* 1200px to 1536px */
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .footer-top {
+        padding: 0%;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        top: 0%;
+        text-align: start;
+        margin: 20px 0 0 0;
+    }
+
+    .selft-detail span {
+        font-size: 13px;
+    }
+
+    .text ul li a {
+        font-size: 13px;
+        font-weight: 100;
+        display: flex;
+        align-items: start;
+    }
+
+    .first p,
+    .selft-detail {
+        font-size: 10px;
+    }
+
+    .title-head {
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .two-button {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .webnar-btn {
+        /* width: 100%; */
+        margin: 0%;
+    }
+
+    .subscribe-btn {
+        /* width: 100%; */
+        font-size: 14px;
+        padding: 10px 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* Prevents text wrapping */
+        overflow: hidden;
+    }
+
+    .footer-end {
+        flex-direction: row;
+    }
+
+    .start,
+    .middle-icones,
+    .end {
+        margin: 0 0 10px 0;
     }
 }

@@ -102,7 +102,12 @@
     display: flex;
     gap: 10px;
 }
-
+.main-slide-screen{
+    background-color: #fff;
+}
+.hello{
+    background-color: #fff;
+}
 .custom-dot {
     background-color: #00223e;
     width: 3px;

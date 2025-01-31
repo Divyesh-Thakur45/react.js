@@ -1,0 +1,283 @@
+/* Base Styles */
+.hero_section {
+    position: relative;
+    background-color: #00223e;
+    height: 100vh;
+}
+
+.SettingIconSvg {
+    height: 100vh;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* background-color: #fff; */
+}
+.SettingIconSvg img{
+    height: 100%;
+    width: 100%;
+}
+.image-carrier {
+    position: relative;
+}
+
+.image-carrier img {
+    /* object-fit: cover; */
+}
+
+.glow {
+    position: absolute;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.star-1 {
+    top: 10%;
+    left: 20%;
+}
+
+.star-2 {
+    top: 30%;
+    right: 15%;
+}
+
+.star-3 {
+    bottom: 40%;
+    left: 25%;
+}
+
+.star-4 {
+    top: 15%;
+    right: 30%;
+}
+
+.star-5 {
+    bottom: 25%;
+    left: 40%;
+}
+
+.text-shadow-glow {
+    text-shadow: 0 0 10px rgba(128, 172, 211, 0.5);
+}
+
+/* Vacancies Section */
+.vacancies-container {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    gap: 5px;
+    z-index: 10;
+}
+
+.vacancy-circle {
+    border: 1px solid rgba(128, 172, 211, 0.63);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacancy-inner {
+    background-color: rgba(233, 233, 248, 0.5);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacancy-content {
+    border: 1px solid #00223e;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Text Sizes */
+.hero-title {
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(128, 172, 211, 0.5);
+    letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+    color: #80acd3;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+/* Circular Buttons */
+.circle-button {
+    border: 1px solid #80acd3;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle-button-inner {
+    transition: background-color 1000ms, opacity 1000ms;
+}
+
+.circle-button-inner:hover {
+    background-color: #80acd3;
+    opacity: 0.7;
+}
+
+/* Main Line Section */
+.main-line-container {
+    position: absolute;
+    bottom: 5%;
+    padding-left: 1.25rem;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .vacancies-container {
+        top: 140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .vacancy-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .vacancy-inner {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero_section {
+        height: 100vh;
+    }
+
+    .image-carrier img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 3.75rem;
+    }
+
+    .main-line-container {
+        display: flex;
+    }
+
+    .vacancies-container {
+        top: 140px;
+        left: 50px;
+    }
+
+    .vacancy-circle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .vacancy-inner {
+        width: 170px;
+        height: 170px;
+    }
+
+    .circle-button {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle-button-inner {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .main-line-container {
+        padding-left: 5rem;
+    }
+
+    .circle-button {
+        width: 176px;
+        height: 176px;
+    }
+
+    .circle-button-inner {
+        width: 157px;
+        height: 157px;
+    }
+}
+
+/* Helper Classes */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add other helper classes as needed based on your markup */

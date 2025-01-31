@@ -15,7 +15,7 @@ const ProcessSlide = () => {
     const sliderRef = useRef(null);
 
     const settings = {
-        // dots: true,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -30,7 +30,7 @@ const ProcessSlide = () => {
         ),
         appendDots: (dots) => (
             <div className="custom-dots-wrapper">
-                <ul>{dots}</ul>
+                <ul className="hello">{dots}</ul>
             </div>
         ),
     };
@@ -46,7 +46,7 @@ const ProcessSlide = () => {
             />
 
             {/* Slider */}
-            <Slider ref={sliderRef} {...settings}>
+            <Slider ref={sliderRef} {...settings} className="main-slide-screen">
                 <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_1} alt="" className="inside-img" />

@@ -127,7 +127,27 @@
 .title-btn button:hover .WhiteArrow {
     display: none;
 }
+/* Media Queries */
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+    .sub-contact-page {
+        width: 70%;
+        padding: 80px 0;
+    }
 
+    .contact-dp-border {
+        height: 220px;
+        width: 220px;
+    }
+
+    .dp {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+}
 /* Media Queries */
 @media screen and (max-width: 1200px) and (min-width: 992px) {
     .sub-contact-page {

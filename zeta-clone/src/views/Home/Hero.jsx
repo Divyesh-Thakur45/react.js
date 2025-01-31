@@ -5,9 +5,11 @@ import Solutaion from './Solutaion';
 import Benefits from './Benefits';
 import Contact from './Contact';
 import Career from './Career';
+// import Randome from './Randome';
 const Hero = () => {
   return (
     <div>
+      {/* <Randome /> */}
       <Technology />
       <ProcessSlide />
       <Solutaion />
