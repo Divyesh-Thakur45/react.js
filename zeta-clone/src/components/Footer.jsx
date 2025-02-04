@@ -40,7 +40,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="first">
             <h1 className='title-head' onClick={() => setfirstShow(!firstShow)}>ZETA Holding <br />
-              Headquarter <img src={footericone} className='footericone' alt="" /></h1>
+              Headquarter <div>
+                <img src={footericone} className='footericone' alt="" /></div></h1>
             <div
               className={`footer-none ${firstShow ? "sm:block" : "sm:hidden"} md:block`}
             >
@@ -57,7 +58,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="second">
-            <h1 className='title-head' onClick={() => setSecondShow(!SecondShow)}>Company <img src={footericone} className='footericone' alt="" /></h1>
+            <h1 className='title-head' onClick={() => setSecondShow(!SecondShow)}>Company <div>
+              <img src={footericone} className='footericone' alt="" /></div></h1>
             <div className="text">
               <ul className={`footer-none ${SecondShow ? "sm:block" : "sm:hidden"} md:block`}>
                 <li><a href="">About </a></li>
@@ -69,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="third">
-            <h1 className='title-head' onClick={() => setThirdShow(!ThirdShow)}>INFO & ESSENTIALS <img src={footericone} className='footericone' alt="" /></h1>
+            <h1 className='title-head' onClick={() => setThirdShow(!ThirdShow)}>INFO & ESSENTIALS <div><img src={footericone} className='footericone' alt="" /></div></h1>
             <div className="text">
               <ul className={`footer-none ${ThirdShow ? "sm:block" : "sm:hidden"} md:block`}>
                 <li><a href="">Success Stories</a></li>
@@ -82,7 +84,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="fourth">
-            <h1 className='title-head' onClick={() => setFourthShow(!FourthShow)}>LEGAL <img src={footericone} className='footericone' alt="" /></h1>
+            <h1 className='title-head' onClick={() => setFourthShow(!FourthShow)}>LEGAL <div><img src={footericone} className='footericone' alt="" /></div></h1>
             <div className="text">
               <ul className={`footer-none ${FourthShow ? "sm:block" : "sm:hidden"} md:block`}>
                 <li><a href="">Data protection</a></li>

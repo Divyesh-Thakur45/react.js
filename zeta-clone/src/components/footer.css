@@ -274,7 +274,8 @@
         align-items: center;
         margin: auto;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        /* background-color: #fff; */
     }
 
     .two-button {
