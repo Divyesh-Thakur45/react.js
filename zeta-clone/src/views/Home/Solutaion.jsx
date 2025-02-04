@@ -480,8 +480,8 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
             </div>
           </div>
         </div>
-        <div className="">
-          <img src={lineEnd} alt="" className='LineEnd' />
+        <div className="LineEnd">
+          <img src={lineEnd} alt="" className='' />
         </div>
         <div className='bottom-heading'>
           <h3>Are you already</h3>
