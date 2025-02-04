@@ -756,8 +756,12 @@
     /* background-color: #fff; */
 
 }
-
+#solution-cursor{
+    height: 100%;
+    transform: rotate(-50%);
+}
 .animation-drop {
+    top: 10%;
     position: absolute;
 }
 

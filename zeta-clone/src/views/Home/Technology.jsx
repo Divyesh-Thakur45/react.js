@@ -40,7 +40,7 @@ const Technology = () => {
                     </div>
                 </div>
                 <div className='right-side-content'>
-                    <h3>Evolution</h3>
+                    <p>Evolution</p>
                     <h1><strong>of Technology</strong></h1>
                     <h2>From Concept to Realization:</h2>
                     <h4>ZETA – Your Partner for the Pharmaceutical and Biotech Industry!</h4>

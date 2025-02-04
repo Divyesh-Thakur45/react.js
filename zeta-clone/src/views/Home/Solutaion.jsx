@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./solution.css"
 import line from "../../assets/SVGS/svgexport-13.svg";
 import Airoplane from "../../assets/SVGS/svgexport-15.svg";
@@ -10,21 +10,22 @@ import basket from "../../assets/SVGS/svgexport-20.svg";
 import gold from "../../assets/SVGS/svgexport-21.svg";
 import hand from "../../assets/SVGS/svgexport-22.svg";
 import magnetic from "../../assets/SVGS/svgexport-23.svg";
-// import water from "../../assets/SVGS/svgexport-14.svg";
 import lineEnd from "../../assets/SVGS/svgexport-24.svg";
 import Arrow_1 from "../../assets/SVGS/svgexport-10.svg";
 import Arrow_2 from "../../assets/SVGS/svgexport-31.svg";
-import drop from "../../assets/SVGS/svgexport-14.svg";
+// import drop from "../../assets/SVGS/svgexport-14.svg";
 import RightTop from "../../assets/SVGS/rightTop.svg"
 import LeftBottom from "../../assets/SVGS/LeftBottom.svg"
 import RightBottom from "../../assets/SVGS/RightBottom.svg"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from 'react';
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
 const Solutaion = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     gsap.from('.round_1', {
       x: 10,
       opacity: 0,
@@ -32,8 +33,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".sub_round_1",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -46,8 +47,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_2",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -60,8 +61,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_3",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -74,8 +75,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_4",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -88,8 +89,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_5",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -102,8 +103,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_6",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -116,8 +117,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_7",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -130,8 +131,8 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_8",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
@@ -144,13 +145,55 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_9",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
       }
     })
+
+    // gsap.set("#solution-cursor", {
+    //   xPercent: -50, yPercent: -50, transformOrigin: "50% 50%", rotation: 1000,
+    //   rotationX: 1000,
+    //   rotationY: 0,
+    // });
+    gsap.fromTo("#solution-cursor",
+      { rotation: 360 }, // Starting rotation
+      {
+        rotation: 360, 
+        duration: 5, 
+        repeat: -1, 
+        ease: "linear"
+      }
+    );
+    gsap.to("#solution-cursor", {
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#motionPath",
+        start: "top 90%",
+        end: "bottom 100%",
+        scrub: true,
+        // markers: true,
+        toggleActions: "play reverse play reverse",
+      },
+      motionPath: {
+        path: "#motionPath",
+        align: "#motionPath",
+        alignOrigin: [0.5, 0.5],
+        autoRotate: true,
+        start: 1,
+        end: 0,
+      },
+      ease: "none", // Keeps steady speed
+    });
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [])
   return (
     <div className='solution-page'>
@@ -160,8 +203,180 @@ const Solutaion = () => {
           <p>We have developed <strong>a unique solution</strong> for implementing your project efficiently and successfully!</p>
         </div>
         <div className="animation">
-          <img src={drop} alt="" className='animation-drop' />
-          <img src={line} alt="" className='animation-line' />
+          {/* <img src={} alt="" className='drop' /> */}
+          <span className='animation-line'>
+            <svg
+              version="1.1"
+              id="solution-bg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 480 2898.1"
+              width="480"
+              height="2898.1"
+              style={{ enableBackground: 'new 0 0 480 2898.1' }}
+              xmlSpace="preserve"
+            >
+              {/* Motion Path */}
+              <path
+                id="motionPath"
+                className="main-path"
+                style={{ strokeMiterlimit: 10 }}
+                d={
+                  isMobile
+                    ? 'M 0,2898.1 L0,24' // Mobile path
+                    : 'M252,2898.1c0-222.6,121-210.3,121-432.9l0,0c0-405.8-349-401.4-349-807.1s455.5-405.8,455.5-811.5S24,440.7,24,34.9' // Desktop path
+                }
+                stroke="#80ACD3"
+                fill="none"
+              />
+
+              {/* Colored Motion Path */}
+              <path
+                id="motionPathColored"
+                style={{
+                  strokeMiterlimit: 10,
+                  strokeDasharray: '3292.85px',
+                  strokeDashoffset: '439.364px',
+                }}
+                d={
+                  isMobile
+                    ? 'M 0,2898.1 L0,24' // Mobile path
+                    : 'M252,2898.1c0-222.6,121-210.3,121-432.9l0,0c0-405.8-349-401.4-349-807.1s455.5-405.8,455.5-811.5S24,440.7,24,34.9' // Desktop path
+                }
+                data-length="3292.853759765625"
+                stroke="#FFFFFF"
+                fill="none"
+              />
+              <g className="point point1" transform="translate(1499.5 6338) rotate(180)">
+                <g transform="translate(857.571 3725.071)">
+                  <path d="M617.9,2558.9c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S623.4,2558.9,617.9,2558.9z" fill="#80ACD3"></path>
+                  <path d="M617.9,2542.5c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5c3.6,0,6.5-2.9,6.5-6.5S621.4,2542.5,617.9,2542.5
+M617.9,2535.5c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S610.4,2535.5,617.9,2535.5z" fill="#002A4D"></path>
+                </g>
+                <g transform="translate(849.5 3717)">
+                  <circle cx="625.9" cy="2557" r="14.5" fill="none"></circle>
+                  <circle cx="625.9" cy="2557" r="14" stroke="#80ACD3" fill="none"></circle>
+                </g>
+              </g>
+              <g className="point point2" transform="translate(1499.5 6312) rotate(180)">
+                <g transform="translate(857.571 3725.071)">
+                  <path d="M474.5,2235c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S480,2235,474.5,2235z" fill="#80ACD3"></path>
+                  <path d="M474.5,2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S478,2218.6,474.5,2218.6
+M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,2211.6,474.5,2211.6z" fill="#002A4D"></path>
+                </g>
+                <g transform="translate(849.5 3717)">
+                  <circle cx="482.5" cy="2233.1" r="14.5" fill="none"></circle>
+                  <circle cx="482.5" cy="2233.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                </g>
+              </g>
+              <g className="point point3" transform="translate(82 564)">
+                <g transform="translate(-140 -1555)">
+                  <g transform="translate(857.571 3725.071)">
+                    <path d="M-461.5-2201.7c-5.8,0-10.5-4.7-10.5-10.5s4.7-10.5,10.5-10.5s10.5,4.7,10.5,10.5
+S-455.8-2201.7-461.5-2201.7z" fill="#80ACD3"></path>
+                    <path d="M-461.5-2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S-458-2218.6-461.5-2218.6
+M-461.5-2226.6c8,0,14.5,6.5,14.5,14.5s-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5S-469.5-2226.6-461.5-2226.6z" fill="#002A4D"></path>
+                  </g>
+                  <g transform="translate(849.5 3717)">
+                    <circle cx="-453.5" cy="-2204.1" r="14.5" fill="none"></circle>
+                    <circle cx="-453.5" cy="-2204.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                  </g>
+                </g>
+              </g>
+              <g className="point point4" transform="translate(1790.5 6932) rotate(180)">
+                <g transform="translate(857.571 3725.071)">
+                  <path d="M474.5,2235c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S480,2235,474.5,2235z" fill="#80ACD3"></path>
+                  <path d="M474.5,2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S478,2218.6,474.5,2218.6
+M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,2211.6,474.5,2211.6z" fill="#002A4D"></path>
+                </g>
+                <g transform="translate(849.5 3717)">
+                  <circle cx="482.5" cy="2233.1" r="14.5" fill="none"></circle>
+                  <circle cx="482.5" cy="2233.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                </g>
+              </g>
+              <g className="point point5" transform="translate(-38 1324)">
+                <g transform="translate(-140 -1555)">
+                  <g transform="translate(857.571 3725.071)">
+                    <path d="M-461.5-2201.7c-5.8,0-10.5-4.7-10.5-10.5s4.7-10.5,10.5-10.5s10.5,4.7,10.5,10.5
+S-455.8-2201.7-461.5-2201.7z" fill="#80ACD3"></path>
+                    <path d="M-461.5-2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S-458-2218.6-461.5-2218.6
+M-461.5-2226.6c8,0,14.5,6.5,14.5,14.5s-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5S-469.5-2226.6-461.5-2226.6z" fill="#002A4D"></path>
+                  </g>
+                  <g transform="translate(849.5 3717)">
+                    <circle cx="-453.5" cy="-2204.1" r="14.5" fill="none"></circle>
+                    <circle cx="-453.5" cy="-2204.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                  </g>
+                </g>
+              </g>
+              <g className="point point6" transform="translate(-232.5 1706)">
+                <g transform="translate(-140 -1555)">
+                  <g transform="translate(857.571 3725.071)">
+                    <path d="M-461.5-2201.7c-5.8,0-10.5-4.7-10.5-10.5s4.7-10.5,10.5-10.5s10.5,4.7,10.5,10.5
+S-455.8-2201.7-461.5-2201.7z" fill="#80ACD3"></path>
+                    <path d="M-461.5-2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S-458-2218.6-461.5-2218.6
+M-461.5-2226.6c8,0,14.5,6.5,14.5,14.5s-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5S-469.5-2226.6-461.5-2226.6z" fill="#002A4D"></path>
+                  </g>
+                  <g transform="translate(849.5 3717)">
+                    <circle cx="-453.5" cy="-2204.1" r="14.5" fill="none"></circle>
+                    <circle cx="-453.5" cy="-2204.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                  </g>
+                </g>
+              </g>
+              <g className="point point7" transform="translate(1497.834 7973.382) rotate(180)">
+                <g transform="translate(857.571 3725.071)">
+                  <path d="M474.5,2235c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S480,2235,474.5,2235z" fill="#80ACD3"></path>
+                  <path d="M474.5,2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S478,2218.6,474.5,2218.6
+M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,2211.6,474.5,2211.6z" fill="#002A4D"></path>
+                </g>
+                <g transform="translate(849.5 3717)">
+                  <circle cx="482.5" cy="2233.1" r="14.5" fill="none"></circle>
+                  <circle cx="482.5" cy="2233.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                </g>
+              </g>
+              <g className="point point8" transform="translate(82 2304)">
+                <g transform="translate(-140 -1555)">
+                  <g transform="translate(857.571 3725.071)">
+                    <path d="M-461.5-2201.7c-5.8,0-10.5-4.7-10.5-10.5s4.7-10.5,10.5-10.5s10.5,4.7,10.5,10.5
+S-455.8-2201.7-461.5-2201.7z" fill="#80ACD3"></path>
+                    <path d="M-461.5-2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S-458-2218.6-461.5-2218.6
+M-461.5-2226.6c8,0,14.5,6.5,14.5,14.5s-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5S-469.5-2226.6-461.5-2226.6z" fill="#002A4D"></path>
+                  </g>
+                  <g transform="translate(849.5 3717)">
+                    <circle cx="-453.5" cy="-2204.1" r="14.5" fill="none"></circle>
+                    <circle cx="-453.5" cy="-2204.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                  </g>
+                </g>
+              </g>
+              <g className="point point9" transform="translate(1688.836 8539) rotate(180)">
+                <g transform="translate(857.571 3725.071)">
+                  <path d="M474.5,2235c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S480,2235,474.5,2235z" fill="#80ACD3"></path>
+                  <path d="M474.5,2218.6c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S478,2218.6,474.5,2218.6
+M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,2211.6,474.5,2211.6z" fill="#002A4D"></path>
+                </g>
+                <g transform="translate(849.5 3717)">
+                  <circle cx="482.5" cy="2233.1" r="14.5" fill="none"></circle>
+                  <circle cx="482.5" cy="2233.1" r="14" stroke="#80ACD3" fill="none"></circle>
+                </g>
+              </g>
+
+              <g id="solution-cursor">
+                <g>
+                  <path d="M24,57.8c-2.7,0-5.3-0.5-7.8-1.6c-2.4-1-4.5-2.5-6.4-4.3c-1.8-1.8-3.3-4-4.3-6.4c-1-2.5-1.6-5.1-1.6-7.8
+        c0-2.6,0.9-5.9,2.8-10c1.4-3,3.3-6.5,5.7-10.3c2.3-3.8,4.5-6.9,5.6-8.4c0.7-1,1.4-1.9,2-2.6c0.3-0.3,0.5-0.6,0.7-0.8
+        C21.1,5.2,22.2,4,24,4c1.2,0,2.2,0.5,3,1.4c0.4,0.4,4.5,5.9,8.5,12.2c2.4,3.8,4.3,7.2,5.7,10.2c1.9,4.1,2.8,7.4,2.8,10
+        c0,2.7-0.5,5.3-1.6,7.8c-1,2.4-2.5,4.5-4.3,6.4c-1.8,1.8-4,3.3-6.4,4.3C29.3,57.2,26.7,57.8,24,57.8z" fill="#80ACD3"></path>
+                  <path d="M24,8C23.6,8,8,29,8,37.8s7.2,16,16,16s16-7.2,16-16C40,28.9,24.2,8.2,24,8L24,8 M24,0L24,0
+        c2.3,0,4.4,1,6,2.7l0,0c0.2,0.2,18,22.7,18,35.1c0,13.2-10.8,24-24,24S0,51,0,37.8C0,30.2,14.8,0,24,0z" fill="#022E55"></path>
+                </g>
+              </g>
+
+              {/* <animateMotion href="#solution-cursor" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" rotate="auto">
+                <mpath href="#motionPath" />
+              </animateMotion> */}
+            </svg>
+          </span>
         </div>
         <div className="all_rounds">
           <div className="round_1">

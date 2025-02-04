@@ -121,7 +121,7 @@
 .btm-btn {
     margin: auto;
     border-radius: 5px;
-    padding: 10px 45px;
+    padding: 10px 40px;
     font-weight: 600;
     cursor: pointer;
     font-size: 17px;
@@ -131,6 +131,23 @@
     background-color: #80acd3;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
+    transition: all 0.2s linear;
+}
+
+.btm-btn:hover {
+    background-color: #fff;
+    color: #80acd3;
+   
+}
+
+.btm-btn:hover .blueArrow {
+    transition: all 0.2s linear;
+    display: block;
+    margin: 0px 10px 0px 0px;
+}
+
+.btm-btn:hover .WhiteArrow {
+    display: none;
 }
 
 /* Media Queries */

@@ -30,18 +30,17 @@
     object-fit: cover;
     position: relative;
     left: -10%;
-    top: -10%;
+    top: -15%;
     z-index: 99;
 }
 
 .light {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 34%;
     left: 40%;
     height: 100%;
     object-fit: cover;
-    /* background-color: #fff; */
 }
 
 .stars {
@@ -71,10 +70,12 @@
     0% {
         opacity: 1;
     }
+
     25% {
         opacity: 0;
         /* Element is visible */
     }
+
     50% {
         opacity: 1;
     }
@@ -209,9 +210,21 @@
     transform: translate(-50%, -50%);
 }
 
-.right-side-content h3,
+.right-side-content p {
+    font-family: 'Ubuntu';
+    font-size: 47px;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
+    color: #fff;
+    /* background-color: #fff; */
+}
+
 .right-side-content h1 {
     font-family: 'Ubuntu';
+    font-weight: bold;
     font-size: 47px;
     line-height: 1;
     letter-spacing: 0.025em;
@@ -285,7 +298,7 @@
     width: 145px;
     border-radius: 50%;
     background: transparent;
-    transition: all 0.8s;
+    transition: all 0.5s;
 }
 
 .inner:hover {
@@ -436,7 +449,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .right-side-content h3,
+    .right-side-content p,
     .right-side-content h1 {
         font-size: 28px;
     }
@@ -581,7 +594,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .right-side-content h3,
+    .right-side-content p,
     .right-side-content h1 {
         font-size: 28px;
     }
@@ -725,7 +738,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .right-side-content h3,
+    .right-side-content p,
     .right-side-content h1 {
         font-size: 28px;
     }
@@ -869,7 +882,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .right-side-content h3,
+    .right-side-content p,
     .right-side-content h1 {
         font-size: 28px;
     }
@@ -1015,7 +1028,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .right-side-content h3,
+    .right-side-content p,
     .right-side-content h1 {
         font-size: 28px;
     }
