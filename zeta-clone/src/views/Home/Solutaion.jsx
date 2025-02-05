@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./solution.css"
-import line from "../../assets/SVGS/svgexport-13.svg";
+// import line from "../../assets/SVGS/svgexport-13.svg";
+// import dotanimation from "../../assets/images/dotanimation2.png";
 import Airoplane from "../../assets/SVGS/svgexport-15.svg";
 import PetrolPump from "../../assets/SVGS/svgexport-16.svg";
 import co from "../../assets/SVGS/svgexport-17.svg";
@@ -13,7 +14,7 @@ import magnetic from "../../assets/SVGS/svgexport-23.svg";
 import lineEnd from "../../assets/SVGS/svgexport-24.svg";
 import Arrow_1 from "../../assets/SVGS/svgexport-10.svg";
 import Arrow_2 from "../../assets/SVGS/svgexport-31.svg";
-// import drop from "../../assets/SVGS/svgexport-14.svg";
+import drop from "../../assets/SVGS/svgexport-14.svg";
 import RightTop from "../../assets/SVGS/rightTop.svg"
 import LeftBottom from "../../assets/SVGS/LeftBottom.svg"
 import RightBottom from "../../assets/SVGS/RightBottom.svg"
@@ -21,9 +22,19 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from 'react';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import CountUp from 'react-countup';
 
 const Solutaion = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [startCount1, setStartCount1] = useState(false);
+  const [startCount2, setStartCount2] = useState(false);
+  const [startCount3, setStartCount3] = useState(false);
+  const [startCount4, setStartCount4] = useState(false);
+  const [startCount5, setStartCount5] = useState(false);
+  const [startCount6, setStartCount6] = useState(false);
+  const [startCount7, setStartCount7] = useState(false);
+  const [startCount8, setStartCount8] = useState(false);
+  const [startCount9, setStartCount9] = useState(false);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     gsap.from('.round_1', {
@@ -38,6 +49,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount1(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount1(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_2', {
@@ -52,6 +65,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_3', {
@@ -66,6 +81,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount3(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount3(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_4', {
@@ -80,6 +97,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount4(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount4(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_5', {
@@ -94,6 +113,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount5(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount5(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_6', {
@@ -108,6 +129,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount6(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount6(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_7', {
@@ -122,6 +145,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount7(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount7(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_8', {
@@ -136,6 +161,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount8(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount8(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_9', {
@@ -150,6 +177,8 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
+        onEnter: () => setStartCount9(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount9(false), // Reset if scrolling up
       }
     })
 
@@ -158,34 +187,34 @@ const Solutaion = () => {
     //   rotationX: 1000,
     //   rotationY: 0,
     // });
-    gsap.fromTo("#solution-cursor",
-      { rotation: 360 }, // Starting rotation
-      {
-        rotation: 360, 
-        duration: 5, 
-        repeat: -1, 
-        ease: "linear"
-      }
-    );
-    gsap.to("#solution-cursor", {
-      duration: 2,
+    // gsap.fromTo("#solution-cursor",
+    //   { rotation: 360 }, // Starting rotation
+    //   {
+    //     rotation: 360,
+    //     duration: 5,
+    //     repeat: -1,
+    //     ease: "linear"
+    //   }
+    // );
+    gsap.to("#actioncursor", {
       scrollTrigger: {
+        delay: 300,
+        transition: 0.2,
         trigger: "#motionPath",
         start: "top 90%",
         end: "bottom 100%",
-        scrub: true,
-        // markers: true,
-        toggleActions: "play reverse play reverse",
+        scrub: true, // Smoothly scrub through the animation as you scroll
+        // markers: true, 
       },
       motionPath: {
-        path: "#motionPath",
-        align: "#motionPath",
-        alignOrigin: [0.5, 0.5],
-        autoRotate: true,
-        start: 1,
-        end: 0,
+        path: "#motionPath", // The path to follow
+        align: "#motionPath", // Align the element to the path
+        alignOrigin: [0.5, 0.5], // Center the element on the path
+        autoRotate: -90,
+        start: 1, // Start at the end of the path
+        end: 0, // Move towards the beginning of the path
       },
-      ease: "none", // Keeps steady speed
+      ease: "none",
     });
 
     const handleResize = () => {
@@ -361,7 +390,7 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
                 </g>
               </g>
 
-              <g id="solution-cursor">
+              {/* <g id="solution-cursor">
                 <g>
                   <path d="M24,57.8c-2.7,0-5.3-0.5-7.8-1.6c-2.4-1-4.5-2.5-6.4-4.3c-1.8-1.8-3.3-4-4.3-6.4c-1-2.5-1.6-5.1-1.6-7.8
         c0-2.6,0.9-5.9,2.8-10c1.4-3,3.3-6.5,5.7-10.3c2.3-3.8,4.5-6.9,5.6-8.4c0.7-1,1.4-1.9,2-2.6c0.3-0.3,0.5-0.6,0.7-0.8
@@ -370,8 +399,20 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
                   <path d="M24,8C23.6,8,8,29,8,37.8s7.2,16,16,16s16-7.2,16-16C40,28.9,24.2,8.2,24,8L24,8 M24,0L24,0
         c2.3,0,4.4,1,6,2.7l0,0c0.2,0.2,18,22.7,18,35.1c0,13.2-10.8,24-24,24S0,51,0,37.8C0,30.2,14.8,0,24,0z" fill="#022E55"></path>
                 </g>
+              </g> */}
+              <g id="actioncursor">
+                <g>
+                  <image
+                    href={drop}
+                    // rotate={150}
+                    x="0"
+                    y="0"
+                    width="50"
+                    height="50"
+                    className="dotanimation"
+                  />
+                </g>
               </g>
-
               {/* <animateMotion href="#solution-cursor" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" rotate="auto">
                 <mpath href="#motionPath" />
               </animateMotion> */}
@@ -478,6 +519,51 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
                 <img src={magnetic} alt="" className='round_9_img' />
               </div>
             </div>
+          </div>
+        </div>
+        <div className="all-counters">
+          <div className="counterOne">
+            <h1> <CountUp start={0} end={startCount1 ? 980 : 0} duration={2.75} /></h1>
+            <p>Satisfied <br />
+              Customers</p>
+          </div>
+          <div className="counterTwo">
+            <h1> <CountUp start={0} end={startCount2 ? 1400 : 0} duration={2.75} /></h1>
+            <p>Employees</p>
+          </div>
+          <div className="counterThird">
+            <h1> <CountUp start={0} end={startCount3 ? 25.500 : 0} duration={2.75} /></h1>
+            <p>Square meter<br />
+              production area</p>
+          </div>
+          <div className="counterFourth">
+            <h1> <CountUp start={0} end={startCount4 ? 201 : 0} duration={2.75} /></h1>
+            <p>Global <br />
+              bussness <br />
+              partners</p>
+          </div>
+          <div className="counterFifth">
+            <h1> <CountUp start={0} end={startCount5 ? 101 : 0} duration={2.75} /></h1>
+            <p>Locations <br />
+              in total</p>
+          </div>
+          <div className="counterSix">
+            <h1> <CountUp start={0} end={startCount6 ? 305 : 0} duration={2.75} /></h1>
+            <p>Continents</p>
+          </div>
+          <div className="counterSeven">
+            <h1> <CountUp start={0} end={startCount7 ? 901 : 0} duration={2.75} /></h1>
+            <p>Countries</p>
+          </div>
+          <div className="counterEight">
+            <h1> <CountUp start={0} end={startCount8 ? 4222 : 0} duration={2.75} /></h1>
+            <p>Project hours<br />
+              experience</p>
+          </div>
+          <div className="counterNine">
+            <h1> <CountUp start={0} end={startCount9 ? 800 : 0} duration={2.75} /></h1>
+            <p>Patents<br />
+              applied for</p>
           </div>
         </div>
         <div className="LineEnd">
