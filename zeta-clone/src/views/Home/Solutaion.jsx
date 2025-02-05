@@ -204,7 +204,21 @@ const Solutaion = () => {
         start: "top 90%",
         end: "bottom 100%",
         scrub: true, // Smoothly scrub through the animation as you scroll
-        // markers: true, 
+        // markers: true,
+        onUpdate: (self) => {
+          const img = document.querySelector(".LineEndImg");
+          const drop = document.querySelector(".dotanimation");
+          if (self.progress === 1) {
+            img.style.filter = "drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.52))";
+          } else {
+            img.style.filter = "none"; // Reset shadow when not at the end
+          }
+          if (self.progress === 1) {
+            drop.style.opacity = 0;
+          } else {
+            drop.style.opacity = 1; // Reset opacity when not at the end
+          }
+        },
       },
       motionPath: {
         path: "#motionPath", // The path to follow
@@ -242,7 +256,7 @@ const Solutaion = () => {
               x="0px"
               y="0px"
               viewBox="0 0 480 2898.1"
-              width="480"
+              width="505"
               height="2898.1"
               style={{ enableBackground: 'new 0 0 480 2898.1' }}
               xmlSpace="preserve"
@@ -567,7 +581,7 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
           </div>
         </div>
         <div className="LineEnd">
-          <img src={lineEnd} alt="" className='' />
+          <img src={lineEnd} alt="" className='LineEndImg' />
         </div>
         <div className='bottom-heading'>
           <h3>Are you already</h3>
