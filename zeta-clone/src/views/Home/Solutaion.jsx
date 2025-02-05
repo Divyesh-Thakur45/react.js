@@ -579,7 +579,7 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
           I'm ready!
         </button>
         <div className="msg">
-          <p>No, I need more info!</p>
+          <p className='msgContent'>No, I need more info!</p>
         </div>
       </div>
       <div className="images">

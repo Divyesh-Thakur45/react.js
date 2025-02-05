@@ -9,6 +9,8 @@ import facebook from "../assets/SVGS/svgexport-36.svg";
 import youtube from "../assets/SVGS/svgexport-37.svg";
 import v from "../assets/SVGS/svgexport-38.svg";
 import insta from "../assets/SVGS/svgexport-39.svg";
+import fullBlue from "../assets/SVGS/DarkBlue.svg";
+import LightBlue from "../assets/SVGS/svgexport-26.svg";
 import footericone from "../assets/SVGS/footer-icone.svg"
 
 const Footer = () => {
@@ -26,11 +28,13 @@ const Footer = () => {
           </div>
           <div className="two-button">
             <button className='webnar-btn'>
-              <img src={whiteArrow} alt="" />
+              <img src={whiteArrow} className='fullWhite' alt="" />
+              <img src={fullBlue} className='fullBlue' alt="" />
               Next Webinar
             </button>
             <button className='subscribe-btn'>
-              <img src={whiteArrow} alt="" />
+              <img src={whiteArrow} className='fullWhite2' alt="" />
+              <img src={LightBlue} className='LightBlue' alt="" />
               Subscribe to the newsletter
             </button>
           </div>
@@ -62,11 +66,11 @@ const Footer = () => {
               <img src={footericone} className='footericone' alt="" /></div></h1>
             <div className="text">
               <ul className={`footer-none ${SecondShow ? "sm:block" : "sm:hidden"} md:block`}>
-                <li><a href="">About </a></li>
-                <li><a href="">Locations</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Career</a></li>
-                <li><a href="">Vacancies</a></li>
+                <li><a href="" className='footerSubText'>About </a></li>
+                <li><a href="" className='footerSubText'>Locations</a></li>
+                <li><a href="" className='footerSubText'>Contact</a></li>
+                <li><a href="" className='footerSubText'>Career</a></li>
+                <li><a href="" className='footerSubText'>Vacancies</a></li>
               </ul>
             </div>
           </div>
@@ -74,12 +78,12 @@ const Footer = () => {
             <h1 className='title-head' onClick={() => setThirdShow(!ThirdShow)}>INFO & ESSENTIALS <div><img src={footericone} className='footericone' alt="" /></div></h1>
             <div className="text">
               <ul className={`footer-none ${ThirdShow ? "sm:block" : "sm:hidden"} md:block`}>
-                <li><a href="">Success Stories</a></li>
-                <li><a href="">ZETA Videos</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Media Relations</a></li>
-                <li><a href="">Downloads</a></li>
-                <li><a href="">FAQs</a></li>
+                <li><a href="" className='footerSubText'>Success Stories</a></li>
+                <li><a href="" className='footerSubText'>ZETA Videos</a></li>
+                <li><a href="" className='footerSubText'>Events</a></li>
+                <li><a href="" className='footerSubText'>Media Relations</a></li>
+                <li><a href="" className='footerSubText'>Downloads</a></li>
+                <li><a href="" className='footerSubText'>FAQs</a></li>
               </ul>
             </div>
           </div>
@@ -87,11 +91,11 @@ const Footer = () => {
             <h1 className='title-head' onClick={() => setFourthShow(!FourthShow)}>LEGAL <div><img src={footericone} className='footericone' alt="" /></div></h1>
             <div className="text">
               <ul className={`footer-none ${FourthShow ? "sm:block" : "sm:hidden"} md:block`}>
-                <li><a href="">Data protection</a></li>
-                <li><a href="">Legal notice</a></li>
-                <li><a href="">General terms and conditions</a></li>
-                <li><a href="">Compliance</a></li>
-                <li><a href="">Cookies</a></li>
+                <li><a href="" className='footerSubText'>Data protection</a></li>
+                <li><a href="" className='footerSubText'>Legal notice</a></li>
+                <li><a href="" className='footerSubText'>General terms and conditions</a></li>
+                <li><a href="" className='footerSubText'>Compliance</a></li>
+                <li><a href="" className='footerSubText'>Cookies</a></li>
               </ul>
             </div>
           </div>

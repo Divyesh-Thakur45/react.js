@@ -58,6 +58,25 @@
     border-radius: 5px;
 }
 
+.webnar-btn:hover {
+    transition: background-color 0.5s ease-in;
+    color: #005aaa;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.webnar-btn:hover .fullWhite {
+    display: none;
+}
+
+.webnar-btn:hover .fullBlue {
+    display: block;
+}
+
+.fullBlue {
+    display: none;
+}
+
 .subscribe-btn img {
     margin: 0 15px 0 0;
 }
@@ -74,6 +93,25 @@
     background-color: #80acd3;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
+}
+
+.subscribe-btn:hover {
+    transition: background-color 0.5s ease-in;
+    border: 1px solid #fff;
+    color: #80acd3;
+    background-color: #fff;
+}
+
+.LightBlue {
+    display: none;
+}
+
+.subscribe-btn:hover .LightBlue {
+    display: block;
+}
+
+.subscribe-btn:hover .fullWhite2 {
+    display: none;
 }
 
 .main-middle {
@@ -123,8 +161,7 @@
 
 .text ul li {
     margin: 20px 0 0 0;
-    /* position: relative; */
-    /* display: inline; */
+    width: max-content;
 }
 
 .text {
@@ -135,28 +172,31 @@
     color: #fff;
 }
 
-.text ul li:hover a {
-    position: relative;
-    color: #80acd3;
-    /* background-color: #fff; */
-}
-
-.underline {
+.footerSubText::after {
+    content: "";
     position: absolute;
-    bottom: -20%;
-    left: 0%;
-    /* display: inline-block; */
+    width: 0%;
     height: 1px;
-    width: 12%;
-    margin: auto;
-    transition: all 0.5s ease-in-out;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
 }
 
-.text ul li:hover .underline {
+.text ul li:hover .footerSubText::after {
+    color: #80acd3;
     width: 100%;
-    left: 0;
-    background-color: #80acd3;
+    transition: width 800ms ease-in-out;
+}
+
+.text ul li:hover .footerSubText {
+    color: #80acd3;
+    transition: color 800ms ease-in-out;
+}
+
+.footerSubText {
+    position: relative;
+
 }
 
 .di {
@@ -218,7 +258,13 @@
     position: relative;
     margin: 0 10px 0 0;
     border: 1px solid #80acd3;
+    cursor: pointer;
 }
+
+/* .icones:hover {
+    background-color: #80ACD3;
+    color: white !important;
+} */
 
 .icones img {
     height: 50%;
@@ -229,9 +275,32 @@
     transform: translate(-50%, -50%);
 }
 
+.end p::after {
+    content: '';
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 1px;
+    background-color: #80acd3;
+
+}
+
+.end:hover p::after {
+
+    width: 100%;
+    transition: width 800ms ease-in-out;
+}
+
 .start,
 .end p {
+    position: relative;
     color: #80acd3;
+    width: max-content;
+    cursor: pointer;
+    /* background-color: #fff; */
 }
 
 /* Media Queries */
