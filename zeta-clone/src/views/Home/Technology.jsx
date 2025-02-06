@@ -40,18 +40,20 @@ const Technology = () => {
                         </div>
                     </div>
                 </div>
-                <div className='right-side-content'>
-                    <p>Evolution</p>
-                    <h1><strong>of Technology</strong></h1>
-                    <h2>From Concept to Realization:</h2>
-                    <h4>ZETA – Your Partner for the Pharmaceutical and Biotech Industry!</h4>
+                <div className="text-container">
+                    <div className='right-side-content'>
+                        <p>Evolution</p>
+                        <h1><strong>of Technology</strong></h1>
+                        <h2>From Concept to Realization:</h2>
+                        <h4>ZETA – Your Partner for the Pharmaceutical and Biotech Industry!</h4>
+                    </div>
                 </div>
                 <div className='main-circle'>
                     <ul className='sub-circle'>
                         <li>
                             <div className="outer">
                                 <div className="inner">
-                                    <span className='line'></span>
+                                    {/* <span className='line'></span> */}
                                     <div className="innerContent">
                                         <img src={clock} alt="clockimage" className='clockimag' />
                                         <p>Time To<br />Market</p>

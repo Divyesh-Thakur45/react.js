@@ -22,7 +22,7 @@
 
 .navigation-main {
     margin: auto;
-    max-width: 1500px;
+    max-width: 1600px;
 }
 
 .navigation {
@@ -35,12 +35,10 @@
 .sub-nav-child {
     display: flex;
     justify-content: flex-end;
-    /* padding: 0 0 10px 0; */
+    /* padding: 0 0 0px 0; */
     z-index: 999;
-    /* position: sticky; */
-    width: 93.5%;
-    /* background-color: #fff; */
-    position: relative;
+    width: 95%;
+    background: transparent;
     /* background-color: #00223E;
     background: transparent; */
 }
@@ -55,7 +53,7 @@
     z-index: 999;
     top: 10;
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 0px 0 0 0;
     /* background-color: red; */
     /* background: transparent; */
     /* background-color: rgba(0, 34, 62 , 0.8); */
@@ -75,7 +73,7 @@
 }
 
 .nav-parent {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -86,15 +84,22 @@
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    padding: 0 0 10px 0;
+    /* background-color: #fff; */
 }
 
 .Logo {
-    width: 135px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    /* background-color: #fff; */
 }
 
 .Logo img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
+    /* background-color: #fff; */
 }
 
 .nav-child {
@@ -124,38 +129,48 @@
 
 .EN {
     font-family: 'Ubuntu';
-    font-weight: normal;
+    font-weight: bold;
     font-size: 13px;
     line-height: 1;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 0 0 10px;
 }
 
 
 .sub-nav {
-    width: 70%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    padding: 0;
-    /* background-color: #fff; */
+    /* padding: 0; */
+    /* background-color: red;
+    text-align: right;
+    border: 1px solid #000; */
 }
 
 .sub-nav li {
+    /* border: 1px solid #000; */
+    /* width: 100%; */
     font-size: 18px;
     justify-content: center;
-    display: flex;
-    margin: auto;
+    padding: 0 0 0 50px;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* margin: auto; */
+    /* text-align: right; */
+    /* justify-content: end; */
+    /* background-color: #fff; */
 }
 
 .sub-nav li a {
     font-family: 'Ubuntu';
     font-weight: normal;
     font-size: 18px;
+    letter-spacing: 0.05em;
     color: #fff;
     position: relative;
     text-decoration: none;
+    /* padding: 0 0 22.5px 0; */
+
 }
 
 .sub-nav li a::after {
@@ -181,7 +196,7 @@
 .search-icone {
     font-size: 27px;
     color: #fff;
-    font-weight: 800;
+    font-weight: bold;
     cursor: pointer;
 }
 
