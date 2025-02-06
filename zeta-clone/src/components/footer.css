@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: 'Ubuntu';
 }
-
+.main-middle-mobile{
+    display: none;
+}
 /* .footer-page {} */
 .footericone {
     display: none;
@@ -307,6 +309,12 @@
 
 /* 300px to <576px */
 @media screen and (max-width: 575px) {
+    .main-middle-mobile{
+        display: block;
+    }
+    .main-middle{
+        display: none;
+    }
     .footer-top {
         flex-direction: column;
         align-items: center;
@@ -402,7 +410,7 @@
 /* 576px to 768px */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .footer-top {
-
+        /* background-color: #fff; */
         flex-direction: row;
         align-items: center;
         text-align: center;
@@ -441,8 +449,9 @@
     }
 
     .two-button {
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
+
     }
 
     .webnar-btn {
@@ -452,8 +461,8 @@
 
     .subscribe-btn {
         /* width: 100%; */
-        font-size: 14px;
-        padding: 10px 35px;
+        font-size: 15px;
+        padding: 15px 25px;
         text-overflow: ellipsis;
         white-space: nowrap;
         /* Prevents text wrapping */

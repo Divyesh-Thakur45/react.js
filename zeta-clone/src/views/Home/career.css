@@ -28,7 +28,7 @@
     /* top: 56%;
     left: 20%;
     transform: translate(-50%, -50%); */
-    text-align: start; 
+    text-align: start;
 }
 
 .contant h3 {
@@ -61,7 +61,8 @@
     font-family: 'Ubuntu';
     display: flex;
     align-items: center;
-    justify-content: center; /* Center-align button contents */
+    justify-content: center;
+    /* Center-align button contents */
     border-radius: 5px;
     background-color: #96e8ca;
     border: 1px solid #96e8ca;
@@ -76,7 +77,16 @@
 .btn img {
     margin: 0 10px 0 0;
 }
-
+.ArrowNewJob{
+    display: none;
+}
+.btn:hover .ArrowNewJob{
+    display: block;
+    transition: display 900ms ease;
+}
+.btn:hover .ArrowNewJob1{
+    display: none;
+}
 .bottom-circle {
     position: relative;
     height: 180px;
@@ -87,18 +97,20 @@
     z-index: 999;
     background-color: rgba(128, 172, 211, 0.5);
 }
-.contantandcircle{
+
+.contantandcircle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 1400px;
     margin: auto;
     /* background-color: yellow; */
     position: absolute;
-    top: 65%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .bottom-small-circle {
     /* position: relative; */
     /* top: 50%;
@@ -201,7 +213,9 @@
     .bottom-sub-small-circel p {
         font-size: 10px;
     }
-    .contantandcircle{
+
+    .contantandcircle {
+        max-width: 90%;
         flex-direction: column;
         align-items: start;
         top: 60%;
@@ -268,7 +282,9 @@
     .bottom-sub-small-circel p {
         font-size: 10px;
     }
-    .contantandcircle{
+
+    .contantandcircle {
+        max-width: 90%;
         flex-direction: row;
         align-items: start;
         top: 70%;
@@ -316,6 +332,10 @@
     .bottom-sub-small-circel p {
         font-size: 12px;
     }
+
+    .contantandcircle {
+        max-width: 90%;
+    }
 }
 
 /* 992px to 1200px */
@@ -358,5 +378,9 @@
 
     .bottom-sub-small-circel p {
         font-size: 12px;
+    }
+
+    .contantandcircle {
+        max-width: 90%;
     }
 }

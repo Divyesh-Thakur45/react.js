@@ -1,5 +1,5 @@
 import React from 'react';
-import light from "../../assets/images/light.jpg";
+import light from "../../assets/images/landingpage.jpg";
 import "./technology.css";
 import clock from "../../assets/SVGS/clock.svg"
 import costumize from "../../assets/SVGS/customize.svg"
@@ -10,6 +10,7 @@ import star from "../../assets/images/star.png"
 import star2 from "../../assets/images/star-2.png"
 import star3 from "../../assets/images/star-3.png"
 import star4 from "../../assets/images/star-4.png"
+import BrainStar from "../../assets/images/star-4.png"
 
 
 const Technology = () => {
@@ -83,6 +84,7 @@ const Technology = () => {
                     </ul>
                 </div>
                 <div className="fixed-round">
+                    <img src={BrainStar} className='BrainStar' alt="" />
                     <img src={brainimage} alt="" className='brainImage' />
                 </div>
             </div>

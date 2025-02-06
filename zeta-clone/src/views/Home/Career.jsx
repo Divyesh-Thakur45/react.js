@@ -2,6 +2,7 @@ import React from 'react'
 import bgImg from "../../assets/images/karriere-opt1_final.jpeg"
 import Gradiant from "../../assets/SVGS/svgexport-32.svg";
 import Arrow from "../../assets/SVGS/svgexport-10.svg";
+import ArrowNewJob from "../../assets/SVGS/svgexport-31.svg";
 import "./career.css"
 
 const Career = () => {
@@ -19,7 +20,8 @@ const Career = () => {
                         <h1> Welcome to <br />
                             <strong>the ZETA team</strong></h1>
                         <button className="btn">
-                            <img src={Arrow} alt="" className="" />
+                            <img src={Arrow} alt="" className="ArrowNewJob1" />
+                            <img src={ArrowNewJob} alt="" className="ArrowNewJob" />
                             My new job
                         </button>
                     </div>

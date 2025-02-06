@@ -1,0 +1,29 @@
+<svg id="animation-intro" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2958 3070" width="2958"
+    height="3070" xml:space="preserve">
+
+    <!-- Background Image -->
+    <image width="2958" height="3070" xlink:href="/files/theme/i/bg/keyvisual-landingpage.jpg" />
+
+    <!-- Points with proper transforms -->
+    <image class="point point1" width="746" height="744"
+        xlink:href="/files/theme/i/bg/9F5A41ED49CCF745.png"
+        transform="matrix(1.5358 0 0 1.5358 733.058 736.7222)" />
+
+    <image class="point point2" width="746" height="744"
+        xlink:href="/files/theme/i/bg/9F5A41ED49CCF748.png"
+        transform="matrix(1.5358 0 0 1.5358 1064.2594 1006.736)" />
+
+    <image class="point point3" width="746" height="744"
+        xlink:href="/files/theme/i/bg/9F5A41ED49CCF749.png" style="opacity:0.7;"
+        transform="matrix(0.9379 0 0 0.9379 1182.8544 879.9828)" />
+
+    <image class="point point4" width="746" height="744"
+        xlink:href="/files/theme/i/bg/9F5A41ED49CCF74A.png"
+        transform="matrix(0.9379 0 0 0.9379 1126.1669 1099.1298)" />
+
+    <image class="point point5" width="746" height="744"
+        xlink:href="/files/theme/i/bg/9F5A41ED49CCF74B.png" style="opacity:0.5;"
+        transform="matrix(0.9379 0 0 0.9379 961.1885 1210.1462)" />
+
+</svg>

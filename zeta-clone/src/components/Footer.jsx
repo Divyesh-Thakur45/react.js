@@ -18,7 +18,6 @@ const Footer = () => {
   const [SecondShow, setSecondShow] = useState(false)
   const [ThirdShow, setThirdShow] = useState(false)
   const [FourthShow, setFourthShow] = useState(false)
-  console.log(firstShow)
   return (
     <div className='footer-page'>
       <div className="main-top">
@@ -43,11 +42,82 @@ const Footer = () => {
       <div className="main-middle">
         <div className="footer-bottom">
           <div className="first">
-            <h1 className='title-head' onClick={() => setfirstShow(!firstShow)}>ZETA Holding <br />
+            <h1 className='title-head'>ZETA Holding <br />
               Headquarter <div>
                 <img src={footericone} className='footericone' alt="" /></div></h1>
             <div
-              className={`footer-none ${firstShow ? "sm:block" : "sm:hidden"} md:block`}
+              className={`footer-none`}
+            >
+              <p>Zetaplatz 1, 8501 Lieboch <br />
+                Austria</p>
+              <div className='selft-detail'>
+                <img src={call} alt="" />
+                <span className='di'>+91 8347346187<span className='line-2'></span></span>
+              </div>
+              <div className='selft-detail'>
+                <img src={email} alt="" />
+                <span className='di'>office@zeta.com<span className='line-2'></span></span>
+              </div>
+            </div>
+          </div>
+          <div className="second">
+            <h1 className='title-head'>Company <div>
+              <img src={footericone} className='footericone' alt="" /></div></h1>
+            <div className="text">
+              <ul className={`footer-none`}>
+                <li><a href="" className='footerSubText'>About </a></li>
+                <li><a href="" className='footerSubText'>Locations</a></li>
+                <li><a href="" className='footerSubText'>Contact</a></li>
+                <li><a href="" className='footerSubText'>Career</a></li>
+                <li><a href="" className='footerSubText'>Vacancies</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="third">
+            <h1 className='title-head'>INFO & ESSENTIALS <div><img src={footericone} className='footericone' alt="" /></div></h1>
+            <div className="text">
+              <ul className={`footer-none`}>
+                <li><a href="" className='footerSubText'>Success Stories</a></li>
+                <li><a href="" className='footerSubText'>ZETA Videos</a></li>
+                <li><a href="" className='footerSubText'>Events</a></li>
+                <li><a href="" className='footerSubText'>Media Relations</a></li>
+                <li><a href="" className='footerSubText'>Downloads</a></li>
+                <li><a href="" className='footerSubText'>FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="fourth">
+            <h1 className='title-head' >LEGAL <div><img src={footericone} className='footericone' alt="" /></div></h1>
+            <div className="text">
+              <ul className={`footer-none`}>
+                <li><a href="" className='footerSubText'>Data protection</a></li>
+                <li><a href="" className='footerSubText'>Legal notice</a></li>
+                <li><a href="" className='footerSubText'>General terms and conditions</a></li>
+                <li><a href="" className='footerSubText'>Compliance</a></li>
+                <li><a href="" className='footerSubText'>Cookies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* mobile Device */}
+      <div className="main-middle-mobile">
+        <div className="footer-bottom">
+          <div className="first">
+            <h1 className='title-head' onClick={() => setfirstShow(!firstShow)}>ZETA Holding <br />
+              Headquarter <div>
+                <img
+                  src={footericone}
+                  className="footericone"
+                  style={{ transform: firstShow ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease-in-out" }}
+                  alt=""
+                />
+              </div>
+            </h1>
+            <div
+              className={`footer-none`}
+              style={{ display: firstShow ? "block" : "none" }}
             >
               <p>Zetaplatz 1, 8501 Lieboch <br />
                 Austria</p>
@@ -63,9 +133,10 @@ const Footer = () => {
           </div>
           <div className="second">
             <h1 className='title-head' onClick={() => setSecondShow(!SecondShow)}>Company <div>
-              <img src={footericone} className='footericone' alt="" /></div></h1>
+              <img src={footericone} className='footericone' alt=""
+                style={{ transform: SecondShow ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease-in-out" }} /></div></h1>
             <div className="text">
-              <ul className={`footer-none ${SecondShow ? "sm:block" : "sm:hidden"} md:block`}>
+              <ul className={`footer-none`} style={{ display: SecondShow ? "block" : "none" }}>
                 <li><a href="" className='footerSubText'>About </a></li>
                 <li><a href="" className='footerSubText'>Locations</a></li>
                 <li><a href="" className='footerSubText'>Contact</a></li>
@@ -75,9 +146,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="third">
-            <h1 className='title-head' onClick={() => setThirdShow(!ThirdShow)}>INFO & ESSENTIALS <div><img src={footericone} className='footericone' alt="" /></div></h1>
+            <h1 className='title-head' onClick={() => setThirdShow(!ThirdShow)}>INFO & ESSENTIALS <div>
+              <img src={footericone} className='footericone' alt=""
+                style={{ transform: ThirdShow ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease-in-out" }} /></div></h1>
             <div className="text">
-              <ul className={`footer-none ${ThirdShow ? "sm:block" : "sm:hidden"} md:block`}>
+              <ul className={`footer-none`} style={{ display: ThirdShow ? "block" : "none" }}>
                 <li><a href="" className='footerSubText'>Success Stories</a></li>
                 <li><a href="" className='footerSubText'>ZETA Videos</a></li>
                 <li><a href="" className='footerSubText'>Events</a></li>
@@ -88,9 +161,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="fourth">
-            <h1 className='title-head' onClick={() => setFourthShow(!FourthShow)}>LEGAL <div><img src={footericone} className='footericone' alt="" /></div></h1>
+            <h1 className='title-head' onClick={() => setFourthShow(!FourthShow)}>LEGAL <div>
+              <img src={footericone} className='footericone' alt=""
+                style={{ transform: FourthShow ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease-in-out" }} /></div></h1>
             <div className="text">
-              <ul className={`footer-none ${FourthShow ? "sm:block" : "sm:hidden"} md:block`}>
+              <ul className={`footer-none`} style={{ display: FourthShow ? "block" : "none" }}>
                 <li><a href="" className='footerSubText'>Data protection</a></li>
                 <li><a href="" className='footerSubText'>Legal notice</a></li>
                 <li><a href="" className='footerSubText'>General terms and conditions</a></li>

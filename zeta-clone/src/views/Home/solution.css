@@ -108,36 +108,50 @@
 
 .sub_round_1:hover .sub_child_round_1 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_round_2:hover .sub_child_round_2 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
-
-
 
 .sub_round_4:hover .sub_child_round_4 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_round_5:hover .sub_child_round_5 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_round_6:hover .sub_child_round_6 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_round_7:hover .sub_child_round_7 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_round_8:hover .sub_child_round_8 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_round_9:hover .sub_child_round_9 {
     background-color: #435E76;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sub_child_round_1 {
@@ -318,6 +332,7 @@
 .sub_round_3:hover .sub_child_round_3 {
     cursor: pointer;
     background-color: #435E76;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .round_3_img {
@@ -904,9 +919,7 @@
 }
 
 .btn-2 {
-    /* background-color: #fff; */
     padding: 10px 30px;
-    /* border: none; */
     border-radius: 5px;
     color: #00223F;
     font-weight: 600;
@@ -914,9 +927,7 @@
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0.025em;
-    text-transform: uppercase;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
-    transition: 0.5s;
+    transition: 0.4s;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -1000,7 +1011,7 @@
 
 
 /* 300px to <576px */
-@media (min-width: 300px) and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
     .all-counters {
         display: none;
     }
