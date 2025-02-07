@@ -8,7 +8,7 @@
     height: 90vh;
     display: block;
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .technology-page {
@@ -51,8 +51,8 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    height: 100vh;
-    width: 100vw;
+    height: 105vh;
+    width: 90vw;
     object-fit: contain;
     display: block;
     z-index: 1;
@@ -405,18 +405,20 @@
 /* Media Queries */
 @media (max-width: 576px) {
     .main-technology {
-        height: 100vh;
+        height: auto;
         width: 100vw;
         display: block;
+        position: relative;
     }
 
     .landingPage {
-        margin: 30% 0 30% 0;
+        margin: 99px 0 0 0;
         height: 100%;
         width: 100%;
     }
 
     .landingPageImg {
+        position: relative;
         height: 200px;
         width: 200px;
         left: 0%;
@@ -440,20 +442,60 @@
         object-fit: contain;
     }
 
-    .text-container {
-        max-width: 100%;
-        top: 60%;
-        left: 50%;
+    /* .text-container {
+        max-width: 1410px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 51%;
+        position: absolute;
         z-index: 99;
+    }
+    
+    .right-side-content {
+        z-index: 99;
+        width: 51%;
+        max-width: 800px;
+        position: absolute;
+        left: 72%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+        padding: 20px;
+    } */
+
+    .text-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+        /* margin-top: 50px; */
+        /* background-color: red; */
+        margin: 80px 0 -53px 0;
+        text-align: center;
+        /* padding: 100px 0 0 0; */
     }
 
     .right-side-content {
-        z-index: 99;
-        width: 100%;
-        max-width: 100%;
+        /* margin-top: 40px; */
+        width: auto;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0 !important;
+        text-align: center;
         left: 50%;
         top: 50%;
-        text-align: center;
+        /* background-color: #fff; */
+    }
+
+    .main-circle {
+        position: relative;
+        /* background-color: #fff; */
+        max-width: fit-content;
+        transform: translate(-50%, -50%);
+        bottom: 0%;
+        left: 50%;
+        /* margin: auto; */
     }
 
     .left {
@@ -490,14 +532,7 @@
         font-size: 12px;
     }
 
-    .main-circle {
-        width: max-content;
-        z-index: 99;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        bottom: 0%;
-    }
+
 
     .right-side-content p,
     .right-side-content h1 {
@@ -505,11 +540,13 @@
     }
 
     .right-side-content h2 {
-        font-size: 20px;
+        font-size: 18px;
+
     }
 
     .right-side-content h4 {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .sub-circle {
@@ -518,6 +555,7 @@
         justify-content: space-evenly;
         margin: auto;
     }
+
     .line::before {
         content: "";
         position: absolute;
@@ -581,25 +619,26 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
     .main-technology {
-        height: 115vh;
-        width: 100%;
+        height: auto;
+        width: 100vw;
         display: block;
+        position: relative;
     }
 
     .landingPage {
-        margin: 20% 0 20% 0;
+        margin: 180px 0 0 0;
         height: 100%;
         width: 100%;
     }
 
     .landingPageImg {
-        height: 450px;
-        width: 450px;
+        position: relative;
+        height: 350px;
+        width: 350px;
         left: 0%;
         top: 0%;
         margin: auto;
         object-fit: cover;
-
     }
 
     .light {
@@ -608,12 +647,49 @@
         top: 50%;
         left: 50%;
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
     .lightImg {
-        height: 700px;
-        object-fit: cover;
+        height: 720px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+    .text-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+        /* margin-top: 50px; */
+        /* background-color: red; */
+        margin: 150px 0 -53px 0;
+        text-align: center;
+        /* padding: 100px 0 0 0; */
+    }
+
+    .right-side-content {
+        /* margin-top: 40px; */
+        width: auto;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0 !important;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        /* background-color: #fff; */
+    }
+
+    .main-circle {
+        position: relative;
+        /* background-color: #fff; */
+        max-width: fit-content;
+        transform: translate(-50%, -50%);
+        bottom: 0%;
+        left: 50%;
+        /* margin: auto; */
     }
 
     .left {
@@ -621,14 +697,15 @@
     }
 
     .circle {
-        height: 140px;
-        width: 140px;
-        top: 0%;
+        height: 120px;
+        width: 120px;
+        top: -20px;
+        left: 10px;
     }
 
     .small-circle {
-        height: 120px;
-        width: 120px;
+        height: 105px;
+        width: 105px;
     }
 
     .sub-small-circel {
@@ -649,29 +726,7 @@
         font-size: 12px;
     }
 
-    .main-circle {
-        z-index: 99;
-        position: relative;
-        left: 50%;
-        top: 150%;
-        transform: translate(-50%, -50%);
-    }
 
-    .text-container {
-        max-width: 100%;
-        top: 65%;
-        left: 50%;
-        z-index: 99;
-    }
-
-    .right-side-content {
-        z-index: 99;
-        width: 100%;
-        max-width: 100%;
-        left: 50%;
-        top: 50%;
-        text-align: center;
-    }
 
     .right-side-content p,
     .right-side-content h1 {
@@ -679,28 +734,34 @@
     }
 
     .right-side-content h2 {
-        font-size: 20px;
+        font-size: 18px;
+
     }
 
     .right-side-content h4 {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .sub-circle {
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
         margin: auto;
     }
 
     .line::before {
-        display: none;
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 1.5px;
+        transform: translateX(-100%);
     }
 
     .outer {
         height: 80px;
         width: 80px;
-        margin: 0 0px 0 0px;
+        margin: 0 10px;
         top: 0%;
         right: 0%;
     }
@@ -720,20 +781,37 @@
     }
 
     .stars {
-        /* background-color: #fff; */
-        width: 90px;
-        height: 135px;
+        width: 75px;
+        height: 120px;
         object-fit: contain;
     }
 
     .main-circle::before {
         display: none;
     }
+
+    .fixed-round {
+        left: 10px;
+        bottom: 10px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .BrainStar {
+        top: 40%;
+        left: 60%;
+        scale: 1.1;
+    }
+
+    .brainImage {
+        height: 70px;
+        width: 70px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     .main-technology {
-        height: 120vh;
+        height: auto;
         width: 100%;
         display: block;
     }
@@ -802,29 +880,39 @@
     }
 
     .main-circle {
-        z-index: 99;
         position: relative;
-        left: 50%;
-        bottom: 0%;
-        padding: 30px 0 0 0;
+        /* background-color: #fff; */
+        max-width: fit-content;
         transform: translate(-50%, -50%);
+        bottom: 0%;
+        left: 50%;
+        /* margin: auto; */
     }
 
     .text-container {
-        max-width: 100%;
-        top: 70%;
-        left: 50%;
-        z-index: 99;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+        /* margin-top: 50px; */
+        /* background-color: red; */
+        margin: 150px 0 -53px 0;
+        text-align: center;
+        /* padding: 100px 0 0 0; */
     }
 
     .right-side-content {
-        z-index: 99;
-        width: 100%;
-        max-width: 100%;
+        /* margin-top: 40px; */
+        width: auto;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0 !important;
+        text-align: center;
         left: 50%;
         top: 50%;
-        text-align: center;
+        /* background-color: #fff; */
     }
+
 
     .right-side-content p,
     .right-side-content h1 {
@@ -840,7 +928,6 @@
     }
 
     .sub-circle {
-        width: 40%;
         display: flex;
         justify-content: space-evenly;
         margin: auto;
@@ -886,7 +973,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .main-technology {
-        height: 130vh;
+        height: auto;
         width: 100%;
         display: block;
     }
@@ -1039,7 +1126,7 @@
 
 @media (min-width: 1200px) and (max-width: 1500px) {
     .main-technology {
-        height: 135vh;
+        height: auto;
         width: 100%;
         display: block;
     }

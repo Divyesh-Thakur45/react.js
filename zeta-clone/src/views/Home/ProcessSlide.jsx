@@ -9,6 +9,7 @@ import slider_3 from "../../assets/images/slider_3.jpg";
 import slider_4 from "../../assets/images/slider_4.jpg";
 import leftArrow from "../../assets/SVGS/svgexport-11.svg";
 import RightArrow from "../../assets/SVGS/svgexport-12.svg";
+import SliderBg from "../../assets/SVGS/svgexport-9.svg";
 import Arrow from "../../assets/SVGS/svgexport-10.svg";
 import Arrow_white from "../../assets/SVGS/svgexport-31.svg";
 
@@ -23,8 +24,8 @@ const ProcessSlide = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         arrows: false,
         beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Track active slide
         customPaging: (i) => (
@@ -33,7 +34,7 @@ const ProcessSlide = () => {
             </div>
         ),
         appendDots: (dots) => (
-            <div className="custom-dots-wrapper">   
+            <div className="custom-dots-wrapper">
                 <ul className="hello">{dots}</ul>
             </div>
         ),
@@ -54,6 +55,9 @@ const ProcessSlide = () => {
                 <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_1} alt="" className="inside-img" />
+                        <div className="background">
+                            <img src={SliderBg} alt="" />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
                     </div>
                     <div className="main-text-container">
@@ -77,6 +81,9 @@ const ProcessSlide = () => {
                 <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_2} alt="" className="inside-img" />
+                        <div className="background">
+                            <img src={SliderBg} alt="" />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
                     </div>
                     <div className="main-text-container">
@@ -101,6 +108,9 @@ const ProcessSlide = () => {
                 <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_3} alt="" className="inside-img" />
+                        <div className="background">
+                            <img src={SliderBg} alt="" />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
                     </div>
                     <div className="main-text-container">
@@ -126,14 +136,18 @@ const ProcessSlide = () => {
                 <div className="slide-screen">
                     <div className="relative">
                         <img src={slider_4} alt="" className="inside-img" />
+                        <div className="background">
+                            <img src={SliderBg} alt="" />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
                     </div>
                     <div className="main-text-container">
                         <div className="text-container-inside">
-                            <div className="headline">Digitalization</div>
+                            <div className="headline">Automation</div>
                             <h3 className="subline">
-                                Get to know the digital twin <br />
-                                of your production plant!
+                                Single-user­control, DCS system or MTP?<br />
+                                We have the right automation­solution for you!
+                                
                             </h3>
                             <button className="btn">
                                 <div className="white-arrow-of-slider">

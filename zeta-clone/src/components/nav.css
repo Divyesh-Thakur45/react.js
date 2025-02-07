@@ -176,7 +176,7 @@
 .sub-nav li a::after {
     content: "";
     position: absolute;
-    bottom: -80%;
+    bottom: -150%;
     left: 0;
     width: 100%;
     height: 2px;
@@ -194,7 +194,7 @@
 
 
 .search-icone {
-    font-size: 27px;
+    font-size: 20px;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
@@ -564,6 +564,184 @@
 
 /* 768px to 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .main-nav-for-big {
+        display: none;
+    }
+
+    .phone-nav {
+        z-index: 999;
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        /* display: block; */
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 34, 62, 0.8);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .sub-phone-nav {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        padding: 5px 0 5px 0;
+        /* height: 10px; */
+        /* background-color: #fff; */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icones-for-tab {
+        /* background-color: #fff; */
+    }
+
+    .sub-phone-nav {
+        position: relative;
+        z-index: 999;
+    }
+
+    .close {
+        justify-content: end;
+        display: flex;
+        color: #fff;
+        font-size: 50px;
+        display: block;
+        /* background-color: red; */
+    }
+
+    .small-nav-titles {
+        background-color: #00223E;
+        /* backdrop-filter: blur(200px);
+        background: transparent; */
+        position: absolute;
+        height: 350px;
+        width: 100%;
+        top: 234px;
+        left: 50%;
+        overflow-y: scroll;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+
+    }
+
+    .sub-small-nav-titles {
+        position: relative;
+        height: 100%;
+    }
+
+    .small-nav-li-first {
+        font-family: 'Ubuntu';
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.4);
+        text-align: end;
+        border-bottom: 1px solid rgba(126, 171, 213, 0.4);
+        padding: 15px 0;
+    }
+
+    .small-nav-li {
+        border-bottom: 2px solid rgba(126, 171, 213, 0.4);
+    }
+
+    .small-nav-li a {
+        color: #fff;
+        font-size: 28px;
+        font-family: 'Ubuntu';
+        font-weight: bold;
+        line-height: 1.16666667;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: none;
+        cursor: pointer;
+        padding: 17px 15px;
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none;
+        font-family: 'Ubuntu';
+        font-weight: bold;
+        line-height: 1.14893617;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.52);
+    }
+
+    .search-content {
+        z-index: 995;
+        position: absolute;
+        height: 150px;
+        background-color: #00223E;
+        object-fit: cover;
+        width: 100%;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search-image {
+        position: absolute;
+        /* background-color: red; */
+        width: 100%;
+        height: 500px;
+    }
+
+    .search-image svg {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .search-content p {
+        font-family: 'Ubuntu';
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 1.16666667;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: #01213f;
+        margin: 0 0 0 10px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* z-index: 999; */
+    }
+
+    .search-content input {
+        position: relative;
+        top: 80%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 435px;
+        max-width: 80%;
+        line-height: 50px;
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        /* background-color: transparent; */
+        color: #fff;
+        opacity: 1;
+        font-weight: 600;
+        padding: 0 40px 0 54.75px;
+        z-index: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    .toggle {
+        transition: all 0.9s ease-in-out;
+    }
+}
+
+/*  992px to  1200px*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     .main-nav-for-big {
         display: none;
     }
