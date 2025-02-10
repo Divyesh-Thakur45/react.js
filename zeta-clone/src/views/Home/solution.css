@@ -68,6 +68,7 @@
 }
 
 .counterOne {
+    display: none;
     position: absolute;
     top: 7.5%;
     left: 10%;
@@ -875,17 +876,21 @@
     /* object-fit: cover; */
     margin: auto;
     position: relative;
+    z-index: 99;
     /* top: 0%; */
     /* padding-bottom: 150px; */
 }
 
 .LineEnd img {
+    /* background-color: #002E55; */
+    height: 100%;
+    width: 100%;
     /* object-fit: cover; */
     /* background-color: red; */
-    
-    color: #00223F;
+    z-index: 99;
+    /* color: #00223F; */
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 58.5%;
     transform: translate(-50%, -50%);
 }

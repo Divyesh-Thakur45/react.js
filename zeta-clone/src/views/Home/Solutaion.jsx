@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import "./solution.css"
 // import line from "../../assets/SVGS/svgexport-13.svg";
 // import dotanimation from "../../assets/images/dotanimation2.png";
@@ -25,6 +25,7 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import CountUp from 'react-countup';
 
 const Solutaion = () => {
+  // const pathRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [startCount1, setStartCount1] = useState(false);
   const [startCount2, setStartCount2] = useState(false);
@@ -44,7 +45,23 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".sub_round_1",
-        start: "top 90%",
+        start: "top 84%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount1(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount1(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterOne', {
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      onStart: () => document.querySelector('.counterOne').style.display = 'block',
+      scrollTrigger: {
+        trigger: ".counterOne",
+        start: "top 84%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -60,7 +77,23 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_2",
-        start: "top 90%",
+        start: "top 85%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterTwo', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterTwo",
+        start: "top 81%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -76,13 +109,29 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_3",
-        start: "top 90%",
+        start: "top 79%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount3(true), // Start counter when round_1 is fully visible
         onLeaveBack: () => setStartCount3(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterThird', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterThird",
+        start: "top 94%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_4', {
@@ -92,13 +141,29 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_4",
-        start: "top 90%",
+        start: "top 85%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount4(true), // Start counter when round_1 is fully visible
         onLeaveBack: () => setStartCount4(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterFourth', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterFourth",
+        start: "top 85%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_5', {
@@ -108,13 +173,29 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_5",
-        start: "top 90%",
+        start: "top 82%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount5(true), // Start counter when round_1 is fully visible
         onLeaveBack: () => setStartCount5(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterFifth', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterFifth",
+        start: "top 84%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_6', {
@@ -124,13 +205,29 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_6",
-        start: "top 90%",
+        start: "top 81%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount6(true), // Start counter when round_1 is fully visible
         onLeaveBack: () => setStartCount6(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterSix', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterSix",
+        start: "top 82%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_7', {
@@ -140,13 +237,29 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_7",
-        start: "top 90%",
+        start: "top 86%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount7(true), // Start counter when round_1 is fully visible
         onLeaveBack: () => setStartCount7(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterSeven', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterSeven",
+        start: "top 86%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_8', {
@@ -156,13 +269,29 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_8",
-        start: "top 90%",
+        start: "top 82%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount8(true), // Start counter when round_1 is fully visible
         onLeaveBack: () => setStartCount8(false), // Reset if scrolling up
+      }
+    })
+    gsap.from('.counterEight', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterEight",
+        start: "top 84%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
       }
     })
     gsap.from('.round_9', {
@@ -172,7 +301,7 @@ const Solutaion = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".round_9",
-        start: "top 90%",
+        start: "top 92%",
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
@@ -181,21 +310,22 @@ const Solutaion = () => {
         onLeaveBack: () => setStartCount9(false), // Reset if scrolling up
       }
     })
-
-    // gsap.set("#solution-cursor", {
-    //   xPercent: -50, yPercent: -50, transformOrigin: "50% 50%", rotation: 1000,
-    //   rotationX: 1000,
-    //   rotationY: 0,
-    // });
-    // gsap.fromTo("#solution-cursor",
-    //   { rotation: 360 }, // Starting rotation
-    //   {
-    //     rotation: 360,
-    //     duration: 5,
-    //     repeat: -1,
-    //     ease: "linear"
-    //   }
-    // );
+    gsap.from('.counterNine', {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".counterNine",
+        start: "top 92%",
+        end: "bottom 100%",
+        scrub: 2,
+        toggleActions: "play reverse play reverse",
+        // markers: true,
+        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
+        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+      }
+    })
     gsap.to("#actioncursor", {
       scrollTrigger: {
         delay: 300,
@@ -231,6 +361,19 @@ const Solutaion = () => {
       ease: "none",
     });
 
+    // gsap.to("#motionPathColored", {
+    //   scrollTrigger: {
+    //     trigger: "#motionPathColored",
+    //     start: "top 90%", 
+    //     end: "bottom 50%", 
+    //     scrub: true,
+    //     markers: true, 
+    //   },
+    //   strokeDashoffset: 0,
+    //   ease: "none",
+    // });
+
+
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -265,7 +408,7 @@ const Solutaion = () => {
               <path
                 id="motionPath"
                 className="main-path"
-                style={{ strokeMiterlimit: 10 }}
+                style={{ strokeMiterlimit: 10, zIndex: 10 }}
                 d={
                   isMobile
                     ? 'M 0,2898.1 L0,24' // Mobile path
@@ -276,7 +419,7 @@ const Solutaion = () => {
               />
 
               {/* Colored Motion Path */}
-              <path
+              {/* <path
                 id="motionPathColored"
                 style={{
                   strokeMiterlimit: 10,
@@ -285,13 +428,13 @@ const Solutaion = () => {
                 }}
                 d={
                   isMobile
-                    ? 'M 0,2898.1 L0,24' // Mobile path
+                    ? 'M 0,2898.1 L0,24'
                     : 'M252,2898.1c0-222.6,121-210.3,121-432.9l0,0c0-405.8-349-401.4-349-807.1s455.5-405.8,455.5-811.5S24,440.7,24,34.9' // Desktop path
                 }
                 data-length="3292.853759765625"
-                stroke="#FFFFFF"
+                stroke="#FF0000"
                 fill="none"
-              />
+              /> */}
               <g className="point point1" transform="translate(1499.5 6338) rotate(180)">
                 <g transform="translate(857.571 3725.071)">
                   <path d="M617.9,2558.9c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S623.4,2558.9,617.9,2558.9z" fill="#80ACD3"></path>
@@ -414,7 +557,7 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
         c2.3,0,4.4,1,6,2.7l0,0c0.2,0.2,18,22.7,18,35.1c0,13.2-10.8,24-24,24S0,51,0,37.8C0,30.2,14.8,0,24,0z" fill="#022E55"></path>
                 </g>
               </g> */}
-              <g id="actioncursor">
+              <g id="actioncursor" style={{ zIndex: 999 }} >
                 <g>
                   <image
                     href={drop}
@@ -580,7 +723,7 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
               applied for</p>
           </div>
         </div>
-        <div className="LineEnd">
+        <div className="LineEnd" style={{ zIndex: 99 }}>
           <img src={lineEnd} alt="" className='LineEndImg' />
         </div>
         <div className='bottom-heading'>
