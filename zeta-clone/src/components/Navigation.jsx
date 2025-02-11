@@ -9,6 +9,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 const Navigation = () => {
     const [navigate, setnavigate] = useState(false)
+    localStorage.setItem("navigate", JSON.stringify(navigate));
     useEffect(() => {
         document.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
@@ -24,7 +25,7 @@ const Navigation = () => {
                 document.querySelector('.sub-nav-child').classList.remove('scroll-sub-nav');
             }
         });
-    }, [])
+    }, [navigate])
     // const [show, setShow] = useState(true);
 
     return (
@@ -72,8 +73,11 @@ const Navigation = () => {
                         <img src={logo} width="138" height="122" alt="ZETA" className='Small-logo' />
                     </div>
                     <div className='icones-for-tab' onClick={() => setnavigate(!navigate)} >
-                        {navigate ? <IoClose className="close" /> :
-                            <HiOutlineMenuAlt1 className="close" />}
+                        <div className="mainBar" style={{ width: "40px", height: "40px", position: "relative" }}>
+                            <div className="bar-1" style={{ display: navigate ? "none" : "block" }}></div>
+                            <div className="bar-2" style={{ width: navigate ? "100%" : "75%", top: navigate ? "80%" : "50%", left: navigate ? "30%" : "37%", rotate: navigate ? "45deg" : "0deg" }}></div>
+                            <div className="bar-3" style={{ width: navigate ? "100%" : "100%", bottom: navigate ? "80%" : "10%", left: navigate ? "33%" : "50%", rotate: navigate ? "-45deg" : "0deg" }}></div>
+                        </div>
                     </div>
                 </div>
                 <div className='toggle' style={{ display: navigate ? "block" : "none" }}>
@@ -91,18 +95,19 @@ const Navigation = () => {
                             <li className='small-nav-li'><a href="">JOBS</a></li>
                             <li className='small-nav-li'><a href="">newsrooms</a></li>
                         </ul>
-
                     </div>
                     <div className='search-content'>
                         <div className='search-image'>
                             <svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="282" viewBox="0 0 375 282"><defs><clipPath id="a"><rect width="375" height="282" transform="translate(4417 2345)" fill="#fff" stroke="#707070" stroke-width="1"></rect></clipPath></defs><g transform="translate(-4417 -2345)" clip-path="url(#a)"><path d="M737.148,0C1144.264,0,1474.3,330.033,1474.3,737.148S1144.264,1474.3,737.148,1474.3,0,1144.264,0,737.148,330.033,0,737.148,0Z" transform="translate(3701.352 2345.352)" fill="#7eabd5"></path></g></svg>
                         </div>
-                        <p>easy search</p>
-                        <input type="text" placeholder='Your Search terms' name="" id="" />
+                        <div className="seach-sub-content">
+                            <p>easy search</p>
+                            <CiSearch className='search-icone-mobile' />
+                            <input type="text" placeholder='Your Search terms' name="" id="" />
+                        </div>
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

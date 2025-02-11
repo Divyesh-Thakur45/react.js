@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Career from './Career';
 // import Randome from './Randome';
 const Hero = () => {
+  
   return (
     <div>
       {/* <Randome /> */}
@@ -20,4 +21,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

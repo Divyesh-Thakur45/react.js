@@ -12,7 +12,7 @@ const Career = () => {
                 <div className='relative'>
                     <img src={bgImg} className='bg-img' alt="" />
                     <img src={Gradiant} className='gradiant-blue' alt="" />
-                    <div className='absolute inset-0 bg-gradient-to-t from-white to-transparent'></div>
+                    <div className='absolute gradient'></div>
                 </div>
                 <div className='contantandcircle'>
                     <div className="contant">

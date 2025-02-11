@@ -48,6 +48,7 @@
     /* Set a fixed height to keep all boxes the same */
     /* background-color: #fff; */
     padding: 20px 50px;
+    cursor: pointer;
     /* Adds spacing inside the box */
     /* border-radius: 8px; */
     /* Optional: Adds rounded corners */
@@ -63,10 +64,9 @@
     position: relative;
     margin: auto;
     /* transition: background-color 0.9s ease-in-out; */
-    cursor: pointer;
 }
 
-.box-round-main:hover .box-sub-round {
+.box:hover .box-sub-round {
     transition: background-color 0.5s ease-in-out;
     background-color: #435E76;
 }
@@ -118,6 +118,7 @@
     font-size: 17px;
     color: #80acd3;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .learn-btn img {

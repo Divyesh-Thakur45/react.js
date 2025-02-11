@@ -86,6 +86,7 @@
     position: absolute;
     top: 7.5%;
     left: 40.7%;
+
 }
 
 .sub_round_1 {
@@ -94,6 +95,8 @@
     border-radius: 50%;
     border: 1px solid #435E76;
     position: relative;
+    transition: width 800ms ease-in-out;
+    animation: BorderAnimation 0.5s infinite;
 }
 
 .sub_round_1::before {
@@ -963,7 +966,8 @@
 .btn-2:hover .Arrow_1 {
     display: none;
 }
-.msgContent::after{
+
+.msgContent::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -973,10 +977,12 @@
     height: 1px;
     background-color: #80acd3;
 }
-.msg:hover .msgContent::after{
+
+.msg:hover .msgContent::after {
     transition: width 800ms ease-in-out;
     width: 0px;
 }
+
 .msg {
     /* background-color: #fff; */
     position: relative;
@@ -1207,7 +1213,12 @@
 
     .animation {
         display: none;
-        
+
+    }
+
+    .all_rounds {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .round_1,
@@ -1348,9 +1359,10 @@
 
 /* 768px to 992px */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .all-counters{
+    .all-counters {
         display: none;
     }
+
     .head {
         width: 90%;
         margin: auto;
@@ -1372,7 +1384,7 @@
 
     .all_rounds {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .animation {
@@ -1517,9 +1529,10 @@
 
 /* 992px to 1200px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .all-counters{
+    .all-counters {
         display: none;
     }
+
     .head {
         width: 90%;
         margin: auto;
@@ -1541,7 +1554,7 @@
 
     .all_rounds {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .animation {
@@ -1685,9 +1698,10 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
-    .all-counters{
+    .all-counters {
         display: none;
     }
+
     .head {
         width: 90%;
         margin: auto;
@@ -1709,7 +1723,7 @@
 
     .all_rounds {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .animation {

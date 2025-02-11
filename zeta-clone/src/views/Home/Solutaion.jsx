@@ -39,7 +39,7 @@ const Solutaion = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     gsap.from('.round_1', {
-      x: 10,
+      // x: 0,
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -71,7 +71,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_2', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -87,7 +87,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterTwo', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -103,7 +103,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_3', {
-      x: 10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -119,7 +119,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterThird', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -135,7 +135,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_4', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -151,7 +151,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterFourth', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -167,7 +167,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_5', {
-      x: 10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -183,7 +183,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterFifth', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -199,7 +199,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_6', {
-      x: 10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -215,7 +215,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterSix', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -231,7 +231,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_7', {
-      x: 10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -247,7 +247,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterSeven', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -263,7 +263,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_8', {
-      x: 10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -279,7 +279,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterEight', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -295,7 +295,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.round_9', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -311,7 +311,7 @@ const Solutaion = () => {
       }
     })
     gsap.from('.counterNine', {
-      x: -10,
+
       opacity: 0,
       duration: 1,
       delay: 1,
