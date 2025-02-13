@@ -18,12 +18,12 @@ const Product = () => {
   );
   const dispatch = useDispatch();
 
-  const multipleFilter = (e) =>{
+  const multipleFilter = (e) => {
     let value = e.target.value;
-    if(category.includes(value)){
-      setcategory(category.filter((e)=> e !== value))
+    if (category.includes(value)) {
+      setcategory(category.filter((e) => e !== value))
     }
-    else{
+    else {
       setcategory([...category, value]);
     }
   }
@@ -74,7 +74,7 @@ const Product = () => {
               value="men's clothing"
               name=""
               id=""
-              onClick={(e)=>multipleFilter(e)}
+              onClick={(e) => multipleFilter(e)}
               className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
             />
             <label htmlFor="" className="text-gray-700">
@@ -88,7 +88,7 @@ const Product = () => {
               value="jewelery"
               name=""
               id=""
-              onClick={(e)=>multipleFilter(e)}
+              onClick={(e) => multipleFilter(e)}
               className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
             />
             <label htmlFor="" className="text-gray-700">
@@ -102,7 +102,7 @@ const Product = () => {
               value="electronics"
               name=""
               id=""
-              onClick={(e)=>multipleFilter(e)}
+              onClick={(e) => multipleFilter(e)}
               className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
             />
             <label htmlFor="" className="text-gray-700">
@@ -116,7 +116,7 @@ const Product = () => {
               value="women's clothing"
               name=""
               id=""
-              onClick={(e)=>multipleFilter(e)}
+              onClick={(e) => multipleFilter(e)}
               className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
             />
             <label htmlFor="" className="text-gray-700">

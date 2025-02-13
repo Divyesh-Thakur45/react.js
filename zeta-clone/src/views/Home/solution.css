@@ -1233,6 +1233,28 @@
         display: none;
     }
 
+    .bottom-heading {
+        margin: 0;
+    }
+
+    .btn-2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .sub_round_1::after,
+    .sub_round_2::after,
+    .sub_round_3::after,
+    .sub_round_4::after,
+    .sub_round_5::after,
+    .sub_round_6::after,
+    .sub_round_7::after,
+    .sub_round_8::after,
+    .sub_round_9::after {
+        display: none;
+    }
+
+
     .head {
         width: 90%;
         margin: auto;
@@ -1395,6 +1417,27 @@
 /* 576px to 768px */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .all-counters {
+        display: none;
+    }
+
+    .bottom-heading {
+        margin: 0;
+    }
+
+    .btn-2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .sub_round_1::after,
+    .sub_round_2::after,
+    .sub_round_3::after,
+    .sub_round_4::after,
+    .sub_round_5::after,
+    .sub_round_6::after,
+    .sub_round_7::after,
+    .sub_round_8::after,
+    .sub_round_9::after {
         display: none;
     }
 
@@ -1569,6 +1612,27 @@
         display: none;
     }
 
+    .bottom-heading {
+        margin: 0;
+    }
+
+    .btn-2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .sub_round_1::after,
+    .sub_round_2::after,
+    .sub_round_3::after,
+    .sub_round_4::after,
+    .sub_round_5::after,
+    .sub_round_6::after,
+    .sub_round_7::after,
+    .sub_round_8::after,
+    .sub_round_9::after {
+        display: none;
+    }
+
     .head {
         width: 90%;
         margin: auto;
@@ -1739,6 +1803,27 @@
         display: none;
     }
 
+    .bottom-heading {
+        margin: 0;
+    }
+
+    .btn-2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .sub_round_1::after,
+    .sub_round_2::after,
+    .sub_round_3::after,
+    .sub_round_4::after,
+    .sub_round_5::after,
+    .sub_round_6::after,
+    .sub_round_7::after,
+    .sub_round_8::after,
+    .sub_round_9::after {
+        display: none;
+    }
+
     .head {
         width: 90%;
         margin: auto;
@@ -1905,6 +1990,27 @@
 
 @media (min-width: 1200px) and (max-width: 1500px) {
     .all-counters {
+        display: none;
+    }
+
+    .bottom-heading {
+        margin: 0;
+    }
+
+    .btn-2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .sub_round_1::after,
+    .sub_round_2::after,
+    .sub_round_3::after,
+    .sub_round_4::after,
+    .sub_round_5::after,
+    .sub_round_6::after,
+    .sub_round_7::after,
+    .sub_round_8::after,
+    .sub_round_9::after {
         display: none;
     }
 
