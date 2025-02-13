@@ -23,7 +23,7 @@
     width: 100%;
     top: 0%;
     right: 0%;
-    z-index: 9;
+    z-index: 2;
 }
 
 .gradient {
@@ -83,7 +83,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Center-align button contents */
     border-radius: 5px;
     background-color: #96e8ca;
     border: 1px solid #96e8ca;
@@ -94,7 +93,6 @@
     font-size: 18px;
     margin: 30px 0px;
 }
-
 .btn img {
     margin: 0 10px 0 0;
 }

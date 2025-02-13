@@ -84,8 +84,8 @@ const Benefits = () => {
                             <img src={earth} alt="" className='box-img' />
                         </div>
                     </div>
-                    <h4>Global Player</h4>
-                    <span>Working for you all over the world! We <br />are always close by with our 17 branch <br />offices.</span>
+                    <h4>Global Player <br /></h4>
+                    <span><br />Working for you all over the world! We <br />are always close by with our 17 branch <br />offices.</span>
                     <button className='learn-btn'>
                         <img src={Arrow} alt="" />
                         Learn More</button>
@@ -97,7 +97,7 @@ const Benefits = () => {
                         </div>
                     </div>
                     <h4>Management<br /> of Complexity</h4>
-                    <span>Whether greenfield or brownfield - we <br />manage your project!</span>
+                    <span><br />Whether greenfield or brownfield - we <br />manage your project!</span>
                     <button className='learn-btn'>
                         <img src={Arrow} alt="" />
                         Learn More</button>

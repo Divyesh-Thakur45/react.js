@@ -50,8 +50,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount1(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount1(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount1(true); // Start counter when round_1 is fully visible
+          document.querySelector('.sub_round_1').classList.add('animate-prixClipFix'); // Add class to trigger animation
+        },
+        onLeaveBack: () => {
+          setStartCount1(false);
+          document.querySelector('.sub_round_1').classList.remove('animate-prixClipFix'); // Remove class to reset animation
+        }
       }
     })
     gsap.from('.counterOne', {
@@ -67,11 +73,10 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount1(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount1(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount1(false),
       }
     })
     gsap.from('.round_2', {
-
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -82,8 +87,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount2(true),
+            document.querySelector('.sub_round_2').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount2(false),
+            document.querySelector('.sub_round_2').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterTwo', {
@@ -99,7 +110,7 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_3', {
@@ -114,8 +125,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount3(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount3(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount3(true),
+            document.querySelector('.sub_round_3').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount3(false),
+            document.querySelector('.sub_round_3').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterThird', {
@@ -131,7 +148,7 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_4', {
@@ -146,8 +163,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount4(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount4(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount4(true),
+            document.querySelector('.sub_round_4').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount4(false),
+            document.querySelector('.sub_round_4').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterFourth', {
@@ -163,11 +186,10 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_5', {
-
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -178,8 +200,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount5(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount5(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount5(true),
+            document.querySelector('.sub_round_5').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount5(false),
+            document.querySelector('.sub_round_5').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterFifth', {
@@ -195,7 +223,7 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_6', {
@@ -209,9 +237,14 @@ const Solutaion = () => {
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
-        // markers: true,
-        onEnter: () => setStartCount6(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount6(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount6(true),
+            document.querySelector('.sub_round_6').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount6(false),
+            document.querySelector('.sub_round_6').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterSix', {
@@ -227,11 +260,10 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_7', {
-
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -242,8 +274,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount7(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount7(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount7(true),
+            document.querySelector('.sub_round_7').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount7(false),
+            document.querySelector('.sub_round_7').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterSeven', {
@@ -259,11 +297,10 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_8', {
-
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -274,8 +311,14 @@ const Solutaion = () => {
         scrub: 2,
         toggleActions: "play reverse play reverse",
         // markers: true,
-        onEnter: () => setStartCount8(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount8(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount8(true),
+            document.querySelector('.sub_round_8').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount8(false),
+            document.querySelector('.sub_round_8').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterEight', {
@@ -291,11 +334,10 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.from('.round_9', {
-
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -305,13 +347,17 @@ const Solutaion = () => {
         end: "bottom 100%",
         scrub: 2,
         toggleActions: "play reverse play reverse",
-        // markers: true,
-        onEnter: () => setStartCount9(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount9(false), // Reset if scrolling up
+        onEnter: () => {
+          setStartCount9(true),
+            document.querySelector('.sub_round_9').classList.add('animate-prixClipFix');
+        },
+        onLeaveBack: () => {
+          setStartCount9(false),
+            document.querySelector('.sub_round_9').classList.remove('animate-prixClipFix');
+        },
       }
     })
     gsap.from('.counterNine', {
-
       opacity: 0,
       duration: 1,
       delay: 1,
@@ -323,7 +369,7 @@ const Solutaion = () => {
         toggleActions: "play reverse play reverse",
         // markers: true,
         onEnter: () => setStartCount2(true), // Start counter when round_1 is fully visible
-        onLeaveBack: () => setStartCount2(false), // Reset if scrolling up
+        onLeaveBack: () => setStartCount2(false),
       }
     })
     gsap.to("#actioncursor", {
@@ -399,9 +445,9 @@ const Solutaion = () => {
               x="0px"
               y="0px"
               viewBox="0 0 480 2898.1"
-              width="505"
+              width="520"
               height="2898.1"
-              style={{ enableBackground: 'new 0 0 480 2898.1' }}
+              style={{ enableBackground: 'new 0 0 480 2898.1', }}
               xmlSpace="preserve"
             >
               {/* Motion Path */}
@@ -564,8 +610,8 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
                     // rotate={150}
                     x="0"
                     y="0"
-                    width="50"
-                    height="50"
+                    width="70"
+                    height="70"
                     className="dotanimation"
                   />
                 </g>
@@ -730,11 +776,13 @@ M474.5,2211.6c7.4,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5s-13.5-6-13.5-13.5S467,221
           <h3>Are you already</h3>
           <h1>convinced of ZETA?</h1>
         </div>
-        <button className='btn-2'>
-          <img src={Arrow_1} alt="" className='Arrow_1' />
-          <img src={Arrow_2} alt="" className='Arrow_2' />
-          I'm ready!
-        </button>
+        <div>
+          <button className='btn-2'>
+            <img src={Arrow_1} alt="" className='Arrow_1' />
+            <img src={Arrow_2} alt="" className='Arrow_2' />
+            I'm ready!
+          </button>
+        </div>
         <div className="msg">
           <p className='msgContent'>No, I need more info!</p>
         </div>

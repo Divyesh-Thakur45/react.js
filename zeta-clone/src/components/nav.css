@@ -35,35 +35,41 @@
 .sub-nav-child {
     display: flex;
     justify-content: flex-end;
-    /* padding: 0 0 0px 0; */
     z-index: 999;
     width: 95%;
     background: transparent;
-    /* background-color: #00223E;
-    background: transparent; */
+    opacity: 1;
+    /* Initially visible */
+    visibility: visible;
+    transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
 }
 
 .scroll-sub-nav {
-    display: none;
+    opacity: 0;
+    /* Fades out smoothly */
+    visibility: hidden;
+    /* Ensures it cannot be clicked */
 }
+
 
 
 .main-nav {
     position: sticky;
     z-index: 999;
-    top: 10;
+    top: 10px;
     width: 100%;
     padding: 0px 0 0 0;
     /* background-color: red; */
     /* background: transparent; */
     /* background-color: rgba(0, 34, 62 , 0.8); */
+    transition: top 0.9s;
 }
 
 .scroll-nav {
     position: fixed;
-    transition: top 5s ease-in-out;
     z-index: 999;
-    top: 0;
+    top: 0px;
+    transition: top 0.9s;
     left: 0%;
     margin: auto;
     max-width: 7000px;

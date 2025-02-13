@@ -27,7 +27,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* Creates 4 equal columns */
-    width: 90%;
+    width: 85%;
     margin: auto;
     gap: 20px;
     align-items: stretch;
@@ -57,8 +57,8 @@
 }
 
 .box-round-main {
-    height: 160px;
-    width: 160px;
+    height: 170px;
+    width: 170px;
     border-radius: 50%;
     border: 2px solid #435E76;
     position: relative;
@@ -72,8 +72,8 @@
 }
 
 .box-sub-round {
-    height: 140px;
-    width: 140px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -84,7 +84,7 @@
 .box-img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: contain;
     padding: 30px;
 }
 
@@ -129,11 +129,14 @@
     text-align: center;
     margin: auto;
     width: 270px;
-    padding: 5% 0%;
+    /* padding: 5% 0%; */
+    /* margin-top: 10px; */
+    margin-bottom: 40px;
 }
 
 .blueArrow {
     display: none;
+
 }
 
 .WhiteArrow {
@@ -143,7 +146,7 @@
 .btm-btn {
     margin: auto;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 8px 35px;
     font-weight: 600;
     cursor: pointer;
     font-size: 17px;
@@ -153,23 +156,24 @@
     background-color: #80acd3;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
-    transition: all 0.2s linear;
+    /* transition: all 0.2s linear; */
 }
 
 .btm-btn:hover {
     background-color: #fff;
     color: #80acd3;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .btm-btn:hover .blueArrow {
-    transition: all 0.2s linear;
-    display: block;
+   display: block;
+    transition: all 0.3s ease-in-out;
     margin: 0px 10px 0px 0px;
 }
 
 .btm-btn:hover .WhiteArrow {
     display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Media Queries */

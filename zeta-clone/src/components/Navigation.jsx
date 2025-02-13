@@ -2,10 +2,6 @@ import React, { useEffect, useState } from 'react';
 import logo from "../assets/images/zeta-logo.svg";
 import { CiSearch } from "react-icons/ci";
 import "./nav.css";
-import Headroom from 'react-headroom';
-// import { HiOutlineBars3BottomRight } from "react-icons/hi2";
-import { IoClose } from "react-icons/io5";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 const Navigation = () => {
     const [navigate, setnavigate] = useState(false)

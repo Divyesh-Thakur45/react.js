@@ -58,19 +58,19 @@
     display: flex;
     font-weight: 600;
     align-items: center;
-    border: 1px solid #005aaa;
+    /* border: 1px solid #005aaa; */
     background-color: #005aaa;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
     padding: 10px 35px;
     border-radius: 5px;
+    /* border: 1px solid #fff; */
 }
 
 .webnar-btn:hover {
-    transition: background-color 0.5s ease-in;
+    transition: all 0.3s;
     color: #005aaa;
     background-color: #fff;
-    border: 1px solid #fff;
 }
 
 .webnar-btn:hover .fullWhite {
@@ -97,15 +97,14 @@
     font-size: 17px;
     padding: 10px 30px;
     border-radius: 5px;
-    border: 1px solid #80acd3;
+    /* border: 1px solid #80acd3; */
     background-color: #80acd3;
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 34, 62, 0.21);
+    transition: all 0.3s ease-in;
 }
 
 .subscribe-btn:hover {
-    transition: background-color 0.5s ease-in;
-    border: 1px solid #fff;
     color: #80acd3;
     background-color: #fff;
 }
@@ -190,12 +189,13 @@
     bottom: -10%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    transition: width 500ms ease-in-out;
 }
 
 .text ul li:hover .footerSubText::after {
     color: #80acd3;
     width: 100%;
-    transition: width 800ms ease-in-out;
+    transition: width 500ms ease-in-out;
 }
 
 .text ul li:hover .footerSubText {
@@ -248,7 +248,7 @@
 .footer-end {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     margin: auto;
     align-items: center;
     padding: 5px 0 10px 0;
@@ -265,7 +265,7 @@
     height: 40px;
     border-radius: 50%;
     position: relative;
-    margin: 0 10px 0 0;
+    margin: 0 8px;
     border: 1px solid #80acd3;
     cursor: pointer;
 }
@@ -294,13 +294,13 @@
     width: 0%;
     height: 1px;
     background-color: #80acd3;
-
+    transition: width 400ms ease-in-out;
 }
 
 .end:hover p::after {
 
     width: 100%;
-    transition: width 800ms ease-in-out;
+    transition: width 400ms ease-in-out;
 }
 
 .start,
