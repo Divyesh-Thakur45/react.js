@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap");
+.App {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+/* for Contact Page */
+.contact-box {
+  box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.486);
+}
+/* CSS */
+.button:hover {
+  background-image: linear-gradient(to left, #1cbdd6d7, #0f59b4dc);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
